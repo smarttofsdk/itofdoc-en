@@ -47,10 +47,10 @@ Welcome to SmartToF SDK User Guide!
    Tutorial/C_C++/index.rst
    Tutorial/Python/index.rst
    Tutorial/Csharp/index.rst
-   Tutorial/Java/index.rst	
+   Tutorial/Java/index.rst
    Tutorial/ROS/index.rst
    Tutorial/OpenNI2/index.rst
-   Tutorial/Android/index.rst  
+   Tutorial/Android/index.rst
 
 .. raw:: latex
 
@@ -63,12 +63,12 @@ Welcome to SmartToF SDK User Guide!
    
    Reference/tools/index.rst
    Reference/C_C++/index.rst
-   Reference/Python/index.rst   
+   Reference/Python/index.rst
    Reference/Csharp/index.rst
-   Reference/Java/index.rst	
+   Reference/Java/index.rst
    Reference/Android/index.rst
-   Reference/ROS/index.rst 
-   Reference/OpenNI2/index.rst   
+   Reference/ROS/index.rst
+   Reference/OpenNI2/index.rst
   
    
 .. Indices and tables

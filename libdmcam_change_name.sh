@@ -1,5 +1,5 @@
 #/bin/bash
-global_replace_str=sony
+global_replace_str=itof
 echo "*****************************************"
 echo "****replace_before=dmcam_****************"
 echo "****replace_after =${global_replace_str}******************"
@@ -8,7 +8,7 @@ echo "*****************************************"
 cd ../libdmcam/ && git checkout . && cd ../sdk_build/
 declare -a arr
 index=0
-STR=$(cat ../libdmcam/src/dmcam.h.in|tr -s ' '|sed "s/(/ /g"|sed "s/;/ /g"|sed "s/*/ /g"|sed "s/,/ /g"|sed "s/)/ /g"|sed "s/\./ /g"|sed "s#/# #g" )
+STR=$(cat ./source/Reference/C_C++/dmcam.h|tr -s ' '|sed "s/(/ /g"|sed "s/;/ /g"|sed "s/*/ /g"|sed "s/,/ /g"|sed "s/)/ /g"|sed "s/\./ /g"|sed "s#/# #g" )
 for word in $STR;
 do
     var1=`echo $word|grep dmcam_`;
@@ -33,13 +33,13 @@ do
     echo "replace_before="$replace_before
     replace_after=`echo $replace_before|sed "s/dmcam/$global_replace_str/g"`
     echo "replace_after="$replace_after
-    sed -i "s/$replace_before/$replace_after/g" `grep -rl $replace_before ../libdmcam`
+    sed -i "s/$replace_before/$replace_after/g" `grep -rl $replace_before ./source`
 done
 
 #replace dmcam.i 
-sed -i "13s/dmcam/$global_replace_str/g" ../libdmcam/swig/dmcam.i
+#sed -i "13s/dmcam/$global_replace_str/g" ../libdmcam/swig/dmcam.i
 
 #replace dmcam_api.map
-sed -i "3s/dmcam/$global_replace_str/g" ../libdmcam/dmcam_api.map
+#sed -i "3s/dmcam/$global_replace_str/g" ../libdmcam/dmcam_api.map
 
 

@@ -34,7 +34,7 @@ author = 'smarttof'
 # The short X.Y version
 version = '1.8'
 # The full version, including alpha/beta/rc tags
-release = '1.80.5'
+release = '1.81.4'
 
 
 # -- General configuration ---------------------------------------------------
@@ -149,7 +149,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'smarttofdoc'
+htmlhelp_basename = 'itofdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
