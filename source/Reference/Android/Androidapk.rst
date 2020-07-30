@@ -57,9 +57,9 @@ and they all correspond to the APIs defined in ** dmcam.h ** in the C library.
 		}
 		
 - The calling API in Android is basically the same as the calling API in Java，the mapping relationship is as follows: **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** .
-  For example `dmcam_dev_close` be mapped to `dmcam.dev_close`
+  For example `itof_dev_close` be mapped to `dmcam.dev_close`
   
-- Structure mapping： **dmcam_xxxxx -> xxxxx()** . Structure is mapped to a class in java. For example, create a `dmcam_param_item_t` structure as follows:
+- Structure mapping： **dmcam_xxxxx -> xxxxx()** . Structure is mapped to a class in java. For example, create a `itof_param_item_t` structure as follows:
  
   .. code-block:: Java
   

@@ -7,7 +7,7 @@
     <member refid="structdmcam__camera__para__t_1a73404e46ebda15f3e949c725bf73eca8" kind="variable"><name>fy</name></member>
     <member refid="structdmcam__camera__para__t_1a7aca480eed64bacd1157ec89c585abc0" kind="variable"><name>dcoeff</name></member>
   </compound>
-  <compound refid="structdmcam__cap" kind="struct"><name>dmcam_cap</name>
+  <compound refid="structdmcam__cap" kind="struct"><name>itof_cap</name>
     <member refid="structdmcam__cap_1a9738a92486db096aee6a7f2a3918bde3" kind="variable"><name>max_frame_width</name></member>
     <member refid="structdmcam__cap_1a784c11d17aa65f0f43e1c2d5b110c3b7" kind="variable"><name>max_frame_height</name></member>
     <member refid="structdmcam__cap_1a3e67080c617023c4e5ee89130bd6cd43" kind="variable"><name>max_frame_depth</name></member>
@@ -16,7 +16,7 @@
     <member refid="structdmcam__cap_1a666c5bd29577423f5804e75fecd5a8ba" kind="variable"><name>illum_board_type</name></member>
     <member refid="structdmcam__cap_1a0c1a826b804042f3f9a561b8fe2bd8f0" kind="variable"><name>sensor_board_type</name></member>
   </compound>
-  <compound refid="structdmcam__cap__cfg__t" kind="struct"><name>dmcam_cap_cfg_t</name>
+  <compound refid="structdmcam__cap__cfg__t" kind="struct"><name>itof_cap_cfg_t</name>
     <member refid="structdmcam__cap__cfg__t_1a2c210a2e12c6ad6ae5448045babfc286" kind="variable"><name>cache_frames_cnt</name></member>
     <member refid="structdmcam__cap__cfg__t_1add078b05b9ba384278972040e909383e" kind="variable"><name>on_frame_ready</name></member>
     <member refid="structdmcam__cap__cfg__t_1a1fa2ebb10b2f3657e4664254e5b08ea9" kind="variable"><name>on_error</name></member>
@@ -27,34 +27,34 @@
     <member refid="structdmcam__cap__cfg__t_1a6b1bfdc261c77049a63c884684b9ae44" kind="variable"><name>fname_replay</name></member>
     <member refid="structdmcam__cap__cfg__t_1ad638934199d5bae7e2523196a461638c" kind="variable"><name>en_fdev_rewind</name></member>
   </compound>
-  <compound refid="structdmcam__cmap__cfg" kind="struct"><name>dmcam_cmap_cfg</name>
+  <compound refid="structdmcam__cmap__cfg" kind="struct"><name>itof_cmap_cfg</name>
     <member refid="structdmcam__cmap__cfg_1a197159b67f3f5e45c8ab2fada0c9d153" kind="variable"><name>color_palette</name></member>
     <member refid="structdmcam__cmap__cfg_1af5172d8fde04317b37f8b43521a50a65" kind="variable"><name>histeq_en</name></member>
   </compound>
-  <compound refid="structdmcam__dev__if__info__eth" kind="struct"><name>dmcam_dev_if_info_eth</name>
+  <compound refid="structdmcam__dev__if__info__eth" kind="struct"><name>itof_dev_if_info_eth</name>
     <member refid="structdmcam__dev__if__info__eth_1a501e1f8efd60f9263c149b7214614e5d" kind="variable"><name>addr</name></member>
     <member refid="structdmcam__dev__if__info__eth_1a37ea1354353df85502e288ce828136b9" kind="variable"><name>reserved</name></member>
     <member refid="structdmcam__dev__if__info__eth_1a2ad4016dab60410ee612b59adabb35e8" kind="variable"><name>token</name></member>
     <member refid="structdmcam__dev__if__info__eth_1ad3833009c048f42475f44a30eef195c0" kind="variable"><name>cid</name></member>
   </compound>
-  <compound refid="structdmcam__dev__if__info__fil" kind="struct"><name>dmcam_dev_if_info_fil</name>
+  <compound refid="structdmcam__dev__if__info__fil" kind="struct"><name>itof_dev_if_info_fil</name>
     <member refid="structdmcam__dev__if__info__fil_1a7cc878da2d861c3cee9224c114c383d6" kind="variable"><name>fd</name></member>
     <member refid="structdmcam__dev__if__info__fil_1acdea45f7fbbc0330bd8c6fe65257c492" kind="variable"><name>fname</name></member>
   </compound>
-  <compound refid="structdmcam__dev__if__info__t" kind="struct"><name>dmcam_dev_if_info_t</name>
+  <compound refid="structdmcam__dev__if__info__t" kind="struct"><name>itof_dev_if_info_t</name>
     <member refid="structdmcam__dev__if__info__t_1a70793aaee923a1831c31117654fe7054" kind="variable"><name>type</name></member>
     <member refid="structdmcam__dev__if__info__t_1a7d9daa99d3cfc9b385e93b53d89e11b0" kind="variable"><name>usb</name></member>
     <member refid="structdmcam__dev__if__info__t_1aed90c97a0b2d468a29f783684f7c2f13" kind="variable"><name>eth</name></member>
     <member refid="structdmcam__dev__if__info__t_1a6fe1a2f73d72804b4f5d1b50beb9db95" kind="variable"><name>fil</name></member>
     <member refid="structdmcam__dev__if__info__t_1a57622e0c747d6d6c82160b7503bf6cd3" kind="variable"><name>info</name></member>
   </compound>
-  <compound refid="structdmcam__dev__if__info__usb" kind="struct"><name>dmcam_dev_if_info_usb</name>
+  <compound refid="structdmcam__dev__if__info__usb" kind="struct"><name>itof_dev_if_info_usb</name>
     <member refid="structdmcam__dev__if__info__usb_1ad3e8b1b3b1bccce409cb1d936dcb7dc2" kind="variable"><name>usb_bus_num</name></member>
     <member refid="structdmcam__dev__if__info__usb_1a543a7c9a81d24f30075b3a97532718cc" kind="variable"><name>usb_port_num</name></member>
     <member refid="structdmcam__dev__if__info__usb_1a6f766bff1f581c89f674c474e9314716" kind="variable"><name>usb_dev_addr</name></member>
     <member refid="structdmcam__dev__if__info__usb_1a5d799249dbbd7c2ac8a3c7e5d5dd47c0" kind="variable"><name>usb_speed</name></member>
   </compound>
-  <compound refid="structdmcam__dev__t" kind="struct"><name>dmcam_dev_t</name>
+  <compound refid="structdmcam__dev__t" kind="struct"><name>itof_dev_t</name>
     <member refid="structdmcam__dev__t_1a2aa826a48c656096541cd13894b605eb" kind="variable"><name>handler</name></member>
     <member refid="structdmcam__dev__t_1a9a2b5070f2858d3e78f047a229328429" kind="variable"><name>if_info</name></member>
     <member refid="structdmcam__dev__t_1aabf8a075e7a046aaedee540b28e4a41d" kind="variable"><name>product</name></member>
@@ -70,7 +70,7 @@
     <member refid="structdmcam__dev__t_1ae1c5fcb29c0f81ad590627668d9a8059" kind="variable"><name>alloc_flag</name></member>
     <member refid="structdmcam__dev__t_1a89410452d83cad02f822eb800ca3b7c2" kind="variable"><name>api_flag</name></member>
   </compound>
-  <compound refid="uniondmcam__dev__ver__u" kind="union"><name>dmcam_dev_ver_u</name>
+  <compound refid="uniondmcam__dev__ver__u" kind="union"><name>itof_dev_ver_u</name>
     <member refid="uniondmcam__dev__ver__u_1adc9d097e58dfeacff58c77b085046df6" kind="variable"><name>version</name></member>
     <member refid="uniondmcam__dev__ver__u_1aaf26faf1490e89bcacf74434cd5ac288" kind="variable"><name>hw_ver</name></member>
     <member refid="uniondmcam__dev__ver__u_1a567ff17c15c124b5572042793404b8ba" kind="variable"><name>sw_ver</name></member>
@@ -78,7 +78,7 @@
     <member refid="uniondmcam__dev__ver__u_1a334a774a01e54e93a13477de480554b0" kind="variable"><name>hw2_ver</name></member>
     <member refid="uniondmcam__dev__ver__u_1a6eb97cedae675ad024f720c76fcfcefe" kind="variable"><name>ver</name></member>
   </compound>
-  <compound refid="uniondmcam__filter__args__u" kind="union"><name>dmcam_filter_args_u</name>
+  <compound refid="uniondmcam__filter__args__u" kind="union"><name>itof_filter_args_u</name>
     <member refid="uniondmcam__filter__args__u_1a99430ac813e6cfcff9969d6b662de7f7" kind="variable"><name>raw</name></member>
     <member refid="uniondmcam__filter__args__u_1a22c0066afe25327e84a6befb61ffbd7b" kind="variable"><name>case_idx</name></member>
     <member refid="uniondmcam__filter__args__u_1a184d1b6a3e7b3109e5ff85cd71ffdaf7" kind="variable"><name>lens_id</name></member>
@@ -102,7 +102,7 @@
     <member refid="uniondmcam__filter__args__u_1a71d37da1d00f1829a894198cb7b63dd7" kind="variable"><name>fly_noise_threshold</name></member>
     <member refid="uniondmcam__filter__args__u_1add4a369fe785a97c42be3d718b9e3d0f" kind="variable"><name>@24</name></member>
   </compound>
-  <compound refid="structdmcam__frame__info__t" kind="struct"><name>dmcam_frame_info_t</name>
+  <compound refid="structdmcam__frame__info__t" kind="struct"><name>itof_frame_info_t</name>
     <member refid="structdmcam__frame__info__t_1a7b557ad0e20b408a7055f2b9e2cd9243" kind="variable"><name>frame_size</name></member>
     <member refid="structdmcam__frame__info__t_1a418d7a290e76100103fc1afb8f1c3f29" kind="variable"><name>frame_format</name></member>
     <member refid="structdmcam__frame__info__t_1a711f5747b27d5a210f136e4833351f60" kind="variable"><name>frame_idx</name></member>
@@ -116,16 +116,16 @@
     <member refid="structdmcam__frame__info__t_1a81f4ec0b274e7dc79162ab8f3742bd48" kind="variable"><name>rx_ts</name></member>
     <member refid="structdmcam__frame__info__t_1ad112c6e6522520885cb1eec4a7105034" kind="variable"><name>rx_us</name></member>
   </compound>
-  <compound refid="structdmcam__frame__t" kind="struct"><name>dmcam_frame_t</name>
+  <compound refid="structdmcam__frame__t" kind="struct"><name>itof_frame_t</name>
     <member refid="structdmcam__frame__t_1ac0d1f4e4896e6fe15ba66be93d05f3b7" kind="variable"><name>frame_info</name></member>
     <member refid="structdmcam__frame__t_1a387afc351776603e37621af1102a4f56" kind="variable"><name>frame_data</name></member>
   </compound>
-  <compound refid="structdmcam__param__item__t" kind="struct"><name>dmcam_param_item_t</name>
+  <compound refid="structdmcam__param__item__t" kind="struct"><name>itof_param_item_t</name>
     <member refid="structdmcam__param__item__t_1a868d9f8251d594fd065a6224e6b989aa" kind="variable"><name>param_id</name></member>
     <member refid="structdmcam__param__item__t_1a7395b6bfb29f304d7675f8f66d306528" kind="variable"><name>param_val_len</name></member>
     <member refid="structdmcam__param__item__t_1a3d2dc3b921e7691e84d4d5792663a80d" kind="variable"><name>param_val</name></member>
   </compound>
-  <compound refid="structdmcam__param__roi__t" kind="struct"><name>dmcam_param_roi_t</name>
+  <compound refid="structdmcam__param__roi__t" kind="struct"><name>itof_param_roi_t</name>
     <member refid="structdmcam__param__roi__t_1a295513df3516d7783c992d8b16357277" kind="variable"><name>srow</name></member>
     <member refid="structdmcam__param__roi__t_1a25c4365134243d033de095e2932deb5c" kind="variable"><name>erow</name></member>
     <member refid="structdmcam__param__roi__t_1a868c9beea6a8f0e7cd36bac3ee8bac4f" kind="variable"><name>scol</name></member>
@@ -133,7 +133,7 @@
     <member refid="structdmcam__param__roi__t_1a4a77ed13cad724bd1166fe0a4483b9f1" kind="variable"><name>binning</name></member>
     <member refid="structdmcam__param__roi__t_1ae7bc374d9cd1e693d0fb3c501a7aab43" kind="variable"><name>max_fsize</name></member>
   </compound>
-  <compound refid="uniondmcam__param__val__u" kind="union"><name>dmcam_param_val_u</name>
+  <compound refid="uniondmcam__param__val__u" kind="union"><name>itof_param_val_u</name>
     <member refid="uniondmcam__param__val__u_1a0ab03534a82eb31793aaa1ac1fb5765f" kind="variable"><name>raw</name></member>
     <member refid="uniondmcam__param__val__u_1a1d83f81d851d778f6dada329dd1020b6" kind="variable"><name>dev_mode</name></member>
     <member refid="uniondmcam__param__val__u_1a68584e6edb987cb54bf440fbfbd201c3" kind="variable"><name>mod_freq</name></member>
@@ -224,19 +224,19 @@
     <member refid="dmcam_8h_1a73af0413a42e757f342217a861677411" kind="define"><name>DM_SEEK_END</name></member>
     <member refid="dmcam_8h_1afe9655901debd8cfe6196d1890990ade" kind="define"><name>API_DEPRECATED_FOR</name></member>
     <member refid="dmcam_8h_1a08a1ffd181f816039592e1803d45bc23" kind="define"><name>API_DEPRECATED</name></member>
-    <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84" kind="enum"><name>dmcam_dev_if_e</name></member>
+    <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84" kind="enum"><name>itof_dev_if_e</name></member>
     <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84afc34a3f0585cbf13433a187cee58fd6f" kind="enumvalue"><name>DEV_IF_USB</name></member>
     <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84aed5a947d36ce29682f9659200db1ba58" kind="enumvalue"><name>DEV_IF_ETH</name></member>
     <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84a15be48a922359eaac794876b01648176" kind="enumvalue"><name>DEV_IF_FILE</name></member>
     <member refid="dmcam_8h_1a89e2a87368200f4f23d20c9703c81e84a93800477040f962c01497cd686fe501b" kind="enumvalue"><name>DEV_IF_NONE</name></member>
-    <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17" kind="enum"><name>dmcam_log_level_e</name></member>
+    <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17" kind="enum"><name>itof_log_level_e</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17a8fa9f12103da446ab4f3d3dc2fcf7f5d" kind="enumvalue"><name>LOG_LEVEL_TRACE</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17a538b2b6e011479d408ecd2be0f6d6177" kind="enumvalue"><name>LOG_LEVEL_DEBUG</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17aedee1e3159bfe7d918b6e29873c5aee4" kind="enumvalue"><name>LOG_LEVEL_INFO</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17a99c1e5c8e6d557f3993b9ab54a0107f4" kind="enumvalue"><name>LOG_LEVEL_WARN</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17a5b40f003febbc3b535649d63f4b8a44f" kind="enumvalue"><name>LOG_LEVEL_ERROR</name></member>
     <member refid="dmcam_8h_1aec561b7d4a2678a8002879106a04fa17a69dacb1837e1e37c6ed34cc2ee1d8848" kind="enumvalue"><name>LOG_LEVEL_NONE</name></member>
-    <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4" kind="enum"><name>dmcam_dev_rst_e</name></member>
+    <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4" kind="enum"><name>itof_dev_rst_e</name></member>
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4a29949e60507c5ea0cd126994fc3deee5" kind="enumvalue"><name>DEV_RST_DEV</name></member>
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4aa7d7bb1641fc57e821dee1747fff2232" kind="enumvalue"><name>DEV_RST_CAM0</name></member>
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4a4e637fe073781658601b3f8b639ed555" kind="enumvalue"><name>DEV_RST_CAM1</name></member>
@@ -245,18 +245,18 @@
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4adf86c63de812a3bdc0572b9d1fe3be57" kind="enumvalue"><name>DEV_RST_IR2</name></member>
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4a74a405bb7e75c47219b63847612ddff5" kind="enumvalue"><name>DEV_RST_MCU</name></member>
     <member refid="dmcam_8h_1a7ec885c3f24643fde95ec67c1e171bc4a4c1d47a60340d0d2a6601318ce562eac" kind="enumvalue"><name>DEV_RST_CNT</name></member>
-    <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018f" kind="enum"><name>dmcam_dev_mode_e</name></member>
+    <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018f" kind="enum"><name>itof_dev_mode_e</name></member>
     <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018fa492aeba083ac7d63cc9b1885fef6ae51" kind="enumvalue"><name>DEV_MODE_NORMAL</name></member>
     <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018faa6881d5b9f474c7e649156cf1d178aa9" kind="enumvalue"><name>DEV_MODE_DFU</name></member>
     <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018fa3f161e53280a4c6da43a9f8a5ce75c33" kind="enumvalue"><name>DEV_MODE_TEST</name></member>
     <member refid="dmcam_8h_1a0a574c8f0b346da5c06ddefbb839018fa00e689c6cbf8bf6ee3c5dd904ea8e56d" kind="enumvalue"><name>DEV_MODE_DATA_UP</name></member>
-    <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5" kind="enum"><name>dmcam_dev_reg_e</name></member>
+    <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5" kind="enum"><name>itof_dev_reg_e</name></member>
     <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5a56dce8b1f96c59a6f3324257682c4eac" kind="enumvalue"><name>DEV_REG_RESERVED</name></member>
     <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5aec99c2403a9c2c0251371f0144d1b367" kind="enumvalue"><name>DEV_REG_CAM0</name></member>
     <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5a42408ef5c1f4ba92a84527a7d3f07e7a" kind="enumvalue"><name>DEV_REG_CAM1</name></member>
     <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5aa8a04f969ef3f4f30b2a297238ad1608" kind="enumvalue"><name>DEV_REG_IR_0</name></member>
     <member refid="dmcam_8h_1a7d06d986a2de30a284ebb4fd110314f5aeb42c51684380ad40bc87c4565ab5ff2" kind="enumvalue"><name>DEV_REG_IR_1</name></member>
-    <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aaf" kind="enum"><name>dmcam_frame_mode_e</name></member>
+    <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aaf" kind="enum"><name>itof_frame_mode_e</name></member>
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafadcea6c1336a55c2797d465b70c6c0eaf" kind="enumvalue"><name>FRAME_FMT_DCSx1</name></member>
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafa82c660bcd4fa45880e18975a8892e8a9" kind="enumvalue"><name>FRAME_FMT_DUAL_MGX_SINE_PIDELAY_DCSx2</name></member>
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafa4ad84d71a4a5a53b95c8ff87bab7ff8e" kind="enumvalue"><name>FRAME_FMT_SINGLE_MGX_SINE_PIDELAY_DCSx4</name></member>
@@ -275,7 +275,7 @@
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafa9bf964d91626ab4e2a904e3e7daa8fb2" kind="enumvalue"><name>FRAME_FMT_QI_SHIFT_LOSSLESS</name></member>
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafa7fb235d7b477fa70fa7784e8fdcab84d" kind="enumvalue"><name>FRAME_FMT_QI_SHIFT_LOSSLESS_DUAL_FREQ</name></member>
     <member refid="dmcam_8h_1a449da4d6a4140fa834dfdae71ded1aafa5bb19d7052bc75651b3dfbfd8960be29" kind="enumvalue"><name>FRAME_FMT_CNT</name></member>
-    <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25" kind="enum"><name>dmcam_dev_param_e</name></member>
+    <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25" kind="enum"><name>itof_dev_param_e</name></member>
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25a76d6eaab530f9961fab23bcd05c35df8" kind="enumvalue"><name>PARAM_DEV_MODE</name></member>
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25a61c2db31bf1dfd49844c12c87df7e45a" kind="enumvalue"><name>PARAM_MOD_FREQ</name></member>
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25a02ed538fba58bfc45b5f0a9f43a16a9f" kind="enumvalue"><name>PARAM_INFO_VENDOR</name></member>
@@ -304,24 +304,24 @@
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25af20cd0c82fb757294dcb117ab0168c07" kind="enumvalue"><name>PARAM_INFO_CALIB_FREQ</name></member>
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25afcb18cb0f42ed6c329f8e2bffdb7c383" kind="enumvalue"><name>PARAM_DEL_CALIB_DATA</name></member>
     <member refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25a0278bf7c87693f37b2ff67eab7a263c3" kind="enumvalue"><name>PARAM_ENUM_COUNT</name></member>
-    <member refid="dmcam_8h_1a887b1ccfc2a7795bd3ea34ff8fa9d3c8" kind="enum"><name>dmcam_bin_data_type_e</name></member>
+    <member refid="dmcam_8h_1a887b1ccfc2a7795bd3ea34ff8fa9d3c8" kind="enum"><name>itof_bin_data_type_e</name></member>
     <member refid="dmcam_8h_1a887b1ccfc2a7795bd3ea34ff8fa9d3c8a962271523d419bf4441db418deeb1ec0" kind="enumvalue"><name>BIN_DATA_TYPE_MCU</name></member>
     <member refid="dmcam_8h_1a887b1ccfc2a7795bd3ea34ff8fa9d3c8a44b6e0b510ac3a77edbd7e16fdd8538a" kind="enumvalue"><name>BIN_DATA_TYPE_TFC</name></member>
     <member refid="dmcam_8h_1a887b1ccfc2a7795bd3ea34ff8fa9d3c8a970dcac16b5757204b7d9700e55fc6ee" kind="enumvalue"><name>BIN_DATA_TYPE_CALIB</name></member>
-    <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30" kind="enum"><name>dmcam_binning_mode_e</name></member>
+    <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30" kind="enum"><name>itof_binning_mode_e</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a8bff4393050281ba9f3d5fb558d0da37" kind="enumvalue"><name>DM_BINNING_1X1</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a31595225859eeb0b1a9a09a04521db42" kind="enumvalue"><name>DM_BINNING_2X2</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a7d29e76e699099d39370d7a4b90aa667" kind="enumvalue"><name>DM_BINNING_4X4</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30ac8b1620d57535246295a007c6011cb8c" kind="enumvalue"><name>DM_BINNING_8X8</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30aa0b283ca04bdb73de8246bbc35ab79ba" kind="enumvalue"><name>DM_BINNING_2X4</name></member>
     <member refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a64e45ed7f190f64a1ed15973a6679d38" kind="enumvalue"><name>DM_BINNING_CNT</name></member>
-    <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0a" kind="enum"><name>dmcam_frame_fmt_e</name></member>
+    <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0a" kind="enum"><name>itof_frame_fmt_e</name></member>
     <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" kind="enumvalue"><name>DM_FRAME_FMT_RAW_DIST</name></member>
     <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" kind="enumvalue"><name>DM_FRAME_FMT_DISTANCE</name></member>
     <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" kind="enumvalue"><name>DM_FRAME_FMT_GRAY</name></member>
     <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" kind="enumvalue"><name>DM_FRAME_FMT_PCLOUD</name></member>
     <member refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" kind="enumvalue"><name>DM_FRAME_FMT_RGB</name></member>
-    <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fb" kind="enum"><name>dmcam_filter_id_e</name></member>
+    <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fb" kind="enum"><name>itof_filter_id_e</name></member>
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" kind="enumvalue"><name>DMCAM_FILTER_ID_LEN_CALIB</name></member>
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" kind="enumvalue"><name>DMCAM_FILTER_ID_PIXEL_CALIB</name></member>
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" kind="enumvalue"><name>DMCAM_FILTER_ID_DEPTH_FILTER</name></member>
@@ -339,7 +339,7 @@
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba1f0cd7c9136c30ea311236dc35197038" kind="enumvalue"><name>DMCAM_FILTER_ID_TEMP_CALIB</name></member>
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" kind="enumvalue"><name>DMCAM_FILTER_ID_MEDIAN</name></member>
     <member refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbacbbef69a4246a1a294d4db4254585fe7" kind="enumvalue"><name>DMCAM_FILTER_CNT</name></member>
-    <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7" kind="enum"><name>dmcam_cmap_palette_e</name></member>
+    <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7" kind="enum"><name>itof_cmap_palette_e</name></member>
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa02ad066b7713b7653076ed3b379cb39" kind="enumvalue"><name>DMCAM_CMAP_EPC</name></member>
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ada922268943b40a9c3675b111a086208" kind="enumvalue"><name>DMCAM_CMAP_HSV</name></member>
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a8f9b45fecadb1b1671b9f826ef5781c6" kind="enumvalue"><name>DMCAM_CMAP_BWR</name></member>
@@ -405,78 +405,78 @@
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aee5ea2d04777447969bb7d5192a801f3" kind="enumvalue"><name>DMCAM_CMAP_FLAG</name></member>
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a3118ad6b6286ab13150ab82e6aa51be5" kind="enumvalue"><name>DMCAM_CMAP_PRISM</name></member>
     <member refid="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ae6f28059d62894e6512aa70efee2c5dc" kind="enumvalue"><name>DMCAM_CMAP_COUNT</name></member>
-    <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2" kind="enum"><name>dmcam_cmap_outfmt_e</name></member>
+    <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2" kind="enum"><name>itof_cmap_outfmt_e</name></member>
     <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a0f1818943889f4c81adc13c04d60517f" kind="enumvalue"><name>DMCAM_CMAP_OUTFMT_RGB</name></member>
     <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a864b9a0090e380133ebc1d33e5162ba0" kind="enumvalue"><name>DMCAM_CMAP_OUTFMT_RGBA</name></member>
     <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a5c5ce16961cfaed9df33e5aca1d913f4" kind="enumvalue"><name>DMCAM_CMAP_OUTFMT_BGR</name></member>
     <member refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a4fd19e2e57ef200da40233b22895a49e" kind="enumvalue"><name>DMCAM_CMAP_OUTFMT_COUNT</name></member>
-    <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3" kind="enum"><name>dmcam_frame_save_fmt_t</name></member>
+    <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3" kind="enum"><name>itof_frame_save_fmt_t</name></member>
     <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3a882e4858b23c918647703be83c71a330" kind="enumvalue"><name>DMCAM_FRAME_SAVE_FLOAT32</name></member>
     <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3ace6ebcef16b39cb963fe2d87c6ff0d1f" kind="enumvalue"><name>DMCAM_FRAME_SAVE_UINT32</name></member>
     <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3ae9ac65f69b694e62b31cf2c82f70ae27" kind="enumvalue"><name>DMCAM_FRAME_SAVE_UINT16</name></member>
     <member refid="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3a0bc01c35f94cfc59c179869f049e0a32" kind="enumvalue"><name>DMCAM_FRAME_SAVE_UINT8</name></member>
-    <member refid="dmcam_8h_1af4e19db9883abb468473e1417f08f44d" kind="typedef"><name>dmcam_param_cap_t</name></member>
-    <member refid="dmcam_8h_1a7849459a06fce3a8ebcb2ed1f3973eac" kind="typedef"><name>dmcam_cap_frdy_f</name></member>
-    <member refid="dmcam_8h_1aa8a592c9c0553d896e52900ffdc99eeb" kind="typedef"><name>dmcam_cap_err_f</name></member>
-    <member refid="dmcam_8h_1af65a973c99f7fa7ce0edbcc6d4dc1b79" kind="typedef"><name>dmcam_cmap_cfg_t</name></member>
-    <member refid="dmcam_8h_1a684254b9b411831a876fb5d2c3acdb3f" kind="function"><name>dmcam_init</name></member>
-    <member refid="dmcam_8h_1a8e2d89f44424a284a00d5189fdb78812" kind="function"><name>dmcam_uninit</name></member>
-    <member refid="dmcam_8h_1ac05e4d01759cbead7b662595350b7d12" kind="function"><name>dmcam_log_cfg</name></member>
-    <member refid="dmcam_8h_1a9ac318a393cb90d50572e5e6ca0e0fbe" kind="function"><name>dmcam_path_cfg</name></member>
-    <member refid="dmcam_8h_1a38b41f66b430a48cbc969e4f80a9b406" kind="function"><name>dmcam_path_get</name></member>
-    <member refid="dmcam_8h_1ad39a197d99faf734e91cfdad1a2f7f3f" kind="function"><name>dmcam_error_name</name></member>
-    <member refid="dmcam_8h_1ae27b74edb35b9020e4d75002fecaf949" kind="function"><name>dmcam_dev_list</name></member>
-    <member refid="dmcam_8h_1abcd7bfd3b53d62aabd4b34a4f93eb63b" kind="function"><name>dmcam_dev_open</name></member>
-    <member refid="dmcam_8h_1af927227c3fc1da50c54a1c63f4566ee2" kind="function"><name>dmcam_dev_open_by_fd</name></member>
-    <member refid="dmcam_8h_1ae5da36231f829fcd19fae8cb55bbeef7" kind="function"><name>dmcam_dev_open_by_uri</name></member>
-    <member refid="dmcam_8h_1ad395f0de3c2c6ac11251fad93f379fac" kind="function"><name>dmcam_dev_close</name></member>
-    <member refid="dmcam_8h_1a9899ace6d1c2a2da066ccd8b7489b714" kind="function"><name>dmcam_dev_get_uri</name></member>
-    <member refid="dmcam_8h_1a64278cba893dea9626a90ab992e14d1c" kind="function"><name>dmcam_dev_reset</name></member>
-    <member refid="dmcam_8h_1a223ff6ed701bafde24d25ac0ac3835e7" kind="function"><name>dmcam_reg_batch_write</name></member>
-    <member refid="dmcam_8h_1aa1c0fb8eb8dacf5e9bed4574c6239215" kind="function"><name>dmcam_reg_batch_read</name></member>
-    <member refid="dmcam_8h_1a7842cd6a2aee7c691e213a9486620594" kind="function"><name>dmcam_param_batch_set</name></member>
-    <member refid="dmcam_8h_1ad661056e429d3ec09a81f723c2b3bd2c" kind="function"><name>dmcam_param_batch_get</name></member>
-    <member refid="dmcam_8h_1ad8d2f9ef09c4337b76124e8ec6d6c0c2" kind="function"><name>dmcam_cap_config_set</name></member>
-    <member refid="dmcam_8h_1a52e0b214b3b1ccd54dd8084b7952e3cd" kind="function"><name>dmcam_cap_config_get</name></member>
-    <member refid="dmcam_8h_1adf485506fef795de5084578e24f69468" kind="function"><name>dmcam_cap_set_callback_on_frame_ready</name></member>
-    <member refid="dmcam_8h_1ac318140ffd39ba4f227a550739b103f5" kind="function"><name>dmcam_cap_set_callback_on_error</name></member>
-    <member refid="dmcam_8h_1a6dae2856d85b8c9c0a5d422e74bbfd9e" kind="function"><name>dmcam_cap_snapshot</name></member>
-    <member refid="dmcam_8h_1aff920045679fbf522c89bfb9e57e67d6" kind="function"><name>dmcam_cap_is_ongoing</name></member>
-    <member refid="dmcam_8h_1a9cf5df46c457249084919038ac0d7d8f" kind="function"><name>dmcam_cap_start</name></member>
-    <member refid="dmcam_8h_1a77745ba3b0b299e7b25541f938410cf9" kind="function"><name>dmcam_cap_stop</name></member>
-    <member refid="dmcam_8h_1ace83386899d334d63bd44e9f53bff181" kind="function"><name>dmcam_cap_get_frames</name></member>
-    <member refid="dmcam_8h_1a3a9007d1414099ae67fb8e976abdeabe" kind="function"><name>dmcam_cap_get_frame</name></member>
-    <member refid="dmcam_8h_1aa30cef39b8590d45757c51c35cc0c823" kind="function"><name>dmcam_cap_save_frame</name></member>
-    <member refid="dmcam_8h_1ab2d04b430386b192a00be56caadc2007" kind="function"><name>dmcam_cap_seek_frame</name></member>
-    <member refid="dmcam_8h_1a51f5965814b35fa4f3070b640162f511" kind="function"><name>dmcam_firmware_upgrade</name></member>
-    <member refid="dmcam_8h_1a27288b6edf8ea62b411c109dd79a01cc" kind="function"><name>dmcam_data_download</name></member>
-    <member refid="dmcam_8h_1a1aca510d682fd3b67f0d68086e5e9e8c" kind="function"><name>dmcam_data_upload</name></member>
-    <member refid="dmcam_8h_1a254938f5c548e56c6fab6c043fca0ede" kind="function"><name>dmcam_frame_get_distance</name></member>
-    <member refid="dmcam_8h_1a69df5018e1eab3ee46a409bf8bf992c5" kind="function"><name>dmcam_frame_get_dist_raw</name></member>
-    <member refid="dmcam_8h_1a400ff437a3fdab7dd4261c295957c521" kind="function"><name>dmcam_frame_get_dist_f32</name></member>
-    <member refid="dmcam_8h_1a5904f93833a6b1fa6e159e8d6546a5d7" kind="function"><name>dmcam_frame_get_dist_u16</name></member>
-    <member refid="dmcam_8h_1aa20fc909c478be490fff511be768039f" kind="function"><name>dmcam_frame_get_gray</name></member>
-    <member refid="dmcam_8h_1a9025d5a4071ef00798b478099dc77ff3" kind="function"><name>dmcam_frame_get_gray_f32</name></member>
-    <member refid="dmcam_8h_1ad5c459379fcc872c6685dd8873b9ed2b" kind="function"><name>dmcam_frame_get_gray_u16</name></member>
-    <member refid="dmcam_8h_1a0c938a718352b7b791b2826d4aaa8692" kind="function"><name>dmcam_frame_get_pcl</name></member>
-    <member refid="dmcam_8h_1a7a716664d7e88db1e4c7ab49d0bd098d" kind="function"><name>dmcam_frame_get_pcl_xyzd</name></member>
-    <member refid="dmcam_8h_1ae483c9b218260c2849fdbddf397236f7" kind="function"><name>dmcam_frame_get_pcl_xyzi</name></member>
-    <member refid="dmcam_8h_1a5274bfb4e28093c3d58ee361f0f89bce" kind="function"><name>dmcam_filter_enable</name></member>
-    <member refid="dmcam_8h_1add8477d44943b64c016e948a4a1c73f6" kind="function"><name>dmcam_filter_disable</name></member>
-    <member refid="dmcam_8h_1a5955f132304782e03f9162e0e4e78ab0" kind="function"><name>dmcam_cmap_palette_set</name></member>
-    <member refid="dmcam_8h_1a818b2656621893d7c657eb33bc9fd799" kind="function"><name>dmcam_cmap_palette_get</name></member>
-    <member refid="dmcam_8h_1acd8278a4ba7590e78db3f429a2e79ecd" kind="function"><name>dmcam_cmap_dist_f32_to_RGB</name></member>
-    <member refid="dmcam_8h_1a7a61e6254ffd4a83abc422f223ab9b2c" kind="function"><name>dmcam_cmap_dist_u16_to_RGB</name></member>
-    <member refid="dmcam_8h_1a37319aefddbd3c274f4cff9d0955c594" kind="function"><name>dmcam_cmap_gray_u16_to_IR</name></member>
-    <member refid="dmcam_8h_1ae6185f162f89c73dac79d317ea15e2eb" kind="function"><name>dmcam_cmap_gray_f32_to_IR</name></member>
-    <member refid="dmcam_8h_1afc31165cb9b0709441990c726198f5b5" kind="function"><name>dmcam_file_open</name></member>
-    <member refid="dmcam_8h_1a561eb8b4e2257bd6ba378c0cbd0c74ca" kind="function"><name>dmcam_file_close</name></member>
-    <member refid="dmcam_8h_1adb2f0b9ba97da2cb0cef0e3afe58e630" kind="function"><name>dmcam_frame_save_raw</name></member>
-    <member refid="dmcam_8h_1a166ad053e6c9c2c3dd15024ee861bb8c" kind="function"><name>dmcam_frame_save_distance</name></member>
-    <member refid="dmcam_8h_1afab5154e6aaa8f6d436b6e97c80a9e51" kind="function"><name>dmcam_frame_save_gray</name></member>
-    <member refid="dmcam_8h_1a8aff3beeaa724043c1861e8b6f30cede" kind="function"><name>dmcam_frame_load_raw</name></member>
-    <member refid="dmcam_8h_1aff19ee2a211c9121508ffaa69355a457" kind="function"><name>dmcam_frame_load_distance</name></member>
-    <member refid="dmcam_8h_1a8f2ad8fa16497bc890e4308d936425d7" kind="function"><name>dmcam_frame_load_gray</name></member>
+    <member refid="dmcam_8h_1af4e19db9883abb468473e1417f08f44d" kind="typedef"><name>itof_param_cap_t</name></member>
+    <member refid="dmcam_8h_1a7849459a06fce3a8ebcb2ed1f3973eac" kind="typedef"><name>itof_cap_frdy_f</name></member>
+    <member refid="dmcam_8h_1aa8a592c9c0553d896e52900ffdc99eeb" kind="typedef"><name>itof_cap_err_f</name></member>
+    <member refid="dmcam_8h_1af65a973c99f7fa7ce0edbcc6d4dc1b79" kind="typedef"><name>itof_cmap_cfg_t</name></member>
+    <member refid="dmcam_8h_1a684254b9b411831a876fb5d2c3acdb3f" kind="function"><name>itof_init</name></member>
+    <member refid="dmcam_8h_1a8e2d89f44424a284a00d5189fdb78812" kind="function"><name>itof_uninit</name></member>
+    <member refid="dmcam_8h_1ac05e4d01759cbead7b662595350b7d12" kind="function"><name>itof_log_cfg</name></member>
+    <member refid="dmcam_8h_1a9ac318a393cb90d50572e5e6ca0e0fbe" kind="function"><name>itof_path_cfg</name></member>
+    <member refid="dmcam_8h_1a38b41f66b430a48cbc969e4f80a9b406" kind="function"><name>itof_path_get</name></member>
+    <member refid="dmcam_8h_1ad39a197d99faf734e91cfdad1a2f7f3f" kind="function"><name>itof_error_name</name></member>
+    <member refid="dmcam_8h_1ae27b74edb35b9020e4d75002fecaf949" kind="function"><name>itof_dev_list</name></member>
+    <member refid="dmcam_8h_1abcd7bfd3b53d62aabd4b34a4f93eb63b" kind="function"><name>itof_dev_open</name></member>
+    <member refid="dmcam_8h_1af927227c3fc1da50c54a1c63f4566ee2" kind="function"><name>itof_dev_open_by_fd</name></member>
+    <member refid="dmcam_8h_1ae5da36231f829fcd19fae8cb55bbeef7" kind="function"><name>itof_dev_open_by_uri</name></member>
+    <member refid="dmcam_8h_1ad395f0de3c2c6ac11251fad93f379fac" kind="function"><name>itof_dev_close</name></member>
+    <member refid="dmcam_8h_1a9899ace6d1c2a2da066ccd8b7489b714" kind="function"><name>itof_dev_get_uri</name></member>
+    <member refid="dmcam_8h_1a64278cba893dea9626a90ab992e14d1c" kind="function"><name>itof_dev_reset</name></member>
+    <member refid="dmcam_8h_1a223ff6ed701bafde24d25ac0ac3835e7" kind="function"><name>itof_reg_batch_write</name></member>
+    <member refid="dmcam_8h_1aa1c0fb8eb8dacf5e9bed4574c6239215" kind="function"><name>itof_reg_batch_read</name></member>
+    <member refid="dmcam_8h_1a7842cd6a2aee7c691e213a9486620594" kind="function"><name>itof_param_batch_set</name></member>
+    <member refid="dmcam_8h_1ad661056e429d3ec09a81f723c2b3bd2c" kind="function"><name>itof_param_batch_get</name></member>
+    <member refid="dmcam_8h_1ad8d2f9ef09c4337b76124e8ec6d6c0c2" kind="function"><name>itof_cap_config_set</name></member>
+    <member refid="dmcam_8h_1a52e0b214b3b1ccd54dd8084b7952e3cd" kind="function"><name>itof_cap_config_get</name></member>
+    <member refid="dmcam_8h_1adf485506fef795de5084578e24f69468" kind="function"><name>itof_cap_set_callback_on_frame_ready</name></member>
+    <member refid="dmcam_8h_1ac318140ffd39ba4f227a550739b103f5" kind="function"><name>itof_cap_set_callback_on_error</name></member>
+    <member refid="dmcam_8h_1a6dae2856d85b8c9c0a5d422e74bbfd9e" kind="function"><name>itof_cap_snapshot</name></member>
+    <member refid="dmcam_8h_1aff920045679fbf522c89bfb9e57e67d6" kind="function"><name>itof_cap_is_ongoing</name></member>
+    <member refid="dmcam_8h_1a9cf5df46c457249084919038ac0d7d8f" kind="function"><name>itof_cap_start</name></member>
+    <member refid="dmcam_8h_1a77745ba3b0b299e7b25541f938410cf9" kind="function"><name>itof_cap_stop</name></member>
+    <member refid="dmcam_8h_1ace83386899d334d63bd44e9f53bff181" kind="function"><name>itof_cap_get_frames</name></member>
+    <member refid="dmcam_8h_1a3a9007d1414099ae67fb8e976abdeabe" kind="function"><name>itof_cap_get_frame</name></member>
+    <member refid="dmcam_8h_1aa30cef39b8590d45757c51c35cc0c823" kind="function"><name>itof_cap_save_frame</name></member>
+    <member refid="dmcam_8h_1ab2d04b430386b192a00be56caadc2007" kind="function"><name>itof_cap_seek_frame</name></member>
+    <member refid="dmcam_8h_1a51f5965814b35fa4f3070b640162f511" kind="function"><name>itof_firmware_upgrade</name></member>
+    <member refid="dmcam_8h_1a27288b6edf8ea62b411c109dd79a01cc" kind="function"><name>itof_data_download</name></member>
+    <member refid="dmcam_8h_1a1aca510d682fd3b67f0d68086e5e9e8c" kind="function"><name>itof_data_upload</name></member>
+    <member refid="dmcam_8h_1a254938f5c548e56c6fab6c043fca0ede" kind="function"><name>itof_frame_get_distance</name></member>
+    <member refid="dmcam_8h_1a69df5018e1eab3ee46a409bf8bf992c5" kind="function"><name>itof_frame_get_dist_raw</name></member>
+    <member refid="dmcam_8h_1a400ff437a3fdab7dd4261c295957c521" kind="function"><name>itof_frame_get_dist_f32</name></member>
+    <member refid="dmcam_8h_1a5904f93833a6b1fa6e159e8d6546a5d7" kind="function"><name>itof_frame_get_dist_u16</name></member>
+    <member refid="dmcam_8h_1aa20fc909c478be490fff511be768039f" kind="function"><name>itof_frame_get_gray</name></member>
+    <member refid="dmcam_8h_1a9025d5a4071ef00798b478099dc77ff3" kind="function"><name>itof_frame_get_gray_f32</name></member>
+    <member refid="dmcam_8h_1ad5c459379fcc872c6685dd8873b9ed2b" kind="function"><name>itof_frame_get_gray_u16</name></member>
+    <member refid="dmcam_8h_1a0c938a718352b7b791b2826d4aaa8692" kind="function"><name>itof_frame_get_pcl</name></member>
+    <member refid="dmcam_8h_1a7a716664d7e88db1e4c7ab49d0bd098d" kind="function"><name>itof_frame_get_pcl_xyzd</name></member>
+    <member refid="dmcam_8h_1ae483c9b218260c2849fdbddf397236f7" kind="function"><name>itof_frame_get_pcl_xyzi</name></member>
+    <member refid="dmcam_8h_1a5274bfb4e28093c3d58ee361f0f89bce" kind="function"><name>itof_filter_enable</name></member>
+    <member refid="dmcam_8h_1add8477d44943b64c016e948a4a1c73f6" kind="function"><name>itof_filter_disable</name></member>
+    <member refid="dmcam_8h_1a5955f132304782e03f9162e0e4e78ab0" kind="function"><name>itof_cmap_palette_set</name></member>
+    <member refid="dmcam_8h_1a818b2656621893d7c657eb33bc9fd799" kind="function"><name>itof_cmap_palette_get</name></member>
+    <member refid="dmcam_8h_1acd8278a4ba7590e78db3f429a2e79ecd" kind="function"><name>itof_cmap_dist_f32_to_RGB</name></member>
+    <member refid="dmcam_8h_1a7a61e6254ffd4a83abc422f223ab9b2c" kind="function"><name>itof_cmap_dist_u16_to_RGB</name></member>
+    <member refid="dmcam_8h_1a37319aefddbd3c274f4cff9d0955c594" kind="function"><name>itof_cmap_gray_u16_to_IR</name></member>
+    <member refid="dmcam_8h_1ae6185f162f89c73dac79d317ea15e2eb" kind="function"><name>itof_cmap_gray_f32_to_IR</name></member>
+    <member refid="dmcam_8h_1afc31165cb9b0709441990c726198f5b5" kind="function"><name>itof_file_open</name></member>
+    <member refid="dmcam_8h_1a561eb8b4e2257bd6ba378c0cbd0c74ca" kind="function"><name>itof_file_close</name></member>
+    <member refid="dmcam_8h_1adb2f0b9ba97da2cb0cef0e3afe58e630" kind="function"><name>itof_frame_save_raw</name></member>
+    <member refid="dmcam_8h_1a166ad053e6c9c2c3dd15024ee861bb8c" kind="function"><name>itof_frame_save_distance</name></member>
+    <member refid="dmcam_8h_1afab5154e6aaa8f6d436b6e97c80a9e51" kind="function"><name>itof_frame_save_gray</name></member>
+    <member refid="dmcam_8h_1a8aff3beeaa724043c1861e8b6f30cede" kind="function"><name>itof_frame_load_raw</name></member>
+    <member refid="dmcam_8h_1aff19ee2a211c9121508ffaa69355a457" kind="function"><name>itof_frame_load_distance</name></member>
+    <member refid="dmcam_8h_1a8f2ad8fa16497bc890e4308d936425d7" kind="function"><name>itof_frame_load_gray</name></member>
     <member refid="dmcam_8h_1a88cc1dd0bdf01fad346debf786bf4ee0" kind="function"><name>dmcam_get_lens_param</name></member>
   </compound>
 </doxygenindex>

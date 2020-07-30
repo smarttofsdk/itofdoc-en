@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="structdmcam__param__roi__t" kind="struct" prot="public">
-    <compoundname>dmcam_param_roi_t</compoundname>
+    <compoundname>itof_param_roi_t</compoundname>
     <includes refid="dmcam_8h" local="no">dmcam.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdmcam__param__roi__t_1a295513df3516d7783c992d8b16357277" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_param_roi_t::srow</definition>
+        <definition>uint16_t itof_param_roi_t::srow</definition>
         <argsstring></argsstring>
         <name>srow</name>
         <briefdescription>
@@ -19,7 +19,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__roi__t_1a25c4365134243d033de095e2932deb5c" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_param_roi_t::erow</definition>
+        <definition>uint16_t itof_param_roi_t::erow</definition>
         <argsstring></argsstring>
         <name>erow</name>
         <briefdescription>
@@ -32,7 +32,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__roi__t_1a868c9beea6a8f0e7cd36bac3ee8bac4f" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_param_roi_t::scol</definition>
+        <definition>uint16_t itof_param_roi_t::scol</definition>
         <argsstring></argsstring>
         <name>scol</name>
         <briefdescription>
@@ -45,7 +45,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__roi__t_1a8b2ff5df6e7a998e6f4c3167606b0693" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_param_roi_t::ecol</definition>
+        <definition>uint16_t itof_param_roi_t::ecol</definition>
         <argsstring></argsstring>
         <name>ecol</name>
         <briefdescription>
@@ -58,7 +58,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__roi__t_1a4a77ed13cad724bd1166fe0a4483b9f1" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_param_roi_t::binning</definition>
+        <definition>uint8_t itof_param_roi_t::binning</definition>
         <argsstring></argsstring>
         <name>binning</name>
         <briefdescription>
@@ -71,7 +71,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__roi__t_1ae7bc374d9cd1e693d0fb3c501a7aab43" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
-        <definition>uint32_t dmcam_param_roi_t::max_fsize</definition>
+        <definition>uint32_t itof_param_roi_t::max_fsize</definition>
         <argsstring></argsstring>
         <name>max_fsize</name>
         <briefdescription>
@@ -90,12 +90,12 @@
 </para>    </detaileddescription>
     <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="291" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="291" bodyend="298"/>
     <listofallmembers>
-      <member refid="structdmcam__param__roi__t_1a4a77ed13cad724bd1166fe0a4483b9f1" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>binning</name></member>
-      <member refid="structdmcam__param__roi__t_1a8b2ff5df6e7a998e6f4c3167606b0693" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>ecol</name></member>
-      <member refid="structdmcam__param__roi__t_1a25c4365134243d033de095e2932deb5c" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>erow</name></member>
-      <member refid="structdmcam__param__roi__t_1ae7bc374d9cd1e693d0fb3c501a7aab43" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>max_fsize</name></member>
-      <member refid="structdmcam__param__roi__t_1a868c9beea6a8f0e7cd36bac3ee8bac4f" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>scol</name></member>
-      <member refid="structdmcam__param__roi__t_1a295513df3516d7783c992d8b16357277" prot="public" virt="non-virtual"><scope>dmcam_param_roi_t</scope><name>srow</name></member>
+      <member refid="structdmcam__param__roi__t_1a4a77ed13cad724bd1166fe0a4483b9f1" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>binning</name></member>
+      <member refid="structdmcam__param__roi__t_1a8b2ff5df6e7a998e6f4c3167606b0693" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>ecol</name></member>
+      <member refid="structdmcam__param__roi__t_1a25c4365134243d033de095e2932deb5c" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>erow</name></member>
+      <member refid="structdmcam__param__roi__t_1ae7bc374d9cd1e693d0fb3c501a7aab43" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>max_fsize</name></member>
+      <member refid="structdmcam__param__roi__t_1a868c9beea6a8f0e7cd36bac3ee8bac4f" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>scol</name></member>
+      <member refid="structdmcam__param__roi__t_1a295513df3516d7783c992d8b16357277" prot="public" virt="non-virtual"><scope>itof_param_roi_t</scope><name>srow</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

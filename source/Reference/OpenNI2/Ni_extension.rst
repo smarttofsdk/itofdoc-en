@@ -55,7 +55,7 @@ Sample code for module setup under OpenNI2
 In OpenNI2, you can set the property ID in the above list to the SmartToF module through setProperty.
 For specific setting code examples, please refer to the setting of integration time code below.::
 
-    dmcam_param_item_t wparam;	//setting integration time
+    itof_param_item_t wparam;	//setting integration time
     wparam.param_id = PARAM_INTG_TIME;
     wparam.param_val.intg.intg_us = intg;
     wparam.param_val_len = sizeof(wparam.param_val.intg.intg_us);
@@ -63,7 +63,7 @@ For specific setting code examples, please refer to the setting of integration t
 
 The code to get the module settings is as follows::
 
-    dmcam_param_item_t rparam;	//getting framerate
+    itof_param_item_t rparam;	//getting framerate
     rparam.param_id = PARAM_FRAME_RATE;
     rparam.param_val_len = sizeof(rparam.param_val.frame_rate.fps);
     depth.getProperty(PROPERTY_ID_PARAM_GET, &rparam);

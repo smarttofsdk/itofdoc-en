@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="uniondmcam__filter__args__u" kind="union" prot="public">
-    <compoundname>dmcam_filter_args_u</compoundname>
+    <compoundname>itof_filter_args_u</compoundname>
     <includes refid="dmcam_8h" local="no">dmcam.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a99430ac813e6cfcff9969d6b662de7f7" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::raw</definition>
+        <definition>uint16_t itof_filter_args_u::raw</definition>
         <argsstring></argsstring>
         <name>raw</name>
         <briefdescription>
@@ -19,7 +19,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a22c0066afe25327e84a6befb61ffbd7b" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::case_idx</definition>
+        <definition>uint8_t itof_filter_args_u::case_idx</definition>
         <argsstring></argsstring>
         <name>case_idx</name>
         <briefdescription>
@@ -32,7 +32,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a184d1b6a3e7b3109e5ff85cd71ffdaf7" prot="public" static="no" mutable="no">
         <type>uint32_t</type>
-        <definition>uint32_t dmcam_filter_args_u::lens_id</definition>
+        <definition>uint32_t itof_filter_args_u::lens_id</definition>
         <argsstring></argsstring>
         <name>lens_id</name>
         <briefdescription>
@@ -45,7 +45,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a682d6eb9a5750e89977ee126555c92f9" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::min_amp</definition>
+        <definition>uint16_t itof_filter_args_u::min_amp</definition>
         <argsstring></argsstring>
         <name>min_amp</name>
         <briefdescription>
@@ -58,7 +58,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a0126a90774545dd6ad47c4b2687553e9" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::sat_ratio</definition>
+        <definition>uint16_t itof_filter_args_u::sat_ratio</definition>
         <argsstring></argsstring>
         <name>sat_ratio</name>
         <briefdescription>
@@ -71,7 +71,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a925d145a6eb431b5aaac0e81db568268" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::sync_delay</definition>
+        <definition>uint16_t itof_filter_args_u::sync_delay</definition>
         <argsstring></argsstring>
         <name>sync_delay</name>
         <briefdescription>
@@ -84,7 +84,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1adf5e6948721fe5579d388dd6001eb97f" prot="public" static="no" mutable="no">
         <type>int16_t</type>
-        <definition>int16_t dmcam_filter_args_u::temp_threshold</definition>
+        <definition>int16_t itof_filter_args_u::temp_threshold</definition>
         <argsstring></argsstring>
         <name>temp_threshold</name>
         <briefdescription>
@@ -97,7 +97,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a49a503990e4290359007bf39119bc8f1" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::intg_3d</definition>
+        <definition>uint16_t itof_filter_args_u::intg_3d</definition>
         <argsstring></argsstring>
         <name>intg_3d</name>
         <briefdescription>
@@ -110,7 +110,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1adafb76cc8f44326824492fad4a7df54c" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::intg_3dhdr</definition>
+        <definition>uint16_t itof_filter_args_u::intg_3dhdr</definition>
         <argsstring></argsstring>
         <name>intg_3dhdr</name>
         <briefdescription>
@@ -122,8 +122,8 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1096" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1096" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a199fddbdc1263bbfaa62f63e791812ef" prot="public" static="no" mutable="no">
-        <type>struct dmcam_filter_args_u::@19</type>
-        <definition>struct dmcam_filter_args_u::@19 dmcam_filter_args_u::intg</definition>
+        <type>struct itof_filter_args_u::@19</type>
+        <definition>struct itof_filter_args_u::@19 itof_filter_args_u::intg</definition>
         <argsstring></argsstring>
         <name>intg</name>
         <briefdescription>
@@ -136,7 +136,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1ac7dcd5e191772053a96dafb1f5613b22" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::median_ksize</definition>
+        <definition>uint8_t itof_filter_args_u::median_ksize</definition>
         <argsstring></argsstring>
         <name>median_ksize</name>
         <briefdescription>
@@ -149,7 +149,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1abfe369df4afe55b17106079c9a2bbe1b" prot="public" static="no" mutable="no">
         <type>int32_t</type>
-        <definition>int32_t dmcam_filter_args_u::offset_mm</definition>
+        <definition>int32_t itof_filter_args_u::offset_mm</definition>
         <argsstring></argsstring>
         <name>offset_mm</name>
         <briefdescription>
@@ -162,7 +162,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a3ceba90f8948d00b6e7623352f70317f" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::sport_mode</definition>
+        <definition>uint8_t itof_filter_args_u::sport_mode</definition>
         <argsstring></argsstring>
         <name>sport_mode</name>
         <briefdescription>
@@ -175,7 +175,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a74aa563c60985e8bd62fc93e4826f53f" prot="public" static="no" mutable="no">
         <type>uint16_t</type>
-        <definition>uint16_t dmcam_filter_args_u::k_ambient_light</definition>
+        <definition>uint16_t itof_filter_args_u::k_ambient_light</definition>
         <argsstring></argsstring>
         <name>k_ambient_light</name>
         <briefdescription>
@@ -188,7 +188,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1ab7a44424ac8706be1a13d70b1539f6f5" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::col_reduction</definition>
+        <definition>uint8_t itof_filter_args_u::col_reduction</definition>
         <argsstring></argsstring>
         <name>col_reduction</name>
         <briefdescription>
@@ -201,7 +201,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a37420a4c5fddfb051f7d1f775c9b047c" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::row_reduction</definition>
+        <definition>uint8_t itof_filter_args_u::row_reduction</definition>
         <argsstring></argsstring>
         <name>row_reduction</name>
         <briefdescription>
@@ -213,8 +213,8 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1104" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a6ae32d19597b4f8287e704a4667233da" prot="public" static="no" mutable="no">
-        <type>struct dmcam_filter_args_u::@20</type>
-        <definition>struct dmcam_filter_args_u::@20 dmcam_filter_args_u::binning_info</definition>
+        <type>struct itof_filter_args_u::@20</type>
+        <definition>struct itof_filter_args_u::@20 itof_filter_args_u::binning_info</definition>
         <argsstring></argsstring>
         <name>binning_info</name>
         <briefdescription>
@@ -227,7 +227,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1aa5202c51e11f2041d3ef71795f8a799e" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::depth_filter_mode</definition>
+        <definition>uint8_t itof_filter_args_u::depth_filter_mode</definition>
         <argsstring></argsstring>
         <name>depth_filter_mode</name>
         <briefdescription>
@@ -240,7 +240,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a2f1ff2506497f7245631eb630a45f4ed" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::depth_filter_strength</definition>
+        <definition>uint8_t itof_filter_args_u::depth_filter_strength</definition>
         <argsstring></argsstring>
         <name>depth_filter_strength</name>
         <briefdescription>
@@ -252,8 +252,8 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1110" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a792d2c209fef64a4c0adf0da4c9a9cd3" prot="public" static="no" mutable="no">
-        <type>struct dmcam_filter_args_u::@21</type>
-        <definition>struct dmcam_filter_args_u::@21 dmcam_filter_args_u::@22</definition>
+        <type>struct itof_filter_args_u::@21</type>
+        <definition>struct itof_filter_args_u::@21 itof_filter_args_u::@22</definition>
         <argsstring></argsstring>
         <name>@22</name>
         <briefdescription>
@@ -266,7 +266,7 @@
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1a71d37da1d00f1829a894198cb7b63dd7" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_filter_args_u::fly_noise_threshold</definition>
+        <definition>uint8_t itof_filter_args_u::fly_noise_threshold</definition>
         <argsstring></argsstring>
         <name>fly_noise_threshold</name>
         <briefdescription>
@@ -278,8 +278,8 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1114" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1114" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="uniondmcam__filter__args__u_1add4a369fe785a97c42be3d718b9e3d0f" prot="public" static="no" mutable="no">
-        <type>struct dmcam_filter_args_u::@23</type>
-        <definition>struct dmcam_filter_args_u::@23 dmcam_filter_args_u::@24</definition>
+        <type>struct itof_filter_args_u::@23</type>
+        <definition>struct itof_filter_args_u::@23 itof_filter_args_u::@24</definition>
         <argsstring></argsstring>
         <name>@24</name>
         <briefdescription>
@@ -297,26 +297,26 @@
 <para>filter args </para>    </detaileddescription>
     <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1086" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1086" bodyend="1116"/>
     <listofallmembers>
-      <member refid="uniondmcam__filter__args__u_1a6ae32d19597b4f8287e704a4667233da" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>binning_info</name></member>
-      <member refid="uniondmcam__filter__args__u_1a22c0066afe25327e84a6befb61ffbd7b" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>case_idx</name></member>
-      <member refid="uniondmcam__filter__args__u_1ab7a44424ac8706be1a13d70b1539f6f5" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>col_reduction</name></member>
-      <member refid="uniondmcam__filter__args__u_1aa5202c51e11f2041d3ef71795f8a799e" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>depth_filter_mode</name></member>
-      <member refid="uniondmcam__filter__args__u_1a2f1ff2506497f7245631eb630a45f4ed" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>depth_filter_strength</name></member>
-      <member refid="uniondmcam__filter__args__u_1a71d37da1d00f1829a894198cb7b63dd7" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>fly_noise_threshold</name></member>
-      <member refid="uniondmcam__filter__args__u_1a199fddbdc1263bbfaa62f63e791812ef" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>intg</name></member>
-      <member refid="uniondmcam__filter__args__u_1a49a503990e4290359007bf39119bc8f1" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>intg_3d</name></member>
-      <member refid="uniondmcam__filter__args__u_1adafb76cc8f44326824492fad4a7df54c" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>intg_3dhdr</name></member>
-      <member refid="uniondmcam__filter__args__u_1a74aa563c60985e8bd62fc93e4826f53f" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>k_ambient_light</name></member>
-      <member refid="uniondmcam__filter__args__u_1a184d1b6a3e7b3109e5ff85cd71ffdaf7" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>lens_id</name></member>
-      <member refid="uniondmcam__filter__args__u_1ac7dcd5e191772053a96dafb1f5613b22" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>median_ksize</name></member>
-      <member refid="uniondmcam__filter__args__u_1a682d6eb9a5750e89977ee126555c92f9" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>min_amp</name></member>
-      <member refid="uniondmcam__filter__args__u_1abfe369df4afe55b17106079c9a2bbe1b" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>offset_mm</name></member>
-      <member refid="uniondmcam__filter__args__u_1a99430ac813e6cfcff9969d6b662de7f7" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>raw</name></member>
-      <member refid="uniondmcam__filter__args__u_1a37420a4c5fddfb051f7d1f775c9b047c" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>row_reduction</name></member>
-      <member refid="uniondmcam__filter__args__u_1a0126a90774545dd6ad47c4b2687553e9" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>sat_ratio</name></member>
-      <member refid="uniondmcam__filter__args__u_1a3ceba90f8948d00b6e7623352f70317f" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>sport_mode</name></member>
-      <member refid="uniondmcam__filter__args__u_1a925d145a6eb431b5aaac0e81db568268" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>sync_delay</name></member>
-      <member refid="uniondmcam__filter__args__u_1adf5e6948721fe5579d388dd6001eb97f" prot="public" virt="non-virtual"><scope>dmcam_filter_args_u</scope><name>temp_threshold</name></member>
+      <member refid="uniondmcam__filter__args__u_1a6ae32d19597b4f8287e704a4667233da" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>binning_info</name></member>
+      <member refid="uniondmcam__filter__args__u_1a22c0066afe25327e84a6befb61ffbd7b" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>case_idx</name></member>
+      <member refid="uniondmcam__filter__args__u_1ab7a44424ac8706be1a13d70b1539f6f5" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>col_reduction</name></member>
+      <member refid="uniondmcam__filter__args__u_1aa5202c51e11f2041d3ef71795f8a799e" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>depth_filter_mode</name></member>
+      <member refid="uniondmcam__filter__args__u_1a2f1ff2506497f7245631eb630a45f4ed" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>depth_filter_strength</name></member>
+      <member refid="uniondmcam__filter__args__u_1a71d37da1d00f1829a894198cb7b63dd7" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>fly_noise_threshold</name></member>
+      <member refid="uniondmcam__filter__args__u_1a199fddbdc1263bbfaa62f63e791812ef" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>intg</name></member>
+      <member refid="uniondmcam__filter__args__u_1a49a503990e4290359007bf39119bc8f1" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>intg_3d</name></member>
+      <member refid="uniondmcam__filter__args__u_1adafb76cc8f44326824492fad4a7df54c" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>intg_3dhdr</name></member>
+      <member refid="uniondmcam__filter__args__u_1a74aa563c60985e8bd62fc93e4826f53f" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>k_ambient_light</name></member>
+      <member refid="uniondmcam__filter__args__u_1a184d1b6a3e7b3109e5ff85cd71ffdaf7" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>lens_id</name></member>
+      <member refid="uniondmcam__filter__args__u_1ac7dcd5e191772053a96dafb1f5613b22" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>median_ksize</name></member>
+      <member refid="uniondmcam__filter__args__u_1a682d6eb9a5750e89977ee126555c92f9" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>min_amp</name></member>
+      <member refid="uniondmcam__filter__args__u_1abfe369df4afe55b17106079c9a2bbe1b" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>offset_mm</name></member>
+      <member refid="uniondmcam__filter__args__u_1a99430ac813e6cfcff9969d6b662de7f7" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>raw</name></member>
+      <member refid="uniondmcam__filter__args__u_1a37420a4c5fddfb051f7d1f775c9b047c" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>row_reduction</name></member>
+      <member refid="uniondmcam__filter__args__u_1a0126a90774545dd6ad47c4b2687553e9" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>sat_ratio</name></member>
+      <member refid="uniondmcam__filter__args__u_1a3ceba90f8948d00b6e7623352f70317f" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>sport_mode</name></member>
+      <member refid="uniondmcam__filter__args__u_1a925d145a6eb431b5aaac0e81db568268" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>sync_delay</name></member>
+      <member refid="uniondmcam__filter__args__u_1adf5e6948721fe5579d388dd6001eb97f" prot="public" virt="non-virtual"><scope>itof_filter_args_u</scope><name>temp_threshold</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

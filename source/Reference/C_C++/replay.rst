@@ -9,12 +9,12 @@ Settings for video files
 ++++++++++++++++++++++++
 
 
-Whether to save the video file and what kind of data the video file saves are mainly set in the program ``dmcam_cap_cfg_t`` structure, the specific code is as follows
+Whether to save the video file and what kind of data the video file saves are mainly set in the program ``itof_cap_cfg_t`` structure, the specific code is as follows
 
 .. code-block:: C
 
     /* set capture config */
-   dmcam_cap_cfg_t cap_cfg = {
+   itof_cap_cfg_t cap_cfg = {
     .cache_frames_cnt = FRAME_BUF_FCNT, /* FRAME_BUF_FCNT frames can be cached in frame buffer*/
     .on_error = NULL,      /* No error callback */
     .on_frame_ready = NULL, /* No frame ready callback*/
@@ -41,12 +41,12 @@ Reading of video files
 +++++++++++++++++++++++
 
 
-SmartToF video file "xxx.oni" can be simulated as a standard DMCAM device and can be opened by the ``dmcam_dev_open_by_uri`` function,
+SmartToF video file "xxx.oni" can be simulated as a standard DMCAM device and can be opened by the ``itof_dev_open_by_uri`` function,
 If the file name is "test.oni", the code to read the file name is as follows.
 
 .. code-block:: C
 
-	dev = dmcam_dev_open_by_uri("test.oni") 	//or file://test.oni
+	dev = itof_dev_open_by_uri("test.oni") 	//or file://test.oni
 
 .. caution::
 

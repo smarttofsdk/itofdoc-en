@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="structdmcam__param__item__t" kind="struct" prot="public">
-    <compoundname>dmcam_param_item_t</compoundname>
+    <compoundname>itof_param_item_t</compoundname>
     <includes refid="dmcam_8h" local="no">dmcam.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structdmcam__param__item__t_1a868d9f8251d594fd065a6224e6b989aa" prot="public" static="no" mutable="no">
-        <type><ref refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25" kindref="member">dmcam_dev_param_e</ref></type>
-        <definition>dmcam_dev_param_e dmcam_param_item_t::param_id</definition>
+        <type><ref refid="dmcam_8h_1a79aff7664786fca93ace67a7f53cfa25" kindref="member">itof_dev_param_e</ref></type>
+        <definition>itof_dev_param_e itof_param_item_t::param_id</definition>
         <argsstring></argsstring>
         <name>param_id</name>
         <briefdescription>
@@ -19,7 +19,7 @@
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__item__t_1a7395b6bfb29f304d7675f8f66d306528" prot="public" static="no" mutable="no">
         <type>uint8_t</type>
-        <definition>uint8_t dmcam_param_item_t::param_val_len</definition>
+        <definition>uint8_t itof_param_item_t::param_val_len</definition>
         <argsstring></argsstring>
         <name>param_val_len</name>
         <briefdescription>
@@ -31,8 +31,8 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="406" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="406" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structdmcam__param__item__t_1a3d2dc3b921e7691e84d4d5792663a80d" prot="public" static="no" mutable="no">
-        <type><ref refid="uniondmcam__param__val__u" kindref="compound">dmcam_param_val_u</ref></type>
-        <definition>dmcam_param_val_u dmcam_param_item_t::param_val</definition>
+        <type><ref refid="uniondmcam__param__val__u" kindref="compound">itof_param_val_u</ref></type>
+        <definition>itof_param_val_u itof_param_item_t::param_val</definition>
         <argsstring></argsstring>
         <name>param_val</name>
         <briefdescription>
@@ -50,7 +50,7 @@
 <para>param data struct </para>    </detaileddescription>
     <collaborationgraph>
       <node id="95">
-        <label>dmcam_param_val_u</label>
+        <label>itof_param_val_u</label>
         <link refid="uniondmcam__param__val__u"/>
         <childnode refid="96" relation="usage">
           <edgelabel>info_capability</edgelabel>
@@ -60,15 +60,15 @@
         </childnode>
       </node>
       <node id="97">
-        <label>dmcam_param_roi_t</label>
+        <label>itof_param_roi_t</label>
         <link refid="structdmcam__param__roi__t"/>
       </node>
       <node id="96">
-        <label>dmcam_cap</label>
+        <label>itof_cap</label>
         <link refid="structdmcam__cap"/>
       </node>
       <node id="94">
-        <label>dmcam_param_item_t</label>
+        <label>itof_param_item_t</label>
         <link refid="structdmcam__param__item__t"/>
         <childnode refid="95" relation="usage">
           <edgelabel>param_val</edgelabel>
@@ -77,9 +77,9 @@
     </collaborationgraph>
     <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="404" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="404" bodyend="408"/>
     <listofallmembers>
-      <member refid="structdmcam__param__item__t_1a868d9f8251d594fd065a6224e6b989aa" prot="public" virt="non-virtual"><scope>dmcam_param_item_t</scope><name>param_id</name></member>
-      <member refid="structdmcam__param__item__t_1a3d2dc3b921e7691e84d4d5792663a80d" prot="public" virt="non-virtual"><scope>dmcam_param_item_t</scope><name>param_val</name></member>
-      <member refid="structdmcam__param__item__t_1a7395b6bfb29f304d7675f8f66d306528" prot="public" virt="non-virtual"><scope>dmcam_param_item_t</scope><name>param_val_len</name></member>
+      <member refid="structdmcam__param__item__t_1a868d9f8251d594fd065a6224e6b989aa" prot="public" virt="non-virtual"><scope>itof_param_item_t</scope><name>param_id</name></member>
+      <member refid="structdmcam__param__item__t_1a3d2dc3b921e7691e84d4d5792663a80d" prot="public" virt="non-virtual"><scope>itof_param_item_t</scope><name>param_val</name></member>
+      <member refid="structdmcam__param__item__t_1a7395b6bfb29f304d7675f8f66d306528" prot="public" virt="non-virtual"><scope>itof_param_item_t</scope><name>param_val_len</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

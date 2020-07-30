@@ -56,14 +56,14 @@ reference *tools instruduction* in :ref:`doc-Replay` , using **dmcam-cli** tools
 Offline algorithm evaluation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After obtaining the video file, open the video file by calling the interface ``dmcam_dev_open_by_uri`` and then Then load and run the evaluation algorithm on the obtained video file.
+After obtaining the video file, open the video file by calling the interface ``itof_dev_open_by_uri`` and then Then load and run the evaluation algorithm on the obtained video file.
 Compare the actual effect of the algorithm after it is added. If you want to filter the original depth data, you can add commonly used median or bilateral filtering, or you can use improved depth filtering, and evaluate the effect of the algorithm by the image effects before and after filtering.
 This offline algorithm evaluation solves some users' normal work of algorithm evaluation and development when there is no module or the module data cannot be collected normally.
 
 Online algorithm evaluation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When performing online algorithm evaluation, you need to open the actual SmartToF device. The API for opening the device is no longer the same as the API for opening the recording file, using ``dmcam_dev_open`` interface.
+When performing online algorithm evaluation, you need to open the actual SmartToF device. The API for opening the device is no longer the same as the API for opening the recording file, using ``itof_dev_open`` interface.
 After the previous algorithm evaluation of the offline video file, the effect of the evaluation algorithm is basically determined, and it is determined whether the evaluation algorithm meets the design requirements. 
 This is followed by a dynamic actual algorithm evaluation on the module. While adding the offline evaluation algorithm processing, collect real-time data of the SmartToF module, and observe and evaluate the actual effect 
 of the algorithm on the PC in real time. Finally, determine whether the algorithm used on SmartToF meets the requirements.
@@ -71,7 +71,7 @@ of the algorithm on the PC in real time. Finally, determine whether the algorith
 .. Tip::
 
 	The main difference between the offline algorithm evaluation and the online algorithm evaluation is that the opened devices are different. The offline algorithm evaluation opens the device simulated by the video file, and the online algorithm evaluation opens the real module device.
-	The calling API when opening the device is also different. The interface called when the offline algorithm opens the recording file is ``dmcam_dev_open_by_uri`` , Online algorithm develop opened a real device using ``dmcam_dev_open`` interface。
+	The calling API when opening the device is also different. The interface called when the offline algorithm opens the recording file is ``itof_dev_open_by_uri`` , Online algorithm develop opened a real device using ``itof_dev_open`` interface。
 
 Practical platform application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

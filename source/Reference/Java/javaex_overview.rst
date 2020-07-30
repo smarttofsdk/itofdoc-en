@@ -61,10 +61,10 @@ The module API in Java corresponds to the API defined in ** dmcam.h ** in the C 
 		    int cnt = dmcam.dev_list(devs.cast(), 16);
         }
 
-- API name mapping(C->Java)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** .For example `dmcam_dev_open` is mapped to `dmcam.dev_open`
+- API name mapping(C->Java)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** .For example `itof_dev_open` is mapped to `dmcam.dev_open`
 
      
-- Structure mapping(C->Java): **dmcam_xxxxx -> xxxx()** 。 . Structure is mapped to a class in Java. For example, create a `dmcam_frame_info_t` structure as follows:
+- Structure mapping(C->Java): **dmcam_xxxxx -> xxxx()** 。 . Structure is mapped to a class in Java. For example, create a `itof_frame_info_t` structure as follows:
 
   .. code-block:: Java
 
@@ -87,7 +87,7 @@ The module API in Java corresponds to the API defined in ** dmcam.h ** in the C 
   
   .. code-block:: Java
 
-      dmcam.dev_open(null) // dmcam_dev_open(NULL)
+      dmcam.dev_open(null) // itof_dev_open(NULL)
 
 - The following are some differences between calling API in Java and C, need to pay attention.
   

@@ -77,9 +77,9 @@ typedef enum {
     DEV_IF_FILE,
 
     DEV_IF_NONE = 99,
-} dmcam_dev_if_e;
+} itof_dev_if_e;
 
-struct dmcam_dev_if_info_usb {
+struct itof_dev_if_info_usb {
     uint8_t usb_bus_num;
     uint8_t usb_port_num;
     uint8_t usb_dev_addr;
@@ -87,26 +87,26 @@ struct dmcam_dev_if_info_usb {
     char product[16];
     char vendor[16];
 };
-struct dmcam_dev_if_info_eth {
+struct itof_dev_if_info_eth {
     uint8_t addr[16];
     uint8_t reserved[16];
     uint32_t token;
     uint32_t cid;
 };
 
-struct dmcam_dev_if_info_fil {
+struct itof_dev_if_info_fil {
     void *fd;
     char *fname;
 };
 
 typedef struct {
-    dmcam_dev_if_e type;  // interface type
+    itof_dev_if_e type;  // interface type
     union {
-        struct dmcam_dev_if_info_usb usb;
-        struct dmcam_dev_if_info_eth eth;
-        struct dmcam_dev_if_info_fil fil;
+        struct itof_dev_if_info_usb usb;
+        struct itof_dev_if_info_eth eth;
+        struct itof_dev_if_info_fil fil;
     } info;
-} dmcam_dev_if_info_t;
+} itof_dev_if_info_t;
 
 typedef union
 {
@@ -117,7 +117,7 @@ typedef union
         uint16_t sw2_ver;
         uint16_t hw2_ver;
     } ver;
-} dmcam_dev_ver_u;
+} itof_dev_ver_u;
 
 /**
  * dmcam device structure. It describes device usb port info,
@@ -126,7 +126,7 @@ typedef union
 typedef struct {
     void *handler;
 
-    dmcam_dev_if_info_t if_info;
+    itof_dev_if_info_t if_info;
 
     /*  device info  */
     char product[32];
@@ -135,10 +135,10 @@ typedef struct {
 
     uint64_t dev_id; /** device uniq id */
 
-    dmcam_dev_ver_u version;
+    itof_dev_ver_u version;
 
     /*  internal used vars  */
-    char *expath; /** extract path to store calibration data,can be set by dmcam_path_cfg */
+    char *expath; /** extract path to store calibration data,can be set by itof_path_cfg */
     void *lock;   /**  device lock*/
 
     void *user_data0;   /** used internally for python extension */
@@ -146,7 +146,7 @@ typedef struct {
     uint8_t init_flag;  /** struct init flag */
     uint8_t alloc_flag; /** malloc flag used internally */
     uint8_t api_flag;   /** sync between frame wait/get and normal api */
-} dmcam_dev_t;
+} itof_dev_t;
 
 /**
  * camera parameters
@@ -159,7 +159,7 @@ typedef struct {
 
     float dcoef[16]; /** distortion coef*/
     uint8_t n_dcoef; /** number of valid distortion coef */
-} dmcam_len_param_t;
+} itof_len_param_t;
 
 /** log levels */
 typedef enum {
@@ -171,7 +171,7 @@ typedef enum {
     LOG_LEVEL_WARN,
     LOG_LEVEL_ERROR,
     LOG_LEVEL_NONE,
-} dmcam_log_level_e;
+} itof_log_level_e;
 
 typedef enum {
     DEV_RST_DEV = 0,
@@ -183,14 +183,14 @@ typedef enum {
     DEV_RST_MCU = 8,
     //-----
     DEV_RST_CNT,
-} dmcam_dev_rst_e;
+} itof_dev_rst_e;
 
 typedef enum {
     DEV_MODE_NORMAL = 0,  // 3D mode
     DEV_MODE_DFU,
     DEV_MODE_TEST = 8,
     DEV_MODE_DATA_UP,
-} dmcam_dev_mode_e;
+} itof_dev_mode_e;
 
 typedef enum {
     DEV_REG_RESERVED = 0,
@@ -198,7 +198,7 @@ typedef enum {
     DEV_REG_CAM1 = 2,
     DEV_REG_IR_0 = 4,
     DEV_REG_IR_1 = 5,
-} dmcam_dev_reg_e;
+} itof_dev_reg_e;
 
 typedef enum {
     FRAME_FMT_DCSx1 = 0,                           /** gray                                                 */
@@ -219,7 +219,7 @@ typedef enum {
     FRAME_FMT_QI_SHIFT_LOSSLESS = 0X10,            /** QI packed mode     */
     FRAME_FMT_QI_SHIFT_LOSSLESS_DUAL_FREQ = 0X11,  /** Dual frequency QI packed mode     */
     FRAME_FMT_CNT,
-} dmcam_frame_mode_e;
+} itof_frame_mode_e;
 
 /** dmcam param ID */
 typedef enum {
@@ -256,13 +256,13 @@ typedef enum {
     PARAM_DEV_CAPTURE_CFG,     /** Capture configuration*/
 
     PARAM_ENUM_COUNT,
-} dmcam_dev_param_e;
+} itof_dev_param_e;
 
 typedef enum {
     BIN_DATA_TYPE_MCU,    // mcu firmware
     BIN_DATA_TYPE_TFC,    // TOF controller IC firmware
     BIN_DATA_TYPE_CALIB,  //>TOF calibration data
-} dmcam_bin_data_type_e;
+} itof_bin_data_type_e;
 
 /** binning mode */
 typedef enum {
@@ -273,7 +273,7 @@ typedef enum {
     DM_BINNING_2X4,
     //---
     DM_BINNING_CNT,
-} dmcam_binning_mode_e;
+} itof_binning_mode_e;
 
 /**
  * Frame size and Max frame size can be get from paramter
@@ -299,9 +299,9 @@ typedef struct {
     uint16_t ecol;      /** end address for columon,multiple of 16*/
     uint8_t binning;    /** binning mode for some sensor*/
     uint32_t max_fsize; /** MAX frame size*/
-} dmcam_param_roi_t;
+} itof_param_roi_t;
 
-typedef struct dmcam_cap {
+typedef struct itof_cap {
     uint16_t max_frame_width;
     uint16_t max_frame_height;
     uint16_t max_frame_depth;
@@ -309,7 +309,7 @@ typedef struct dmcam_cap {
     uint16_t max_intg_us;
     uint8_t illum_board_type;
     uint8_t sensor_board_type;
-} dmcam_param_cap_t;
+} itof_param_cap_t;
 
 /** dmcam param value */
 typedef union
@@ -321,7 +321,7 @@ typedef union
     /* ----  readonly info fields begin ----*/
     char info_vendor[18];  /** camera vendor information*/
     char info_product[18]; /** camera production information*/
-    dmcam_param_cap_t info_capability; /** device capablity*/
+    itof_param_cap_t info_capability; /** device capablity*/
     struct {
         uint32_t serial[3]; /** serials numbers*/
     } info_serial;
@@ -369,7 +369,7 @@ typedef union
         uint8_t random_delay_en;
         uint16_t delay;
     } sync_delay;
-    dmcam_param_roi_t roi; /** image roi*/
+    itof_param_roi_t roi; /** image roi*/
     struct {
         uint8_t percent; /** illumination power*/
     } illum_power;
@@ -413,16 +413,16 @@ typedef union
     }cap_cfg;
     uint32_t calib_data_type;
     uint16_t ambient_light_coeff;
-} dmcam_param_val_u;
+} itof_param_val_u;
 
 #pragma pack(pop)
 
 /**param data struct */
 typedef struct {
-    dmcam_dev_param_e param_id;  /** param id*/
+    itof_dev_param_e param_id;  /** param id*/
     uint8_t param_val_len;       /** param length*/
-    dmcam_param_val_u param_val; /** param value*/
-} dmcam_param_item_t;
+    itof_param_val_u param_val; /** param value*/
+} itof_param_item_t;
 
 /** Framae data format */
 typedef enum {
@@ -432,7 +432,7 @@ typedef enum {
     DM_FRAME_FMT_PCLOUD,       /** pointcloud data*/
     DM_FRAME_FMT_RGB,          /** reserved*/
     /* --- TBD ----*/
-} dmcam_frame_fmt_e;
+} itof_frame_fmt_e;
 
 /**Used for store frame information */
 typedef struct {
@@ -453,38 +453,38 @@ typedef struct {
     uint8_t dist_is_z;   /** distance is already conv to z*/
     uint8_t reserved[3];
     uint32_t reserved2[16];
-} dmcam_frame_info_t;
+} itof_frame_info_t;
 
 /**frame data struct */
 typedef struct {
-    dmcam_frame_info_t frame_info; /** frame informatin*/
+    itof_frame_info_t frame_info; /** frame informatin*/
     void *frame_data;              /** frame data pointer */
-} dmcam_frame_t;
+} itof_frame_t;
 
 /** camera frame ready function prototype   */
-typedef void (*dmcam_cap_frdy_f)(dmcam_dev_t *dev, dmcam_frame_t *frame);
+typedef void (*itof_cap_frdy_f)(itof_dev_t *dev, itof_frame_t *frame);
 /** camera frame error function prototype   */
-typedef bool (*dmcam_cap_err_f)(dmcam_dev_t *dev, int err, void *err_args);
+typedef bool (*itof_cap_err_f)(itof_dev_t *dev, int err, void *err_args);
 
 /** capture configuration params */
 typedef struct {
     uint32_t cache_frames_cnt; /** max frame count in frame buffer (cache) */
-    dmcam_cap_frdy_f
-        on_frame_ready;       /** callback when frame is ready in the frame buffer; invoked in dmcam_cap_get_frames */
-    dmcam_cap_err_f on_error; /** callback when error happens during capturing; invoked in dmcam_cap_get_frames */
-    uint8_t en_save_manually; /** if set to 1, saving is manually controlled by dmcam_cap_save_frame/dist/gray */
-    uint8_t en_save_replay;   /** enable saving replay file during capturing. saving happens in dmcam_cap_get_frames */
+    itof_cap_frdy_f
+        on_frame_ready;       /** callback when frame is ready in the frame buffer; invoked in itof_cap_get_frames */
+    itof_cap_err_f on_error; /** callback when error happens during capturing; invoked in itof_cap_get_frames */
+    uint8_t en_save_manually; /** if set to 1, saving is manually controlled by itof_cap_save_frame/dist/gray */
+    uint8_t en_save_replay;   /** enable saving replay file during capturing. saving happens in itof_cap_get_frames */
     uint8_t
-        en_save_dist_u16; /** enable saving dist_u16 file during capturing. saving happends in dmcam_cap_get_dist_xx */
+        en_save_dist_u16; /** enable saving dist_u16 file during capturing. saving happends in itof_cap_get_dist_xx */
     uint8_t
-        en_save_gray_u16; /** enable saving gray_u16 file during capturing. saving happends in dmcam_cap_get_gray_xx */
+        en_save_gray_u16; /** enable saving gray_u16 file during capturing. saving happends in itof_cap_get_gray_xx */
     char *fname_replay;   /** replay file name */
     uint8_t en_fdev_rewind; /** only used when type of the device is reaply-file. if true, capture will auto rewind
                                when the EOF of file is met */
-} dmcam_cap_cfg_t;
+} itof_cap_cfg_t;
 
 /** device readonly information. It can be retrieved by
- *  dmcam_dev_get_info() */
+ *  itof_dev_get_info() */
 typedef struct {
     /** device description string   */
     struct {
@@ -545,8 +545,8 @@ typedef struct {
     } calib;
 
     /** lens information  */
-    dmcam_len_param_t lens;
-} dmcam_dev_info_t;
+    itof_len_param_t lens;
+} itof_dev_info_t;
 
 /*---------------------------------------------------------------------------*
  * lib init/uninit/cfg API section
@@ -557,34 +557,34 @@ typedef struct {
  *
  * @param log_fname [in] specified log file name of dmcam layer.
  *                  if NULL, the default log
- *                  (dmcam_YYYYMMDD.log) is used.
+ *                  (itof_YYYYMMDD.log) is used.
  *                  if empty string "" is used, no log will
  *                  generated
  *
  */
-__API void dmcam_init(const char *log_fname);
+__API void itof_init(const char *log_fname);
 
 /**
  * Uninit the DM camera layer.
  *
  */
-__API void dmcam_uninit(void);
+__API void itof_uninit(void);
 
 /**
  * Set the logging configuration for dmcam layer.
  *
- * @param console_level [in] specified dmcam_log_level_e, the
+ * @param console_level [in] specified itof_log_level_e, the
  *                      console log whose log level bellow this
  *                      value will be suppressed.
- * @param file_level [in] specified dmcam_log_level_e, the
+ * @param file_level [in] specified itof_log_level_e, the
  *                      file log whose log level bellow this
  *                      value will be suppressed.
- * @param usb_level [in] specified dmcam_log_level_e, the
+ * @param usb_level [in] specified itof_log_level_e, the
  *                      usb log whose log level bellow this
  *                      value will be suppressed.
  */
 
-__API void dmcam_log_cfg(dmcam_log_level_e console_level, dmcam_log_level_e file_level, dmcam_log_level_e usb_level);
+__API void itof_log_cfg(itof_log_level_e console_level, itof_log_level_e file_level, itof_log_level_e usb_level);
 
 /**
  * set top path for all data files
@@ -594,14 +594,14 @@ __API void dmcam_log_cfg(dmcam_log_level_e console_level, dmcam_log_level_e file
  *
  * @return __API void
  */
-__API void dmcam_path_set(const char *path);
+__API void itof_path_set(const char *path);
 
 /**
  * Get top path for all data files
  *
  * @return _API char*
  */
-__API const char* dmcam_path_get(void);
+__API const char* itof_path_get(void);
 
 /**
  * covert specified error code into error string
@@ -610,13 +610,13 @@ __API const char* dmcam_path_get(void);
  *
  * @return const char*
  */
-__API const char* dmcam_error_name(int error_code);
+__API const char* itof_error_name(int error_code);
 
 /*****************************************************
  *      device enumberation/open/close API section
  *****************************************************/
 /**
- * list the dmcam device and fill into dmcam_dev_t array.
+ * list the dmcam device and fill into itof_dev_t array.
  *
  * @param dev_list [out] device list array to be filled.
  * @param dev_list_num [in] capacity of device list
@@ -624,19 +624,19 @@ __API const char* dmcam_error_name(int error_code);
  * @return int [out] number of dmcam device found
  */
 
-__API int dmcam_dev_list(dmcam_dev_t *dev_list, int dev_list_num);
+__API int itof_dev_list(itof_dev_t *dev_list, int dev_list_num);
 
 /**
  * open specified dmcam device. if the device is not specified,
  * it'll try to open the first dmcam device
  *
  * @param dev [in] specified dmcam device which is usally get
- *            from dmcam_dev_list. if Null, the first dmcam
+ *            from itof_dev_list. if Null, the first dmcam
  *            device will be opened.
  *
- * @return dmcam_dev_t* NULL = open device failed.
+ * @return itof_dev_t* NULL = open device failed.
  */
-__API dmcam_dev_t* dmcam_dev_open(dmcam_dev_t *dev);
+__API itof_dev_t* itof_dev_open(itof_dev_t *dev);
 
 /**
  * open specified dmcam device with specified fd. this is useful
@@ -644,10 +644,10 @@ __API dmcam_dev_t* dmcam_dev_open(dmcam_dev_t *dev);
  *
  * @param fd [in] specified fd
  *
- * @return dmcam_dev_t*  return opened device. NULL = open
+ * @return itof_dev_t*  return opened device. NULL = open
  *         device failed.
  */
-__API dmcam_dev_t* dmcam_dev_open_by_fd(int fd);
+__API itof_dev_t* itof_dev_open_by_fd(int fd);
 
 /**
  * open specified dmcam device with specified uri.
@@ -661,22 +661,22 @@ __API dmcam_dev_t* dmcam_dev_open_by_fd(int fd);
  *    FILE device URI:
  *      file://filename or filename
  *
- * @return dmcam_dev_t* NULL = open device
+ * @return itof_dev_t* NULL = open device
  *         failed.
  */
-__API dmcam_dev_t* dmcam_dev_open_by_uri(const char *uri_str);
+__API itof_dev_t* itof_dev_open_by_uri(const char *uri_str);
 
 /**
  * Close specified dmcam device.
  *
  * @param dev
  */
-__API void dmcam_dev_close(dmcam_dev_t *dev);
+__API void itof_dev_close(itof_dev_t *dev);
 
 /**
  * get URI of specified device.
  *
- * @param dev [in] specified device after dmcam_dev_open
+ * @param dev [in] specified device after itof_dev_open
  * @param uri_str [in] uri string buffer
  * @param uri_str_len [in] uri string buffer len
  *
@@ -684,7 +684,7 @@ __API void dmcam_dev_close(dmcam_dev_t *dev);
  *         failed.
  */
 
-__API const char* dmcam_dev_get_uri(dmcam_dev_t *dev, char *uri_str, int uri_str_len);
+__API const char* itof_dev_get_uri(itof_dev_t *dev, char *uri_str, int uri_str_len);
 
 
 /** 
@@ -693,24 +693,24 @@ __API const char* dmcam_dev_get_uri(dmcam_dev_t *dev, char *uri_str, int uri_str
  * get device readonly information including vendor/product 
  * string, serial, version, calibration, lens .. 
  * 
- * @param dev [in] specified device after dmcam_dev_open
+ * @param dev [in] specified device after itof_dev_open
  * 
  * @param info [out] specified info strucure to be filled.
  * 
  * @return specified info structure. NULL = get info failed.
  * 
  */
-__API const dmcam_dev_info_t* dmcam_dev_get_info(dmcam_dev_t *dev, dmcam_dev_info_t *info);
+__API const itof_dev_info_t* itof_dev_get_info(itof_dev_t *dev, itof_dev_info_t *info);
 
 /**
  * Reset specified target on the dev
  *
  * @param dev [in] dmcam device handler
- * @param target [in] reset taget defined in dmcam_dev_rst_e
+ * @param target [in] reset taget defined in itof_dev_rst_e
  *
  * @return bool [out] true = reset ok.
  */
-__API bool dmcam_dev_reset(dmcam_dev_t *dev, dmcam_dev_rst_e target);
+__API bool itof_dev_reset(itof_dev_t *dev, itof_dev_rst_e target);
 
 /*****************************************************
  *      register/parameters RW API section
@@ -720,7 +720,7 @@ __API bool dmcam_dev_reset(dmcam_dev_t *dev, dmcam_dev_rst_e target);
  *
  * @param dev [in] dmcam device handler
  * @param target [in] specified target defined in
- *               dmcam_dev_reg_e
+ *               itof_dev_reg_e
  * @param reg_base [in] base address of the registers
  * @param reg_vals [in] register values to be written. All
  *                 register value is denoted as UINT32
@@ -729,8 +729,8 @@ __API bool dmcam_dev_reset(dmcam_dev_t *dev, dmcam_dev_rst_e target);
  * @return bool [out] true = write ok.
  */
 
-__API bool dmcam_reg_batch_write(dmcam_dev_t *dev,
-                                 dmcam_dev_reg_e target,
+__API bool itof_reg_batch_write(itof_dev_t *dev,
+                                 itof_dev_reg_e target,
                                  uint32_t reg_base,
                                  const uint32_t *reg_vals,
                                  uint16_t reg_vals_len);
@@ -740,7 +740,7 @@ __API bool dmcam_reg_batch_write(dmcam_dev_t *dev,
  *
  * @param dev [in] dmcam device handler
  * @param target [in] specified target defined in
- *               dmcam_dev_reg_e
+ *               itof_dev_reg_e
  * @param reg_base [in] base address of the registers
  * @param reg_vals [out] register values to be filled. All
  *                 register value is denoted as UINT32
@@ -749,8 +749,8 @@ __API bool dmcam_reg_batch_write(dmcam_dev_t *dev,
  * @return bool [out] true = read ok.
  */
 
-__API bool dmcam_reg_batch_read(dmcam_dev_t *dev,
-                                dmcam_dev_reg_e target,
+__API bool itof_reg_batch_read(itof_dev_t *dev,
+                                itof_dev_reg_e target,
                                 uint32_t reg_base,
                                 uint32_t *reg_vals,
                                 uint16_t reg_vals_len);
@@ -759,9 +759,9 @@ __API bool dmcam_reg_batch_read(dmcam_dev_t *dev,
  * Batch write generic parameters to specified device.
  *
  * @param dev [in] dmcam device handler
- * @param param_items [in] dmcam_param_item_t is used to denotes
+ * @param param_items [in] itof_param_item_t is used to denotes
  *             generic parameter:
- *               * param_id[in]: defined in dmcam_dev_param_e to
+ *               * param_id[in]: defined in itof_dev_param_e to
  *                 identify the parameters.
  *               * param_vals[in]: denotes the generic value
  *                 (max = 16bytes)
@@ -772,14 +772,14 @@ __API bool dmcam_reg_batch_read(dmcam_dev_t *dev,
  * @return bool [out] true = operation is ok.
  */
 
-__API bool dmcam_param_batch_set(dmcam_dev_t *dev, const dmcam_param_item_t *param_items, int item_cnt);
+__API bool itof_param_batch_set(itof_dev_t *dev, const itof_param_item_t *param_items, int item_cnt);
 /**
  * Batch read generic parameters from specified device.
  *
  * @param dev [in] dmcam device handler
- * @param param_items [in/out] dmcam_param_item_t is used to
+ * @param param_items [in/out] itof_param_item_t is used to
  *             denotes generic parameter:
- *               * param_id[in]: defined in dmcam_dev_param_e to
+ *               * param_id[in]: defined in itof_dev_param_e to
  *                 identify the parameters.
  *               * param_vals[out]: denotes the generic value
  *                 (max = 16bytes) filled by this function
@@ -789,7 +789,7 @@ __API bool dmcam_param_batch_set(dmcam_dev_t *dev, const dmcam_param_item_t *par
  *
  * @return bool [out] true = operation is ok.
  */
-__API bool dmcam_param_batch_get(dmcam_dev_t *dev, dmcam_param_item_t *param_items, int item_cnt);
+__API bool itof_param_batch_get(itof_dev_t *dev, itof_param_item_t *param_items, int item_cnt);
 
 /*---------------------------------------------------------------------------*
  * capture API section
@@ -798,7 +798,7 @@ __API bool dmcam_param_batch_get(dmcam_dev_t *dev, dmcam_param_item_t *param_ite
 /**
  * Set specified capture configuration for specified device.
  * This api is available from v1.58 to replace @ref
- * dmcam_cap_set_frame_buffer
+ * itof_cap_set_frame_buffer
  *
  * @param dev [in] specified dmcam device
  * @param cfg [in] specified capture configuration
@@ -806,7 +806,7 @@ __API bool dmcam_param_batch_get(dmcam_dev_t *dev, dmcam_param_item_t *param_ite
  * @return bool [out] true = set OK.
  */
 
-__API bool dmcam_cap_config_set(dmcam_dev_t *dev, const dmcam_cap_cfg_t *cfg);
+__API bool itof_cap_config_set(itof_dev_t *dev, const itof_cap_cfg_t *cfg);
 
 /**
  * Get capture configuration of specified device
@@ -814,17 +814,17 @@ __API bool dmcam_cap_config_set(dmcam_dev_t *dev, const dmcam_cap_cfg_t *cfg);
  * @param dev [in] specified dmcam device
  * @param cfg [out] capture configuration to be filled
  */
-__API void dmcam_cap_config_get(dmcam_dev_t *dev, dmcam_cap_cfg_t *cfg);
+__API void itof_cap_config_get(itof_dev_t *dev, itof_cap_cfg_t *cfg);
 
 /**
  * register frame ready callback function
  *
  * @param dev [in] dmcam device handler
  * @param cb  [in] callback function in following format:
- *     void (*dmcam_cap_frdy_f)(dmcam_dev_t*, dmcam_frame_t)
+ *     void (*itof_cap_frdy_f)(itof_dev_t*, itof_frame_t)
  *
  */
-__API void dmcam_cap_set_callback_on_frame_ready(dmcam_dev_t *dev, dmcam_cap_frdy_f cb);
+__API void itof_cap_set_callback_on_frame_ready(itof_dev_t *dev, itof_cap_frdy_f cb);
 
 /**
  * register error callback function. It's invoked when some
@@ -832,9 +832,9 @@ __API void dmcam_cap_set_callback_on_frame_ready(dmcam_dev_t *dev, dmcam_cap_frd
  *
  * @param dev [in] dmcam device handler
  * @param cb [in] callback function in following format:
- *     void (*dmcam_cap_err_f)(dmcam_dev_t*, int errno);
+ *     void (*itof_cap_err_f)(itof_dev_t*, int errno);
  */
-__API void dmcam_cap_set_callback_on_error(dmcam_dev_t *dev, dmcam_cap_err_f cb);
+__API void itof_cap_set_callback_on_error(itof_dev_t *dev, itof_cap_err_f cb);
 
 /**
  * Take a snapshot and fill frame data into specified frame. If
@@ -849,7 +849,7 @@ __API void dmcam_cap_set_callback_on_error(dmcam_dev_t *dev, dmcam_cap_err_f cb)
  *              null
  * @return bool return true = ok
  */
-__API bool dmcam_cap_snapshot(dmcam_dev_t *dev, uint8_t *frame_data, uint32_t frame_dlen, dmcam_frame_t *frame);
+__API bool itof_cap_snapshot(itof_dev_t *dev, uint8_t *frame_data, uint32_t frame_dlen, itof_frame_t *frame);
 
 /**
  * Check whether the device is in capturing state.
@@ -858,7 +858,7 @@ __API bool dmcam_cap_snapshot(dmcam_dev_t *dev, uint8_t *frame_data, uint32_t fr
  *
  * @return bool [out] true = device in capturing state
  */
-__API bool dmcam_cap_is_ongoing(dmcam_dev_t *dev);
+__API bool itof_cap_is_ongoing(itof_dev_t *dev);
 
 /**
  * start device capturing.
@@ -868,7 +868,7 @@ __API bool dmcam_cap_is_ongoing(dmcam_dev_t *dev);
  * @return bool return true = ok
  */
 
-__API bool dmcam_cap_start(dmcam_dev_t *dev);
+__API bool itof_cap_start(itof_dev_t *dev);
 
 /**
  * stop device capturing.
@@ -878,7 +878,7 @@ __API bool dmcam_cap_start(dmcam_dev_t *dev);
  * @return bool return true = ok
  */
 
-__API bool dmcam_cap_stop(dmcam_dev_t *dev);
+__API bool itof_cap_stop(itof_dev_t *dev);
 
 /**
  * Get specified number of frames into specified user buffer.
@@ -897,11 +897,11 @@ __API bool dmcam_cap_stop(dmcam_dev_t *dev);
  *        (errno < 0)
  */
 
-__API int dmcam_cap_get_frames(dmcam_dev_t *dev,
+__API int itof_cap_get_frames(itof_dev_t *dev,
                                uint32_t frame_num,
                                uint8_t *frame_data,
                                uint32_t frame_dlen,
-                               dmcam_frame_t *first_frame_info);
+                               itof_frame_t *first_frame_info);
 
 /**
  * get one frame into specified buffer. this function is
@@ -914,12 +914,12 @@ __API int dmcam_cap_get_frames(dmcam_dev_t *dev,
  *
  * @return int return 0 if not frame is ready, else return 1
  */
-__API int dmcam_cap_get_frame(dmcam_dev_t *dev, uint8_t *frame_data, uint32_t frame_dlen, dmcam_frame_t *frame_info);
+__API int itof_cap_get_frame(itof_dev_t *dev, uint8_t *frame_data, uint32_t frame_dlen, itof_frame_t *frame_info);
 
 /**
  * save specified raw frame data into replay file. This function
  * is only functional when @ref en_save_replay and
- * @ref en_save_manually in @ref dmcam_cap_cfg_t is set to true.
+ * @ref en_save_manually in @ref itof_cap_cfg_t is set to true.
  *
  * @param dev [in] dmcam device handler
  * @param frame_data [in] raw frame data to be saved.
@@ -930,10 +930,10 @@ __API int dmcam_cap_get_frame(dmcam_dev_t *dev, uint8_t *frame_data, uint32_t fr
  *         negative number
  */
 
-__API int dmcam_cap_save_frame(dmcam_dev_t *dev,
+__API int itof_cap_save_frame(itof_dev_t *dev,
                                const uint8_t *frame_data,
                                uint32_t frame_dlen,
-                               const dmcam_frame_info_t *frame_info);
+                               const itof_frame_info_t *frame_info);
 
 /**
  * seek frame inside replay device. it only has effect on replay
@@ -953,7 +953,7 @@ __API int dmcam_cap_save_frame(dmcam_dev_t *dev,
  *         failed.
  */
 
-__API int dmcam_cap_seek_frame(dmcam_dev_t *dev, int frame_cnt_offset, int whence);
+__API int itof_cap_seek_frame(itof_dev_t *dev, int frame_cnt_offset, int whence);
 
 /**
  * Firmware upgrade for different type target.
@@ -965,22 +965,22 @@ __API int dmcam_cap_seek_frame(dmcam_dev_t *dev, int frame_cnt_offset, int whenc
  *
  * @return int
  */
-__API int dmcam_firmware_upgrade(dmcam_dev_t *dev, uint8_t type, uint16_t version, const char *file_name);
+__API int itof_firmware_upgrade(itof_dev_t *dev, uint8_t type, uint16_t version, const char *file_name);
 
-__API int dmcam_data_download(dmcam_dev_t *dev, char *name, uint8_t type, uint16_t version, uint32_t addr);
-__API bool dmcam_calib_bin_download(dmcam_dev_t *dev, bool zip_en, bool download_enable, const char *name);
-__API int dmcam_data_upload(dmcam_dev_t *dev, uint8_t type, const char *file_name);
+__API int itof_data_download(itof_dev_t *dev, char *name, uint8_t type, uint16_t version, uint32_t addr);
+__API bool dmcam_calib_bin_download(itof_dev_t *dev, bool zip_en, bool download_enable, const char *name);
+__API int itof_data_upload(itof_dev_t *dev, uint8_t type, const char *file_name);
 
 /*****************************************************
  *       frame data get API section 
  *****************************************************/
-/** alias for dmcam_frame_get_dist_f32  */
-__API int dmcam_frame_get_distance(dmcam_dev_t *dev,
+/** alias for itof_frame_get_dist_f32  */
+__API int itof_frame_get_distance(itof_dev_t *dev,
                                    float *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 
 /**
  * convert to raw distance data in uint16 from raw frame data.
@@ -999,12 +999,12 @@ __API int dmcam_frame_get_distance(dmcam_dev_t *dev,
  * @return int [out] return the number for distance points in
  *         dst
  */
-__API int dmcam_frame_get_dist_raw(dmcam_dev_t *dev,
+__API int itof_frame_get_dist_raw(itof_dev_t *dev,
                                    uint16_t *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 /**
  * convert to distance data to float32 from raw frame data.
  *
@@ -1020,12 +1020,12 @@ __API int dmcam_frame_get_dist_raw(dmcam_dev_t *dev,
  *         dst
  */
 
-__API int dmcam_frame_get_dist_f32(dmcam_dev_t *dev,
+__API int itof_frame_get_dist_f32(itof_dev_t *dev,
                                    float *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 
 /**
  * convert to distance data in uint16 from raw frame data.
@@ -1043,20 +1043,20 @@ __API int dmcam_frame_get_dist_f32(dmcam_dev_t *dev,
  *         dst
  */
 
-__API int dmcam_frame_get_dist_u16(dmcam_dev_t *dev,
+__API int itof_frame_get_dist_u16(itof_dev_t *dev,
                                    uint16_t *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 
-/** alias for dmcam_frame_get_gray_f32  */
-__API int dmcam_frame_get_gray(dmcam_dev_t *dev,
+/** alias for itof_frame_get_gray_f32  */
+__API int itof_frame_get_gray(itof_dev_t *dev,
                                float *dst,
                                int dst_len,
                                uint8_t *src,
                                int src_len,
-                               const dmcam_frame_info_t *finfo);
+                               const itof_frame_info_t *finfo);
 /**
  * get gray data in float32 from raw frame data.
  *
@@ -1072,12 +1072,12 @@ __API int dmcam_frame_get_gray(dmcam_dev_t *dev,
  *         dst
  */
 
-__API int dmcam_frame_get_gray_f32(dmcam_dev_t *dev,
+__API int itof_frame_get_gray_f32(itof_dev_t *dev,
                                    float *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 
 /**
  * get gray data in uint16_t from raw frame data.
@@ -1093,16 +1093,16 @@ __API int dmcam_frame_get_gray_f32(dmcam_dev_t *dev,
  *
  * @return int [out] return the number for gray points in dst
  */
-__API int dmcam_frame_get_gray_u16(dmcam_dev_t *dev,
+__API int itof_frame_get_gray_u16(itof_dev_t *dev,
                                    uint16_t *dst,
                                    int dst_len,
                                    uint8_t *src,
                                    int src_len,
-                                   const dmcam_frame_info_t *finfo);
+                                   const itof_frame_info_t *finfo);
 
 /**
  * get point cloud data from distance data. The distance data is
- * usually calcuated using dmcam_frame_get_dist_f32.
+ * usually calcuated using itof_frame_get_dist_f32.
  *
  * @param dev [in] specified dmcam device
  * @param pcl [out] point clound buffer. each 3 element consists
@@ -1124,18 +1124,18 @@ __API int dmcam_frame_get_gray_u16(dmcam_dev_t *dev,
  *         buffer. Note: n points means 3*n floats. N should be
  *         img_w * img_h
  */
-__API int dmcam_frame_get_pcl(dmcam_dev_t *dev,
+__API int itof_frame_get_pcl(itof_dev_t *dev,
                               float *pcl,
                               int pcl_len,
                               const float *dist,
                               int dist_len,
                               int img_w,
                               int img_h,
-                              const dmcam_len_param_t *p_cam_param);
+                              const itof_len_param_t *p_cam_param);
 
 /**
  * get point cloud data from distance data. The distance data is
- * usually calcuated using dmcam_frame_get_dist_f32.
+ * usually calcuated using itof_frame_get_dist_f32.
  * 
  * @param dev [in] specified dmcam device
  * @param pcl [out] point clound buffer. each 4 element consists
@@ -1167,10 +1167,10 @@ __API int dmcam_frame_get_pcl(dmcam_dev_t *dev,
  *         buffer. Note: n points means 4*n floats. N should be
  *         img_w * img_h
  */
-__API int dmcam_frame_get_pcl_xyzd(dmcam_dev_t *dev, float *pcl, int pcl_len,
+__API int itof_frame_get_pcl_xyzd(itof_dev_t *dev, float *pcl, int pcl_len,
                                        const float *dist, int dist_len, int img_w, int img_h,
                                        bool pseudo_color, float pseudo_range_min_mm, float pseudo_range_max_mm,
-                                       const dmcam_len_param_t *p_cam_param);
+                                       const itof_len_param_t *p_cam_param);
 
 
 /**
@@ -1201,7 +1201,7 @@ __API int dmcam_frame_get_pcl_xyzd(dmcam_dev_t *dev, float *pcl, int pcl_len,
  *         buffer. Note: n points means 4*n floats. N should be
  *         img_w * img_h
  */
-__API int dmcam_frame_get_pcl_xyzi(dmcam_dev_t *dev,
+__API int itof_frame_get_pcl_xyzi(itof_dev_t *dev,
                                    float *pcl,
                                    int pcl_len,
                                    const float *dist,
@@ -1211,7 +1211,7 @@ __API int dmcam_frame_get_pcl_xyzi(dmcam_dev_t *dev,
                                    int img_w,
                                    int img_h,
                                    int16_t ir_balance,
-                                   const dmcam_len_param_t *p_cam_param);
+                                   const itof_len_param_t *p_cam_param);
 
 /*****************************************************
  *       filter API section
@@ -1238,7 +1238,7 @@ typedef enum {
     DMCAM_FILTER_ID_MEDIAN = DMCAM_FILTER_ID_DEPTH_FILTER, /**  MEDIAN is replaced with depth filter */
     DMCAM_FILTER_CNT,
     //-------------------
-} dmcam_filter_id_e;
+} itof_filter_id_e;
 
 /** filter args  */
 typedef union
@@ -1277,31 +1277,31 @@ typedef union
     struct {
         uint8_t fly_noise_threshold; /** fly noise threshold 0~255*/
     };
-} dmcam_filter_args_u;
+} itof_filter_args_u;
 
 /**
  *  Enable filter controller setting for raw data processing
  *
  * @param dev [in] dmcam device handler
- * @param filter_id [in]:defined in dmcam_filter_id_e to
+ * @param filter_id [in]:defined in itof_filter_id_e to
  *              identify the filter
  * @param filter_arg [in] filter control args
  * @param reserved [in] reserved for future use. User should set
  *                 to 0
  * @return int 0 = OK, otherwise failed.
  */
-__API int dmcam_filter_enable(dmcam_dev_t *dev, dmcam_filter_id_e filter_id, dmcam_filter_args_u *filter_arg, uint32_t reserved);
+__API int itof_filter_enable(itof_dev_t *dev, itof_filter_id_e filter_id, itof_filter_args_u *filter_arg, uint32_t reserved);
 
 /**
  *  Disable filter controller setting for raw data processing
  *
  * @param dev [in] dmcam device handler
- * @param filter_id [in] defined in dmcam_filter_id_e to
+ * @param filter_id [in] defined in itof_filter_id_e to
  *              identify the filter
  *
  * @return int 0 = OK, otherwise failed.
  */
-__API int dmcam_filter_disable(dmcam_dev_t *dev, dmcam_filter_id_e filter_id);
+__API int itof_filter_disable(itof_dev_t *dev, itof_filter_id_e filter_id);
 
 
 /*****************************************************
@@ -1374,7 +1374,7 @@ typedef enum {
     DMCAM_CMAP_PRISM,
     //---------------------
     DMCAM_CMAP_COUNT,
-} dmcam_cmap_palette_e;
+} itof_cmap_palette_e;
 
 /** DMCAM color map output format definition   */
 typedef enum {
@@ -1390,28 +1390,28 @@ typedef enum {
     DMCAM_CMAP_OUTFMT_ABGR,
     //---------------------
     DMCAM_CMAP_OUTFMT_COUNT,
-} dmcam_cmap_outfmt_e;
+} itof_cmap_outfmt_e;
 
-typedef struct dmcam_cmap_cfg {
-    dmcam_cmap_palette_e color_palette;  // color pallete index used during convertion
+typedef struct itof_cmap_cfg {
+    itof_cmap_palette_e color_palette;  // color pallete index used during convertion
     uint8_t histeq_en;                   // 1 = enable histogram equalization during convertion
-} dmcam_cmap_cfg_t;
+} itof_cmap_cfg_t;
 
 /**
- * set default color palette used inside dmcam_cmap_ apis.
+ * set default color palette used inside itof_cmap_ apis.
  *
  * @param cm [in] color palette
  *
  * @return bool true = set is ok. false = set failed
  */
-__API bool dmcam_cmap_palette_set(dmcam_cmap_palette_e cm);
+__API bool itof_cmap_palette_set(itof_cmap_palette_e cm);
 
 /**
  * get default color palette currently used.
  *
- * @return dmcam_cmap_palette_e current color palette
+ * @return itof_cmap_palette_e current color palette
  */
-__API dmcam_cmap_palette_e dmcam_cmap_palette_get(void);
+__API itof_cmap_palette_e itof_cmap_palette_get(void);
 
 /**
  * convert dist_f32 image (pixel in meter) to pesudo-RGB points
@@ -1424,19 +1424,19 @@ __API dmcam_cmap_palette_e dmcam_cmap_palette_get(void);
  * @param outfmt [in] pixel format of the pseudo-RGB
  * @param range_min_m [in] minimum range of source point
  * @param range_max_m [in] max range of source point
- * @param cfg [in] refer dmcam_cmap_cfg_t. if NULL, default
+ * @param cfg [in] refer itof_cmap_cfg_t. if NULL, default
  *            config is used.
  *
  * @return int [out] the count of pseudo RGB points
  */
-__API int dmcam_cmap_dist_f32_to_RGB(uint8_t *dst,
+__API int itof_cmap_dist_f32_to_RGB(uint8_t *dst,
                                      int dst_len,
                                      const float *src,
                                      int src_len,
-                                     dmcam_cmap_outfmt_e outfmt,
+                                     itof_cmap_outfmt_e outfmt,
                                      float range_min_m,
                                      float range_max_m,
-                                     const dmcam_cmap_cfg_t *cfg);
+                                     const itof_cmap_cfg_t *cfg);
 
 /**
  * convert dist_u16 image (pixel in milimeter) to pesudo-RGB
@@ -1449,19 +1449,19 @@ __API int dmcam_cmap_dist_f32_to_RGB(uint8_t *dst,
  * @param outfmt [in] pixel format of the pseudo-RGB
  * @param range_min_mm [in] minimum range of source point
  * @param range_max_mm [in] max range of source point
- * @param cfg [in] refer dmcam_cmap_cfg_t. if NULL, default
+ * @param cfg [in] refer itof_cmap_cfg_t. if NULL, default
  *            config is used.
  *
  * @return int [out] the count of pseudo RGB points
  */
-__API int dmcam_cmap_dist_u16_to_RGB(uint8_t *dst,
+__API int itof_cmap_dist_u16_to_RGB(uint8_t *dst,
                                      int dst_len,
                                      const uint16_t *src,
                                      int src_len,
-                                     dmcam_cmap_outfmt_e outfmt,
+                                     itof_cmap_outfmt_e outfmt,
                                      uint16_t range_min_mm,
                                      uint16_t range_max_mm,
-                                     const dmcam_cmap_cfg_t *cfg);
+                                     const itof_cmap_cfg_t *cfg);
 /**
  * convert gray_u16 image to IR image whose pixel is in [0~255]
  *
@@ -1473,7 +1473,7 @@ __API int dmcam_cmap_dist_u16_to_RGB(uint8_t *dst,
  *
  * @return int [out] the count of IR image
  */
-__API int dmcam_cmap_gray_u16_to_IR(uint8_t *dst, int dst_len, const uint16_t *src, int src_len, int balance);
+__API int itof_cmap_gray_u16_to_IR(uint8_t *dst, int dst_len, const uint16_t *src, int src_len, int balance);
 
 /**
  * convert gray_f32 image to IR image whose pixel is in [0~255]
@@ -1486,7 +1486,7 @@ __API int dmcam_cmap_gray_u16_to_IR(uint8_t *dst, int dst_len, const uint16_t *s
  *
  * @return int [out] the count of IR image
  */
-__API int dmcam_cmap_gray_f32_to_IR(uint8_t *dst, int dst_len, const float *src, int src_len, int balance);
+__API int itof_cmap_gray_f32_to_IR(uint8_t *dst, int dst_len, const float *src, int src_len, int balance);
 
 /*---------------------------------------------------------------------------*
  * File save/load API section
@@ -1494,21 +1494,21 @@ __API int dmcam_cmap_gray_f32_to_IR(uint8_t *dst, int dst_len, const float *src,
 
 /**
  * open specified file and get file descriptor for
- * dmcam_frame_save_xxx apis.
+ * itof_frame_save_xxx apis.
  *
  * @param fname [in] specified filename
  *
  * @return int [out] file descriptor. < 0 = failed
  */
 
-__API int dmcam_file_open(const char *fname, const char *mode);
+__API int itof_file_open(const char *fname, const char *mode);
 
 /**
  * close specified file descriptor
  *
  * @param fd [in] specified file descriptor
  */
-__API void dmcam_file_close(int fd);
+__API void itof_file_close(int fd);
 
 typedef enum {
     DMCAM_FRAME_SAVE_FLOAT32 = 0,
@@ -1516,7 +1516,7 @@ typedef enum {
     DMCAM_FRAME_SAVE_UINT16,
     DMCAM_FRAME_SAVE_UINT8,
 
-} dmcam_frame_save_fmt_t;
+} itof_frame_save_fmt_t;
 
 /**
  * save specified raw data (in uin16_t) with specified pixcel
@@ -1524,7 +1524,7 @@ typedef enum {
  *
  * @param fd [in] specified file handler
  * @param save_fmt [in] file saving format defined in
- *                 dmcam_frame_save_fmt_t. only followin format
+ *                 itof_frame_save_fmt_t. only followin format
  *                 is supported:
  *              DMCAM_FRAME_SAVE_UINT32
  *              DMCAM_FRAME_SAVE_UINT16
@@ -1535,12 +1535,12 @@ typedef enum {
  * @param img_h [in] dist data pixel height
  * @param dcs_cnt [in] dist data dcs sub-frame count
  * @param raw_tag [in] any string. if want to used by replay,
- *                specify (dmcam_t*)dev->product string here.
+ *                specify (itof_t*)dev->product string here.
  * @return bool [out] true = save raw frame ok, false =
  *         fail
  */
-__API bool dmcam_frame_save_raw(int fd,
-                                dmcam_frame_save_fmt_t save_fmt,
+__API bool itof_frame_save_raw(int fd,
+                                itof_frame_save_fmt_t save_fmt,
                                 const uint16_t *raw,
                                 int raw_len,
                                 int img_w,
@@ -1555,7 +1555,7 @@ __API bool dmcam_frame_save_raw(int fd,
  *
  * @param fd [in] specified file handler
  * @param save_fmt [in] file saving format defined in @
- *                 @ref dmcam_frame_save_fmt_t. only followin
+ *                 @ref itof_frame_save_fmt_t. only followin
  *                 format is supported:
  *              DMCAM_FRAME_SAVE_FLOAT32
  *              DMCAM_FRAME_SAVE_UINT32
@@ -1569,8 +1569,8 @@ __API bool dmcam_frame_save_raw(int fd,
  * @return bool [out] true = save distance frame ok, false =
  *         fail
  */
-__API bool dmcam_frame_save_distance(int fd,
-                                     dmcam_frame_save_fmt_t save_fmt,
+__API bool itof_frame_save_distance(int fd,
+                                     itof_frame_save_fmt_t save_fmt,
                                      const float *dist,
                                      int dist_len,
                                      int img_w,
@@ -1582,7 +1582,7 @@ __API bool dmcam_frame_save_distance(int fd,
  *
  * @param fd [in] specified file handler
  * @param save_fmt [in] file saving format defined in
- *                 @ref dmcam_frame_save_fmt_t. only followin
+ *                 @ref itof_frame_save_fmt_t. only followin
  *                 format is supported:
  *              DMCAM_FRAME_SAVE_UINT16
  *              DMCAM_FRAME_SAVE_UINT8
@@ -1595,13 +1595,13 @@ __API bool dmcam_frame_save_distance(int fd,
  * @return bool [out] true = save distance frame ok, false =
  *         fail
  */
-__API bool dmcam_frame_save_gray(int fd, dmcam_frame_save_fmt_t save_fmt, const float *src, int src_len, int img_w, int img_h);
+__API bool itof_frame_save_gray(int fd, itof_frame_save_fmt_t save_fmt, const float *src, int src_len, int img_w, int img_h);
 
 /*!
  * load one raw frame from specified file fd.
  *
  * @param fd [in] specified data file fd. The fd related file is
- *           always saved by @ref dmcam_frame_save_raw api
+ *           always saved by @ref itof_frame_save_raw api
  * @param dst [out] raw
  * @param dst_len [in] dst buffer length (in count of
  *                sizeof(uint16_t))
@@ -1614,7 +1614,7 @@ __API bool dmcam_frame_save_gray(int fd, dmcam_frame_save_fmt_t save_fmt, const 
  * @return int [out] length of loaded raw data (in count of
  *         sizeof(uint16))
  */
-__API int dmcam_frame_load_raw(int fd,
+__API int itof_frame_load_raw(int fd,
                                uint16_t *dst,
                                int dst_len,
                                int *dst_w,
@@ -1627,7 +1627,7 @@ __API int dmcam_frame_load_raw(int fd,
  * load one distance frame from specified file fd.
  *
  * @param fd [in] specified data file fd. The fd related file is
- *           always saved by @ref dmcam_frame_save_distance api
+ *           always saved by @ref itof_frame_save_distance api
  * @param dst [out] distance in float (unit: meter)
  * @param dst_len [in] dst buffer length (in count of
  *                sizeof(float))
@@ -1638,13 +1638,13 @@ __API int dmcam_frame_load_raw(int fd,
  *         sizeof(float))
  */
 
-__API int dmcam_frame_load_distance(int fd, float *dst, int dst_len, int *dst_w, int *dst_h);
+__API int itof_frame_load_distance(int fd, float *dst, int dst_len, int *dst_w, int *dst_h);
 
 /**
  * load one gray frame from specified file fd.
  *
  * @param fd [in] specified data file fd. The fd related file is
- *           always saved by @ref dmcam_frame_save_gray api
+ *           always saved by @ref itof_frame_save_gray api
  * @param dst [out] gray in float (unit: meter)
  * @param dst_len [in] dst buffer length (in count of
  *                sizeof(float))
@@ -1655,18 +1655,18 @@ __API int dmcam_frame_load_distance(int fd, float *dst, int dst_len, int *dst_w,
  *         sizeof(float))
  */
 
-__API int dmcam_frame_load_gray(int fd, float *dst, int dst_len, int *dst_w, int *dst_h);
+__API int itof_frame_load_gray(int fd, float *dst, int dst_len, int *dst_w, int *dst_h);
 
 
 
 /*****************************************************
  *       lens section 
  *****************************************************/
-typedef struct dmcam_lens_calib_cfg {
+typedef struct itof_lens_calib_cfg {
     uint8_t en_2d_calib; // 2d calib on xy
     uint8_t en_3d_calib; // 3d calib on z
     uint8_t en_dist_direct_z;  // use dist as z directly
-}dmcam_lens_calib_cfg_t; 
+}itof_lens_calib_cfg_t; 
 
 /**
  * set config related with lens calibration.
@@ -1675,17 +1675,17 @@ typedef struct dmcam_lens_calib_cfg {
  * @param cfg 
  */
 
-void dmcam_lens_calib_config_set(dmcam_dev_t *dev, dmcam_lens_calib_cfg_t *cfg);
+void itof_lens_calib_config_set(itof_dev_t *dev, itof_lens_calib_cfg_t *cfg);
 
 /**
  * get config of lens calibration
  * 
  * @param dev [in] specified dmcam device
  * 
- * @return const dmcam_lens_calib_cfg_t* 
+ * @return const itof_lens_calib_cfg_t* 
  */
 
-const dmcam_lens_calib_cfg_t* dmcam_lens_calib_config_get(dmcam_dev_t *dev);
+const itof_lens_calib_cfg_t* itof_lens_calib_config_get(itof_dev_t *dev);
 
 /**
  * get lens calibration data from calibration data
@@ -1696,7 +1696,7 @@ const dmcam_lens_calib_cfg_t* dmcam_lens_calib_config_get(dmcam_dev_t *dev);
  * 
  * @return bool true = ok 
  */
-bool dmcam_lens_param_get(dmcam_dev_t *dev, dmcam_len_param_t *param, uint8_t id);
+bool itof_lens_param_get(itof_dev_t *dev, itof_len_param_t *param, uint8_t id);
 
 /**
  * get lens parameter filename
@@ -1710,7 +1710,7 @@ bool dmcam_lens_param_get(dmcam_dev_t *dev, dmcam_len_param_t *param, uint8_t id
  * 
  * @return char* [out] return len parameter filename (with path)
  */
-char* dmcam_lens_param_filename(dmcam_dev_t *dev, char *name_buf, int buf_len, bool bin_format, bool with_devid); 
+char* itof_lens_param_filename(itof_dev_t *dev, char *name_buf, int buf_len, bool bin_format, bool with_devid); 
 
 
 /**
@@ -1718,7 +1718,7 @@ char* dmcam_lens_param_filename(dmcam_dev_t *dev, char *name_buf, int buf_len, b
  * (dist in float), and output distance in camera coordinate. 
  *  
  * The behavior of this function is controlled by 
- * @ref dmcam_lens_calib_config_set.
+ * @ref itof_lens_calib_config_set.
  *    en_2d_calib: decide whether to apply 2d undistortion using
  *        camera intrinsics
  *    en_3d_calib: decide whether to apply 3d
@@ -1730,7 +1730,7 @@ char* dmcam_lens_param_filename(dmcam_dev_t *dev, char *name_buf, int buf_len, b
  * @param dst_len [in] output distance buffer size in sizeof 
  *                float 
  * @param src [in] input distance image (usually returned by 
- *            @ref dmcam_frame_get_dist_f32
+ *            @ref itof_frame_get_dist_f32
  * @param src_len [in] input distance image size in sizeof float 
  * @param finfo   [in] frame info when get the input image
  * @param p_cam_param [in]  camera intrinsics specified 
@@ -1739,15 +1739,15 @@ char* dmcam_lens_param_filename(dmcam_dev_t *dev, char *name_buf, int buf_len, b
  * 
  * @return bool [out] true= ok 
  */
-bool dmcam_lens_calib_apply_dist_f32(dmcam_dev_t *dev, float *dst, int dst_len, const float *src, int src_len,
-                                     const dmcam_frame_info_t *finfo, const dmcam_len_param_t *p_cam_param);
+bool itof_lens_calib_apply_dist_f32(itof_dev_t *dev, float *dst, int dst_len, const float *src, int src_len,
+                                     const itof_frame_info_t *finfo, const itof_len_param_t *p_cam_param);
 
 /**
  * apply lens calibration (if have) on specified distance image 
  * (dist in uint16), and output distance in camera coordinate. 
  *  
  * The behavior of this function is controlled by 
- * @ref dmcam_lens_calib_config_set.
+ * @ref itof_lens_calib_config_set.
  *    en_2d_calib: decide whether to apply 2d undistortion using
  *        camera intrinsics
  *    en_3d_calib: decide whether to apply 3d
@@ -1759,7 +1759,7 @@ bool dmcam_lens_calib_apply_dist_f32(dmcam_dev_t *dev, float *dst, int dst_len, 
  * @param dst_len [in] output distance buffer size in sizeof 
  *                uint16 
  * @param src [in] input distance image (usually returned by 
- *            @ref dmcam_frame_get_dist_u16
+ *            @ref itof_frame_get_dist_u16
  * @param src_len [in] input distance image size in sizeof 
  *                uint16
  * @param finfo   [in] frame info when get the input image
@@ -1769,15 +1769,15 @@ bool dmcam_lens_calib_apply_dist_f32(dmcam_dev_t *dev, float *dst, int dst_len, 
  * 
  * @return bool [out] true= ok 
  */
-bool dmcam_lens_calib_apply_dist_u16(dmcam_dev_t *dev, uint16_t *dst, int dst_len, const uint16_t *src, int src_len,
-                                     const dmcam_frame_info_t *finfo, const dmcam_len_param_t *p_cam_param);
+bool itof_lens_calib_apply_dist_u16(itof_dev_t *dev, uint16_t *dst, int dst_len, const uint16_t *src, int src_len,
+                                     const itof_frame_info_t *finfo, const itof_len_param_t *p_cam_param);
 /**
  * apply lens calibration (if have) on specified gray 
  * (intensity) image (pixel in float), and output with lens 2d 
  * undistorted image 
  *  
  * The behavior of this function is controlled by 
- * @ref dmcam_lens_calib_config_set.
+ * @ref itof_lens_calib_config_set.
  *    en_2d_calib: decide whether to apply 2d undistortion using
  *        camera intrinsics. if false, this function just copy
  *        src to dst
@@ -1786,7 +1786,7 @@ bool dmcam_lens_calib_apply_dist_u16(dmcam_dev_t *dev, uint16_t *dst, int dst_le
  * @param dst [out] output gray image buffer
  * @param dst_len [in] output buffer size in sizeof float 
  * @param src [in] input gray image (usually returned by 
- *            @ref dmcam_frame_get_gray_f32
+ *            @ref itof_frame_get_gray_f32
  * @param src_len [in] input image size in sizeof float 
  * @param finfo   [in] frame info when get the input image
  * @param p_cam_param [in]  camera intrinsics specified 
@@ -1795,8 +1795,8 @@ bool dmcam_lens_calib_apply_dist_u16(dmcam_dev_t *dev, uint16_t *dst, int dst_le
  * 
  * @return bool [out] true= ok 
  */
-bool dmcam_lens_calib_apply_gray_f32(dmcam_dev_t *dev, float *dst, int dst_len, const float *src, int src_len,
-                                     const dmcam_frame_info_t *finfo, const dmcam_len_param_t *p_cam_param);
+bool itof_lens_calib_apply_gray_f32(itof_dev_t *dev, float *dst, int dst_len, const float *src, int src_len,
+                                     const itof_frame_info_t *finfo, const itof_len_param_t *p_cam_param);
 
 /**
  * apply lens calibration (if have) on specified gray 
@@ -1804,7 +1804,7 @@ bool dmcam_lens_calib_apply_gray_f32(dmcam_dev_t *dev, float *dst, int dst_len, 
  * undistorted image 
  *  
  * The behavior of this function is controlled by 
- * @ref dmcam_lens_calib_config_set.
+ * @ref itof_lens_calib_config_set.
  *    en_2d_calib: decide whether to apply 2d undistortion using
  *        camera intrinsics. if false, this function just copy
  *        src to dst
@@ -1813,7 +1813,7 @@ bool dmcam_lens_calib_apply_gray_f32(dmcam_dev_t *dev, float *dst, int dst_len, 
  * @param dst [out] output gray image buffer
  * @param dst_len [in] output buffer size in sizeof uint16 
  * @param src [in] input gray image (usually returned by 
- *            @ref dmcam_frame_get_gray_u16
+ *            @ref itof_frame_get_gray_u16
  * @param src_len [in] input image size in sizeof uint16 
  * @param finfo   [in] frame info when get the input image
  * @param p_cam_param [in]  camera intrinsics specified 
@@ -1822,8 +1822,8 @@ bool dmcam_lens_calib_apply_gray_f32(dmcam_dev_t *dev, float *dst, int dst_len, 
  * 
  * @return bool [out] true= ok 
  */
-bool dmcam_lens_calib_apply_gray_u16(dmcam_dev_t *dev, uint16_t *dst, int dst_len, const uint16_t *src, int src_len,
-                                     const dmcam_frame_info_t *finfo, const dmcam_len_param_t *p_cam_param); 
+bool itof_lens_calib_apply_gray_u16(itof_dev_t *dev, uint16_t *dst, int dst_len, const uint16_t *src, int src_len,
+                                     const itof_frame_info_t *finfo, const itof_len_param_t *p_cam_param); 
 
 #ifdef __cplusplus
 }

@@ -18,16 +18,16 @@ The API in Python corresponds to the API defined in ** dmcam.h ** in the C libra
 
     import dmcam
 
-- API name mapping(C->Python)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** . For example `dmcam_dev_open` is mapped to `dmcam.dev_open`
+- API name mapping(C->Python)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** . For example `itof_dev_open` is mapped to `dmcam.dev_open`
 
      
-- Structure mapping(C->Python): **dmcam_xxxxx -> dmcam.xxxx()** . Structure is mapped to a class in Python. For exaample, create `dmcam_frame_info_t` structure::
+- Structure mapping(C->Python): **dmcam_xxxxx -> dmcam.xxxx()** . Structure is mapped to a class in Python. For exaample, create `itof_frame_info_t` structure::
 
     finfo = dmcam.frame_info_t()
 
 - `NULL` is mapped to `None`.For example ::
   
-    dmcam.init(None) # dmcam_init(NULL)
+    dmcam.init(None) # itof_init(NULL)
 
 - The following Python interfaces are different from the C APIs.
   
@@ -42,7 +42,7 @@ The API in Python corresponds to the API defined in ** dmcam.h ** in the C libra
         for i, d in enumerate(devs):
 			print("[#%d]: %s" % (i, dmcam.dev_get_uri(d, 256)[0]))
   `dmcam.param_batch_set(dev, dict)`
-   The C interface is simplified in Python, passing a `dict` directly, without having to construct a more complex `dmcam_param_item_t` structure and its length parameters. Use example like below ::
+   The C interface is simplified in Python, passing a `dict` directly, without having to construct a more complex `itof_param_item_t` structure and its length parameters. Use example like below ::
       wparams = {
           dmcam.PARAM_FRAME_RATE: dmcam.param_val_u(),
           dmcam.PARAM_INTG_TIME: dmcam.param_val_u(),}
@@ -54,7 +54,7 @@ The API in Python corresponds to the API defined in ** dmcam.h ** in the C libra
           print(" set parameter failed")
     
   `dmcam.param_batch_get(dev, list)`
-   The C interface is simplified in Python. You can directly pass a list that needs to get parameters without having to construct a more complex `dmcam_param_item_t` structure and its length parameters. Use example like below ::
+   The C interface is simplified in Python. You can directly pass a list that needs to get parameters without having to construct a more complex `itof_param_item_t` structure and its length parameters. Use example like below ::
 
             # get intg from device
             param_vals = dmcam.param_batch_get(dev, [dmcam.PARAM_INTG_TIME])  # type: list[dmcam.param_val_u]
@@ -90,25 +90,25 @@ The following table lists some common API interface comparisons：
 	
 	* - C library API
 	  - python API
-	* - dmcam_init
+	* - itof_init
 	  - dmcam.init
-	* - dmcam_dev_list
+	* - itof_dev_list
 	  - dmcam.dev_list	  
-	* - dmcam_dev_open
+	* - itof_dev_open
 	  - dmcam.dev_open
-	* - dmcam_dev_close
+	* - itof_dev_close
 	  - dmcam.dev_close	
-	* - dmcam_cap_config_set
+	* - itof_cap_config_set
 	  - dmcam.cap_config_set
-	* - dmcam_cap_set_callback_on_error
+	* - itof_cap_set_callback_on_error
 	  - dmcam.cap_set_callback_on_error	  
-	* - dmcam_param_batch_set
+	* - itof_param_batch_set
 	  - dmcam.param_batch_set	  
-	* - dmcam_cap_get_frames
+	* - itof_cap_get_frames
 	  - dmcam.cap_get_frames
-	* - dmcam_frame_get_distance
+	* - itof_frame_get_distance
 	  - dmcam.frame_get_distance
-	* - dmcam_frame_get_gray
+	* - itof_frame_get_gray
 	  - dmcam.frame_get_gray
 
 .. _dmcam: https://pypi.org/project/dmcam/

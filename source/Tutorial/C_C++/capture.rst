@@ -14,8 +14,8 @@ Run sample_capture_frames to collect image sample program as shown in figure:
 
 
 In the sample, the basic settings of the module are set before acquisition, and then the acquisition is started, and 10 frames are acquired each time, and then the depth and grayscale calculations are performed. The total number of frames is set to 100 frames, and the acquisition is stopped after the acquisition is completed.
-The capture sample includes **dmcam_cap_config_set**  for configuration before collection，dmcam_cap_start，dmcam_cap_get_frames
-,dmcam_frame_get_distance interfaces and so on.
+The capture sample includes **itof_cap_config_set**  for configuration before collection，itof_cap_start，itof_cap_get_frames
+,itof_frame_get_distance interfaces and so on.
 
 
 

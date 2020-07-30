@@ -62,10 +62,10 @@ The module API in C# corresponds to the API defined in ** dmcam.h ** in the C li
                 dmcam.uninit();
         }
 
-- API name mapping(C->C#)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** .For example `dmcam_dev_open` is mapped to`dmcam.dev_open`
+- API name mapping(C->C#)： **dmcam_xxxxx(...) -> dmcam.xxxxx(...)** .For example `itof_dev_open` is mapped to`dmcam.dev_open`
 
      
-- Structure mapping(C->C#): **dmcam_xxxxx -> xxxx()** . Structure is mapped to a class in C#, For example, create a `dmcam_frame_info_t` structure as follows:
+- Structure mapping(C->C#): **dmcam_xxxxx -> xxxx()** . Structure is mapped to a class in C#, For example, create a `itof_frame_info_t` structure as follows:
 
     .. code-block:: C#
 
@@ -75,7 +75,7 @@ The module API in C# corresponds to the API defined in ** dmcam.h ** in the C li
   
     .. code-block:: C#
 
-      dmcam.init(null) // dmcam_init(NULL)
+      dmcam.init(null) // itof_init(NULL)
 
 - There are differences between the following C# interfaces and C APIs, you need to pay attention:
   

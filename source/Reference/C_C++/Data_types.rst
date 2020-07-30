@@ -41,7 +41,7 @@ Module parameter enum type definition ::
       PARAM_INFO_CALIB_FREQ,     /**< calibration information*/
       PARAM_DEL_CALIB_DATA,      /**< Delete calibration data*/
       PARAM_ENUM_COUNT,
-    }dmcam_dev_param_e;
+    }itof_dev_param_e;
    
    Module parameter enum type description
 	
@@ -127,7 +127,7 @@ defined as follows ::
       DMCAM_FILTER_ID_TEMP_CALIB,/*Temperature calibration*/
       DMCAM_FILTER_ID_MEDIAN = DMCAM_FILTER_ID_DEPTH_FILTER,  /**<  MEDIAN is replaced with depth filter */
       DMCAM_FILTER_CNT,
-    }dmcam_filter_id_e;
+    }itof_filter_id_e;
 
 
 .. note ::
