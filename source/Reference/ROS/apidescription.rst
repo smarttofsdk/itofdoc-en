@@ -102,32 +102,32 @@ Services posted dmcam_ros
     +---------------------+--------------------------------------------------------------------------------+
     |Function parameter   |  The id value in filter_id can be set to:                                      |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_LEN_CALIB //Lens calibration                                  |
+    |                     |  ITOF_FILTER_ID_LEN_CALIB //Lens calibration                                  |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_PIXEL_CALIB //Pixel calibration                               |
+    |                     |  ITOF_FILTER_ID_PIXEL_CALIB //Pixel calibration                               |
     |                     +--------------------------------------------------------------------------------+
-    |                     | DMCAM_FILTER_ID_RESERVED //Not currently supported                             |
+    |                     | ITOF_FILTER_ID_RESERVED //Not currently supported                             |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AMP //amplitude filter                                        |
+    |                     |  ITOF_FILTER_ID_AMP //amplitude filter                                        |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AUTO_INTG //exposure time                                     |
+    |                     |  ITOF_FILTER_ID_AUTO_INTG //exposure time                                     |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SYNC_DELAY //Not currently supported                          |
+    |                     |  ITOF_FILTER_ID_SYNC_DELAY //Not currently supported                          |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_TEMP_MONITOR //Not currently supported                        |
+    |                     |  ITOF_FILTER_ID_TEMP_MONITOR //Not currently supported                        |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_HDR //HDR mode                                                |
+    |                     |  ITOF_FILTER_ID_HDR //HDR mode                                                |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_OFFSET //distance offset                                      |
+    |                     |  ITOF_FILTER_ID_OFFSET //distance offset                                      |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SPORT_MODE //sport mode                                       |
+    |                     |  ITOF_FILTER_ID_SPORT_MODE //sport mode                                       |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SYS_CALIB //Not currently supported                           |
+    |                     |  ITOF_FILTER_ID_SYS_CALIB //Not currently supported                           |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB //Not currently supported                 |
+    |                     |  ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB //Not currently supported                 |
     |                     +--------------------------------------------------------------------------------+
     |                     | Currently only the value of filter_value needs to be set in,                   |
-    |                     | DMCAM_FILTER_ID_AMP, the range is 0-100                                        |
+    |                     | ITOF_FILTER_ID_AMP, the range is 0-100                                        |
     |                     +--------------------------------------------------------------------------------+
     |                     |  The value of other filter_value can be 0 by default                           |
     +---------------------+--------------------------------------------------------------------------------+
@@ -143,29 +143,29 @@ Services posted dmcam_ros
     +---------------------+--------------------------------------------------------------------------------+
     |Function parameter   |  The id value in filter_id can be set to:                                      |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_LEN_CALIB //Lens calibration                                  |
+    |                     |  ITOF_FILTER_ID_LEN_CALIB //Lens calibration                                  |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_PIXEL_CALIB //Pixel calibration                               |
+    |                     |  ITOF_FILTER_ID_PIXEL_CALIB //Pixel calibration                               |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_RESERVED //Not currently supported                            |
+    |                     |  ITOF_FILTER_ID_RESERVED //Not currently supported                            |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AMP //amplitude filter                                        |
+    |                     |  ITOF_FILTER_ID_AMP //amplitude filter                                        |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AUTO_INTG //exposure time                                     |
+    |                     |  ITOF_FILTER_ID_AUTO_INTG //exposure time                                     |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SYNC_DELAY //Not currently supported                          |
+    |                     |  ITOF_FILTER_ID_SYNC_DELAY //Not currently supported                          |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_TEMP_MONITOR //Not currently supported                        |
+    |                     |  ITOF_FILTER_ID_TEMP_MONITOR //Not currently supported                        |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_HDR //HDR mode                                                |
+    |                     |  ITOF_FILTER_ID_HDR //HDR mode                                                |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_OFFSET //distance offset                                      |
+    |                     |  ITOF_FILTER_ID_OFFSET //distance offset                                      |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SPORT_MODE //sport mode                                       |
+    |                     |  ITOF_FILTER_ID_SPORT_MODE //sport mode                                       |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_SYS_CALIB //Not currently supported                           |
+    |                     |  ITOF_FILTER_ID_SYS_CALIB //Not currently supported                           |
     |                     +--------------------------------------------------------------------------------+
-    |                     |  DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB //Not currently supported                 |
+    |                     |  ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB //Not currently supported                 |
     +---------------------+--------------------------------------------------------------------------------+
 
 

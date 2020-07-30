@@ -109,24 +109,24 @@ defined as follows ::
 
     /** filter ID  */
     typedef enum {
-      DMCAM_FILTER_ID_LEN_CALIB,    /**< lens calibration*/
-      DMCAM_FILTER_ID_PIXEL_CALIB,  /**< pixel calibration*/
-      DMCAM_FILTER_ID_DEPTH_FILTER,  /**< Depth filter */
-      DMCAM_FILTER_ID_RESERVED,        /**< RESERVED */
-      DMCAM_FILTER_ID_AMP,          /**< Amplitude filter control*/
-      DMCAM_FILTER_ID_AUTO_INTG,    /**< auto integration filter enable : use sat_ratio to adjust */
-      DMCAM_FILTER_ID_SYNC_DELAY,   /**<  sync delay */
-      DMCAM_FILTER_ID_TEMP_MONITOR, /**< temperature monitor */
-      DMCAM_FILTER_ID_HDR,          /**< HDR mode */
-      DMCAM_FILTER_ID_OFFSET,       /**<  set offset for calc distance */
-      DMCAM_FILTER_ID_SPORT_MODE,   /**<  set sport mode */
-      DMCAM_FILTER_ID_SYS_CALIB,   /**< using system calibration param */
-      DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB,   /**< using ambient light calib calibration param */
-      DMCAM_FILTER_ID_FLYNOISE,   /**< fly noise filter */
+      ITOF_FILTER_ID_LEN_CALIB,    /**< lens calibration*/
+      ITOF_FILTER_ID_PIXEL_CALIB,  /**< pixel calibration*/
+      ITOF_FILTER_ID_DEPTH_FILTER,  /**< Depth filter */
+      ITOF_FILTER_ID_RESERVED,        /**< RESERVED */
+      ITOF_FILTER_ID_AMP,          /**< Amplitude filter control*/
+      ITOF_FILTER_ID_AUTO_INTG,    /**< auto integration filter enable : use sat_ratio to adjust */
+      ITOF_FILTER_ID_SYNC_DELAY,   /**<  sync delay */
+      ITOF_FILTER_ID_TEMP_MONITOR, /**< temperature monitor */
+      ITOF_FILTER_ID_HDR,          /**< HDR mode */
+      ITOF_FILTER_ID_OFFSET,       /**<  set offset for calc distance */
+      ITOF_FILTER_ID_SPORT_MODE,   /**<  set sport mode */
+      ITOF_FILTER_ID_SYS_CALIB,   /**< using system calibration param */
+      ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB,   /**< using ambient light calib calibration param */
+      ITOF_FILTER_ID_FLYNOISE,   /**< fly noise filter */
 
-      DMCAM_FILTER_ID_TEMP_CALIB,/*Temperature calibration*/
-      DMCAM_FILTER_ID_MEDIAN = DMCAM_FILTER_ID_DEPTH_FILTER,  /**<  MEDIAN is replaced with depth filter */
-      DMCAM_FILTER_CNT,
+      ITOF_FILTER_ID_TEMP_CALIB,/*Temperature calibration*/
+      ITOF_FILTER_ID_MEDIAN = ITOF_FILTER_ID_DEPTH_FILTER,  /**<  MEDIAN is replaced with depth filter */
+      ITOF_FILTER_CNT,
     }itof_filter_id_e;
 
 

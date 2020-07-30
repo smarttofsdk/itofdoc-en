@@ -38,7 +38,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_LEN_CALIB parameter: length index </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_LEN_CALIB parameter: length index </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1089" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1089" bodyend="-1"/>
@@ -51,7 +51,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_AMP parameter: Min amplitude threshold </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_AMP parameter: Min amplitude threshold </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1090" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1090" bodyend="-1"/>
@@ -64,7 +64,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_AUTO_INTG parameter: saturation ratio threshold </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_AUTO_INTG parameter: saturation ratio threshold </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1091" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1091" bodyend="-1"/>
@@ -77,7 +77,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_SYNC_DELAY parameter: sync delay: 0 = random delay, 1 = specified delay in ms </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_SYNC_DELAY parameter: sync delay: 0 = random delay, 1 = specified delay in ms </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1092" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1092" bodyend="-1"/>
@@ -90,7 +90,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_TEMP_MONITOR paramter: Temperature threshold for temperature monitor </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_TEMP_MONITOR paramter: Temperature threshold for temperature monitor </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1093" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1093" bodyend="-1"/>
@@ -129,7 +129,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_HDR paramter </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_HDR paramter </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1097" column="1"/>
@@ -142,7 +142,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_MEDIAN paramter: DEPRECATED, please use DMCAM_FILTER_ID_DEPTH_FILTER </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_MEDIAN paramter: DEPRECATED, please use ITOF_FILTER_ID_DEPTH_FILTER </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1098" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1098" bodyend="-1"/>
@@ -155,7 +155,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_OFFSET paramter : offset in mm for DMCMA_FILTER_ID_OFFSET filter </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_OFFSET paramter : offset in mm for DMCMA_FILTER_ID_OFFSET filter </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1099" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1099" bodyend="-1"/>
@@ -168,7 +168,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_SPORT_MODE parameter: 0 = high motion mode, 1 = extrem high motion mode </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_SPORT_MODE parameter: 0 = high motion mode, 1 = extrem high motion mode </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1100" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1100" bodyend="-1"/>
@@ -181,7 +181,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB kcoeff of ambient light calibration </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB kcoeff of ambient light calibration </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1101" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1101" bodyend="-1"/>
@@ -246,7 +246,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>DMCAM_FILTER_ID_DEPTH_FILTER strength: [0, 31] </para>        </detaileddescription>
+<para>ITOF_FILTER_ID_DEPTH_FILTER strength: [0, 31] </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="1110" column="1" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="1110" bodyend="-1"/>

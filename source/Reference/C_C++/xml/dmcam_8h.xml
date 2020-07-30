@@ -43,7 +43,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="41" column="19"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1aa314cddeed042864a00d211c1af01fa3" prot="public" static="no">
-        <name>DM_NAME</name>
+        <name>IT_NAME</name>
         <initializer>&quot;DMCAM&quot;</initializer>
         <briefdescription>
         </briefdescription>
@@ -54,7 +54,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="45" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1aaab8da01f59b47aebd810b9818d0f97d" prot="public" static="no">
-        <name>DM_VERSION_MAJOR</name>
+        <name>IT_VERSION_MAJOR</name>
         <initializer>1</initializer>
         <briefdescription>
         </briefdescription>
@@ -65,7 +65,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="46" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a2aa0d880d35a6b7abb3271df9771a10d" prot="public" static="no">
-        <name>DM_VERSION_MINOR</name>
+        <name>IT_VERSION_MINOR</name>
         <initializer>80</initializer>
         <briefdescription>
         </briefdescription>
@@ -76,7 +76,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="47" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1add4743608131b540c253d438758fde6e" prot="public" static="no">
-        <name>DM_VERSION_REV</name>
+        <name>IT_VERSION_REV</name>
         <initializer>5</initializer>
         <briefdescription>
         </briefdescription>
@@ -87,7 +87,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="48" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1ac578e0b95d1d89424687e7c38ef9e12b" prot="public" static="no">
-        <name>DM_VERSION_STR</name>
+        <name>IT_VERSION_STR</name>
         <initializer>&quot;v1.80.5&quot;</initializer>
         <briefdescription>
         </briefdescription>
@@ -98,7 +98,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="49" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1aa9de6c26a8241d64aa52c76acded6329" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_FRAME_DISCARD</name>
+        <name>ITOF_ERR_CAP_FRAME_DISCARD</name>
         <initializer>(3)</initializer>
         <briefdescription>
         </briefdescription>
@@ -109,7 +109,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="51" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a1ae338651ed063f907efb9dc49ae7646" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_WRONG_STATE</name>
+        <name>ITOF_ERR_CAP_WRONG_STATE</name>
         <initializer>(-2)</initializer>
         <briefdescription>
         </briefdescription>
@@ -120,7 +120,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="52" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a57a52c64b06f14e0375816f570e2358e" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_CANCEL</name>
+        <name>ITOF_ERR_CAP_CANCEL</name>
         <initializer>(-3)</initializer>
         <briefdescription>
         </briefdescription>
@@ -131,7 +131,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="53" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a160c9fba29606d8e1454a94cc959f72a" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_TIMEOUT</name>
+        <name>ITOF_ERR_CAP_TIMEOUT</name>
         <initializer>(-5)</initializer>
         <briefdescription>
         </briefdescription>
@@ -142,7 +142,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="54" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1acc1cd5678b390f96b9b930410dbb4536" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_STALL</name>
+        <name>ITOF_ERR_CAP_STALL</name>
         <initializer>(-7)</initializer>
         <briefdescription>
         </briefdescription>
@@ -153,7 +153,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="55" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a4fabeba6b6b6b358168b59af7321cd76" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_ERROR</name>
+        <name>ITOF_ERR_CAP_ERROR</name>
         <initializer>(-8)</initializer>
         <briefdescription>
         </briefdescription>
@@ -164,7 +164,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="56" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a3cb7af69ff12f34c3ce7758a093c10c6" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_EOF</name>
+        <name>ITOF_ERR_CAP_EOF</name>
         <initializer>(-9)</initializer>
         <briefdescription>
         </briefdescription>
@@ -175,7 +175,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="57" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1abe442c939926a6e89a5ae2d33365d471" prot="public" static="no">
-        <name>DMCAM_ERR_CAP_UNKNOWN</name>
+        <name>ITOF_ERR_CAP_UNKNOWN</name>
         <initializer>(-10)</initializer>
         <briefdescription>
         </briefdescription>
@@ -186,7 +186,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="58" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a0162f0e3a1ba3630624e27484b54aee3" prot="public" static="no">
-        <name>DM_SEEK_SET</name>
+        <name>IT_SEEK_SET</name>
         <initializer>0</initializer>
         <briefdescription>
         </briefdescription>
@@ -197,7 +197,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="60" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1ab6c04b590cb1c40f677b30f13c0d4ec4" prot="public" static="no">
-        <name>DM_SEEK_CUR</name>
+        <name>IT_SEEK_CUR</name>
         <initializer>1</initializer>
         <briefdescription>
         </briefdescription>
@@ -208,7 +208,7 @@
         <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" line="61" column="9" bodyfile="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="dmcam_8h_1a73af0413a42e757f342217a861677411" prot="public" static="no">
-        <name>DM_SEEK_END</name>
+        <name>IT_SEEK_END</name>
         <initializer>2</initializer>
         <briefdescription>
         </briefdescription>
@@ -889,42 +889,42 @@
       <memberdef kind="enum" id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30" prot="public" static="no">
         <name>itof_binning_mode_e</name>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a8bff4393050281ba9f3d5fb558d0da37" prot="public">
-          <name>DM_BINNING_1X1</name>
+          <name>IT_BINNING_1X1</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a31595225859eeb0b1a9a09a04521db42" prot="public">
-          <name>DM_BINNING_2X2</name>
+          <name>IT_BINNING_2X2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a7d29e76e699099d39370d7a4b90aa667" prot="public">
-          <name>DM_BINNING_4X4</name>
+          <name>IT_BINNING_4X4</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30ac8b1620d57535246295a007c6011cb8c" prot="public">
-          <name>DM_BINNING_8X8</name>
+          <name>IT_BINNING_8X8</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30aa0b283ca04bdb73de8246bbc35ab79ba" prot="public">
-          <name>DM_BINNING_2X4</name>
+          <name>IT_BINNING_2X4</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30a64e45ed7f190f64a1ed15973a6679d38" prot="public">
-          <name>DM_BINNING_CNT</name>
+          <name>IT_BINNING_CNT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -941,7 +941,7 @@
       <memberdef kind="enum" id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0a" prot="public" static="no">
         <name>itof_frame_fmt_e</name>
         <enumvalue id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" prot="public">
-          <name>DM_FRAME_FMT_RAW_DIST</name>
+          <name>IT_FRAME_FMT_RAW_DIST</name>
           <initializer>= 0</initializer>
           <briefdescription>
           </briefdescription>
@@ -949,28 +949,28 @@
 <para>distance data without calibration </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" prot="public">
-          <name>DM_FRAME_FMT_DISTANCE</name>
+          <name>IT_FRAME_FMT_DISTANCE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>distance with calibration </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" prot="public">
-          <name>DM_FRAME_FMT_GRAY</name>
+          <name>IT_FRAME_FMT_GRAY</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Confidence data </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" prot="public">
-          <name>DM_FRAME_FMT_PCLOUD</name>
+          <name>IT_FRAME_FMT_PCLOUD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>pointcloud data </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" prot="public">
-          <name>DM_FRAME_FMT_RGB</name>
+          <name>IT_FRAME_FMT_RGB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -987,120 +987,120 @@
       <memberdef kind="enum" id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fb" prot="public" static="no">
         <name>itof_filter_id_e</name>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" prot="public">
-          <name>DMCAM_FILTER_ID_LEN_CALIB</name>
+          <name>ITOF_FILTER_ID_LEN_CALIB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>lens calibration </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" prot="public">
-          <name>DMCAM_FILTER_ID_PIXEL_CALIB</name>
+          <name>ITOF_FILTER_ID_PIXEL_CALIB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>pixel calibration </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" prot="public">
-          <name>DMCAM_FILTER_ID_DEPTH_FILTER</name>
+          <name>ITOF_FILTER_ID_DEPTH_FILTER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Depth filter </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba88b63c99a08d9fff81fbde67d014ec99" prot="public">
-          <name>DMCAM_FILTER_ID_RESERVED</name>
+          <name>ITOF_FILTER_ID_RESERVED</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>RESERVED </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab10d5c87df0820cfdf3c92aae0da582f" prot="public">
-          <name>DMCAM_FILTER_ID_AMP</name>
+          <name>ITOF_FILTER_ID_AMP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>Amplitude filter control </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba54e9a9433ad6187c3e175bdb340d5832" prot="public">
-          <name>DMCAM_FILTER_ID_AUTO_INTG</name>
+          <name>ITOF_FILTER_ID_AUTO_INTG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>auto integration filter enable : use sat_ratio to adjust </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaf58599b5087bdd95b7135e6efceec1f8" prot="public">
-          <name>DMCAM_FILTER_ID_SYNC_DELAY</name>
+          <name>ITOF_FILTER_ID_SYNC_DELAY</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>sync delay </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab06fa287b6cabf9e96e41fed3518e29d" prot="public">
-          <name>DMCAM_FILTER_ID_TEMP_MONITOR</name>
+          <name>ITOF_FILTER_ID_TEMP_MONITOR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>temperature monitor </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9619340bf83bcc5207a8d7ff63ab9f9c" prot="public">
-          <name>DMCAM_FILTER_ID_HDR</name>
+          <name>ITOF_FILTER_ID_HDR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>HDR mode </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba225ba19c884c049f13574597289b613a" prot="public">
-          <name>DMCAM_FILTER_ID_OFFSET</name>
+          <name>ITOF_FILTER_ID_OFFSET</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>set offset for calc distance </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba6f3845dee52dc985d3f45f71424a7932" prot="public">
-          <name>DMCAM_FILTER_ID_SPORT_MODE</name>
+          <name>ITOF_FILTER_ID_SPORT_MODE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>set sport mode </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba70f44611100dcdf29ecb33c542f4e473" prot="public">
-          <name>DMCAM_FILTER_ID_SYS_CALIB</name>
+          <name>ITOF_FILTER_ID_SYS_CALIB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>using system calibration param </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaeaa40879a14eec486e9c24f20c2f025c" prot="public">
-          <name>DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB</name>
+          <name>ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>using ambient light calib calibration param </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbabe322bbe4858095c020a3ae3921d25f1" prot="public">
-          <name>DMCAM_FILTER_ID_FLYNOISE</name>
+          <name>ITOF_FILTER_ID_FLYNOISE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>fly noise filter </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba1f0cd7c9136c30ea311236dc35197038" prot="public">
-          <name>DMCAM_FILTER_ID_TEMP_CALIB</name>
+          <name>ITOF_FILTER_ID_TEMP_CALIB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" prot="public">
-          <name>DMCAM_FILTER_ID_MEDIAN</name>
-          <initializer>= DMCAM_FILTER_ID_DEPTH_FILTER</initializer>
+          <name>ITOF_FILTER_ID_MEDIAN</name>
+          <initializer>= ITOF_FILTER_ID_DEPTH_FILTER</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
 <para>MEDIAN is replaced with depth filter </para>          </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbacbbef69a4246a1a294d4db4254585fe7" prot="public">
-          <name>DMCAM_FILTER_CNT</name>
+          <name>ITOF_FILTER_CNT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -1117,7 +1117,7 @@
       <memberdef kind="enum" id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7" prot="public" static="no">
         <name>itof_cmap_palette_e</name>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa02ad066b7713b7653076ed3b379cb39" prot="public">
-          <name>DMCAM_CMAP_EPC</name>
+          <name>ITOF_CMAP_EPC</name>
           <initializer>= 0</initializer>
           <briefdescription>
           </briefdescription>
@@ -1125,448 +1125,448 @@
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ada922268943b40a9c3675b111a086208" prot="public">
-          <name>DMCAM_CMAP_HSV</name>
+          <name>ITOF_CMAP_HSV</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a8f9b45fecadb1b1671b9f826ef5781c6" prot="public">
-          <name>DMCAM_CMAP_BWR</name>
+          <name>ITOF_CMAP_BWR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ad72c442f4ad88dffd1106fa1c851b88a" prot="public">
-          <name>DMCAM_CMAP_JET</name>
+          <name>ITOF_CMAP_JET</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a7dea57b8c9a6f8c6b432846a9c375150" prot="public">
-          <name>DMCAM_CMAP_GIST_RAINBOW</name>
+          <name>ITOF_CMAP_GIST_RAINBOW</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7acb9ee272ae76278fd62fa308b32c8dac" prot="public">
-          <name>DMCAM_CMAP_RAINBOW</name>
+          <name>ITOF_CMAP_RAINBOW</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a1c8a8f38c2f3fc2d8c60fb5bb8fcfe7e" prot="public">
-          <name>DMCAM_CMAP_SPECTRAL</name>
+          <name>ITOF_CMAP_SPECTRAL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ad4e5ea4e3d342db2c06d77c621408ce1" prot="public">
-          <name>DMCAM_CMAP_VIRIDIS</name>
+          <name>ITOF_CMAP_VIRIDIS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7afd3d359b45daaf5cfdbf5beaf7aa0e6a" prot="public">
-          <name>DMCAM_CMAP_INFERNO</name>
+          <name>ITOF_CMAP_INFERNO</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aae0234a658afa52f56094d62e94409d6" prot="public">
-          <name>DMCAM_CMAP_PLASMA</name>
+          <name>ITOF_CMAP_PLASMA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a9a6fab0932ee9e3df652dc4a583b00cb" prot="public">
-          <name>DMCAM_CMAP_MAGMA</name>
+          <name>ITOF_CMAP_MAGMA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa88d41fcf3e041b4e1d30153728825ad" prot="public">
-          <name>DMCAM_CMAP_BLUES</name>
+          <name>ITOF_CMAP_BLUES</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a9db7aae8fee5e140d3b92ccd5bc45f14" prot="public">
-          <name>DMCAM_CMAP_BUGN</name>
+          <name>ITOF_CMAP_BUGN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa7c2a7a3f43aa929c29c6da5a015d343" prot="public">
-          <name>DMCAM_CMAP_BUPU</name>
+          <name>ITOF_CMAP_BUPU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a832f4988f910320b1819a39a5a03c585" prot="public">
-          <name>DMCAM_CMAP_GNBU</name>
+          <name>ITOF_CMAP_GNBU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a4d81c8c2388fd11b6be82efcd60e0cbf" prot="public">
-          <name>DMCAM_CMAP_GREENS</name>
+          <name>ITOF_CMAP_GREENS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a87b1db0272f7c56b576c294efc5f6b13" prot="public">
-          <name>DMCAM_CMAP_GREYS</name>
+          <name>ITOF_CMAP_GREYS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a1172d419e7194c5e84c5a1ce8f58afb2" prot="public">
-          <name>DMCAM_CMAP_ORANGES</name>
+          <name>ITOF_CMAP_ORANGES</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ace56dba40ed32940ea4a0c8b5ca7a835" prot="public">
-          <name>DMCAM_CMAP_ORRD</name>
+          <name>ITOF_CMAP_ORRD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a62fb07239d3167fa0aabe8d5ed6bbc8e" prot="public">
-          <name>DMCAM_CMAP_PUBU</name>
+          <name>ITOF_CMAP_PUBU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7afdcb38f4e5d94f0fdaf3a3cffba2fb6b" prot="public">
-          <name>DMCAM_CMAP_PUBUGN</name>
+          <name>ITOF_CMAP_PUBUGN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7adfdf064bc7a67cb9a267832b5b8d54d8" prot="public">
-          <name>DMCAM_CMAP_PURD</name>
+          <name>ITOF_CMAP_PURD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a5e5828b3f4d85e084fa6df1cbab1a9e8" prot="public">
-          <name>DMCAM_CMAP_PURPLES</name>
+          <name>ITOF_CMAP_PURPLES</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa7716c80faa552ff95a72095ebfef9aa" prot="public">
-          <name>DMCAM_CMAP_RDPU</name>
+          <name>ITOF_CMAP_RDPU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aedbc8dca3cd0096fc17a2fdeef0c70b9" prot="public">
-          <name>DMCAM_CMAP_REDS</name>
+          <name>ITOF_CMAP_REDS</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a6e4352a8a165ae55b59964ca78f7849a" prot="public">
-          <name>DMCAM_CMAP_YLGN</name>
+          <name>ITOF_CMAP_YLGN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a69f2c3bb9b2fe5eec3b48dac7e6ee373" prot="public">
-          <name>DMCAM_CMAP_YLGNBU</name>
+          <name>ITOF_CMAP_YLGNBU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aafd851ac774ab3530e7f4731fb5d691f" prot="public">
-          <name>DMCAM_CMAP_YLORBR</name>
+          <name>ITOF_CMAP_YLORBR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aeede10b2a6d6df5d3aa675d8a45e82bf" prot="public">
-          <name>DMCAM_CMAP_YLORRD</name>
+          <name>ITOF_CMAP_YLORRD</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ad3763165377f53ced1ea688ad681b529" prot="public">
-          <name>DMCAM_CMAP_AFMHOT</name>
+          <name>ITOF_CMAP_AFMHOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a6bf7c1cd3d03578f32bf96f767586958" prot="public">
-          <name>DMCAM_CMAP_AUTUMN</name>
+          <name>ITOF_CMAP_AUTUMN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a8f8aa2b346a93817ce993e654c9f3363" prot="public">
-          <name>DMCAM_CMAP_BONE</name>
+          <name>ITOF_CMAP_BONE</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a1641ad345a1d3fe394d334425a084120" prot="public">
-          <name>DMCAM_CMAP_COOL</name>
+          <name>ITOF_CMAP_COOL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a9f6457d009e49b030db2861f53449fe4" prot="public">
-          <name>DMCAM_CMAP_COPPER</name>
+          <name>ITOF_CMAP_COPPER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a5e5aba29331df471e6aae5d9b0d5d241" prot="public">
-          <name>DMCAM_CMAP_GIST_HEAT</name>
+          <name>ITOF_CMAP_GIST_HEAT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a894be0d6288c0ddab3e2f544f831b898" prot="public">
-          <name>DMCAM_CMAP_GRAY</name>
+          <name>ITOF_CMAP_GRAY</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa4dffafa5c247480c2b6edfabec013e3" prot="public">
-          <name>DMCAM_CMAP_HOT</name>
+          <name>ITOF_CMAP_HOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aba8e2711c22dc00bbada3b658314a5cd" prot="public">
-          <name>DMCAM_CMAP_PINK</name>
+          <name>ITOF_CMAP_PINK</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a49f8d21fe41162c30bc53f3a4407ff1a" prot="public">
-          <name>DMCAM_CMAP_SPRING</name>
+          <name>ITOF_CMAP_SPRING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ab2f5dc88672997dc1db65b88b12e7e24" prot="public">
-          <name>DMCAM_CMAP_SUMMER</name>
+          <name>ITOF_CMAP_SUMMER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aee832c9d6b3e5c8e1f48932a93901b9d" prot="public">
-          <name>DMCAM_CMAP_WINTER</name>
+          <name>ITOF_CMAP_WINTER</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa41a217bdd693faad39d027ee96f6252" prot="public">
-          <name>DMCAM_CMAP_BRBG</name>
+          <name>ITOF_CMAP_BRBG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7afd30035d4f1364bbfadb6a1949b14598" prot="public">
-          <name>DMCAM_CMAP_COOLWARM</name>
+          <name>ITOF_CMAP_COOLWARM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a12caf75ad45e87bb467128a2805a6836" prot="public">
-          <name>DMCAM_CMAP_PIYG</name>
+          <name>ITOF_CMAP_PIYG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a1bf2435a3b7167036fa118fe942380b8" prot="public">
-          <name>DMCAM_CMAP_PRGN</name>
+          <name>ITOF_CMAP_PRGN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a2b1e62ae2ce02bd5c4906158d1eef460" prot="public">
-          <name>DMCAM_CMAP_PUOR</name>
+          <name>ITOF_CMAP_PUOR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aab9ab1d934011882396d61d9e926433a" prot="public">
-          <name>DMCAM_CMAP_RDBU</name>
+          <name>ITOF_CMAP_RDBU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a8a93515e9c4c7e3be13f34a86db30999" prot="public">
-          <name>DMCAM_CMAP_RDGY</name>
+          <name>ITOF_CMAP_RDGY</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a5fbe68a065f71571402e5e4b681bdd6e" prot="public">
-          <name>DMCAM_CMAP_RDYLBU</name>
+          <name>ITOF_CMAP_RDYLBU</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a9ad9ebed3fdeff12ba342f6b6e9d4901" prot="public">
-          <name>DMCAM_CMAP_RDYLGN</name>
+          <name>ITOF_CMAP_RDYLGN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a5b4ece1addc7d752eeb5a978dcaf80a3" prot="public">
-          <name>DMCAM_CMAP_SEISMIC</name>
+          <name>ITOF_CMAP_SEISMIC</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a9fa7ef6ae07f46b6231656f979fd28fc" prot="public">
-          <name>DMCAM_CMAP_GIST_EARTH</name>
+          <name>ITOF_CMAP_GIST_EARTH</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aee06eb47cbf96a3cff36065ce898a346" prot="public">
-          <name>DMCAM_CMAP_TERRAIN</name>
+          <name>ITOF_CMAP_TERRAIN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ace3f50db08c0d9c07971fd62106613d2" prot="public">
-          <name>DMCAM_CMAP_OCEAN</name>
+          <name>ITOF_CMAP_OCEAN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7abdf920c93354a80664bba91b0ec4365d" prot="public">
-          <name>DMCAM_CMAP_GIST_STERN</name>
+          <name>ITOF_CMAP_GIST_STERN</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a4392345fe72a800ebc8598f3a48ac66e" prot="public">
-          <name>DMCAM_CMAP_BRG</name>
+          <name>ITOF_CMAP_BRG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ad47fc37f58e830970063ed148cfe108e" prot="public">
-          <name>DMCAM_CMAP_CMRMAP</name>
+          <name>ITOF_CMAP_CMRMAP</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ac28aec4c8daa9498bd18f44dd2475166" prot="public">
-          <name>DMCAM_CMAP_CUBEHELIX</name>
+          <name>ITOF_CMAP_CUBEHELIX</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a6e3c25f49a12dfebfbc44b952b586c96" prot="public">
-          <name>DMCAM_CMAP_GNUPLOT</name>
+          <name>ITOF_CMAP_GNUPLOT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a7811226f9cc812142c7d7447c41a2805" prot="public">
-          <name>DMCAM_CMAP_GNUPLOT2</name>
+          <name>ITOF_CMAP_GNUPLOT2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aa6b37e3177f38f0dde0a56d78af7b53f" prot="public">
-          <name>DMCAM_CMAP_GIST_NCAR</name>
+          <name>ITOF_CMAP_GIST_NCAR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a4bdb2bc91d6197d1d02133b05db84b81" prot="public">
-          <name>DMCAM_CMAP_NIPY_SPECTRAL</name>
+          <name>ITOF_CMAP_NIPY_SPECTRAL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7aee5ea2d04777447969bb7d5192a801f3" prot="public">
-          <name>DMCAM_CMAP_FLAG</name>
+          <name>ITOF_CMAP_FLAG</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7a3118ad6b6286ab13150ab82e6aa51be5" prot="public">
-          <name>DMCAM_CMAP_PRISM</name>
+          <name>ITOF_CMAP_PRISM</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1ad19527184c9c7938a88a29e89cbebbd7ae6f28059d62894e6512aa70efee2c5dc" prot="public">
-          <name>DMCAM_CMAP_COUNT</name>
+          <name>ITOF_CMAP_COUNT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -1583,28 +1583,28 @@
       <memberdef kind="enum" id="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2" prot="public" static="no">
         <name>itof_cmap_outfmt_e</name>
         <enumvalue id="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a0f1818943889f4c81adc13c04d60517f" prot="public">
-          <name>DMCAM_CMAP_OUTFMT_RGB</name>
+          <name>ITOF_CMAP_OUTFMT_RGB</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a864b9a0090e380133ebc1d33e5162ba0" prot="public">
-          <name>DMCAM_CMAP_OUTFMT_RGBA</name>
+          <name>ITOF_CMAP_OUTFMT_RGBA</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a5c5ce16961cfaed9df33e5aca1d913f4" prot="public">
-          <name>DMCAM_CMAP_OUTFMT_BGR</name>
+          <name>ITOF_CMAP_OUTFMT_BGR</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2a4fd19e2e57ef200da40233b22895a49e" prot="public">
-          <name>DMCAM_CMAP_OUTFMT_COUNT</name>
+          <name>ITOF_CMAP_OUTFMT_COUNT</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -1621,7 +1621,7 @@
       <memberdef kind="enum" id="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3" prot="public" static="no">
         <name>itof_frame_save_fmt_t</name>
         <enumvalue id="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3a882e4858b23c918647703be83c71a330" prot="public">
-          <name>DMCAM_FRAME_SAVE_FLOAT32</name>
+          <name>ITOF_FRAME_SAVE_FLOAT32</name>
           <initializer>= 0</initializer>
           <briefdescription>
           </briefdescription>
@@ -1629,21 +1629,21 @@
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3ace6ebcef16b39cb963fe2d87c6ff0d1f" prot="public">
-          <name>DMCAM_FRAME_SAVE_UINT32</name>
+          <name>ITOF_FRAME_SAVE_UINT32</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3ae9ac65f69b694e62b31cf2c82f70ae27" prot="public">
-          <name>DMCAM_FRAME_SAVE_UINT16</name>
+          <name>ITOF_FRAME_SAVE_UINT16</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="dmcam_8h_1a89f39a1f25eaa641fcabee628dab19f3a0bc01c35f94cfc59c179869f049e0a32" prot="public">
-          <name>DMCAM_FRAME_SAVE_UINT8</name>
+          <name>ITOF_FRAME_SAVE_UINT8</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -4387,7 +4387,7 @@
 <parametername>save_fmt</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[in] file saving format defined in itof_frame_save_fmt_t. only followin format is supported: DMCAM_FRAME_SAVE_UINT32 DMCAM_FRAME_SAVE_UINT16 </para></parameterdescription>
+<para>[in] file saving format defined in itof_frame_save_fmt_t. only followin format is supported: ITOF_FRAME_SAVE_UINT32 ITOF_FRAME_SAVE_UINT16 </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -4482,7 +4482,7 @@
 <parametername>save_fmt</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[in] file saving format defined in @ itof_frame_save_fmt_t. only followin format is supported: DMCAM_FRAME_SAVE_FLOAT32 DMCAM_FRAME_SAVE_UINT32 DMCAM_FRAME_SAVE_UINT16 </para></parameterdescription>
+<para>[in] file saving format defined in @ itof_frame_save_fmt_t. only followin format is supported: ITOF_FRAME_SAVE_FLOAT32 ITOF_FRAME_SAVE_UINT32 ITOF_FRAME_SAVE_UINT16 </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -4563,7 +4563,7 @@
 <parametername>save_fmt</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>[in] file saving format defined in itof_frame_save_fmt_t. only followin format is supported: DMCAM_FRAME_SAVE_UINT16 DMCAM_FRAME_SAVE_UINT8 </para></parameterdescription>
+<para>[in] file saving format defined in itof_frame_save_fmt_t. only followin format is supported: ITOF_FRAME_SAVE_UINT16 ITOF_FRAME_SAVE_UINT8 </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -4898,8 +4898,8 @@
 <para>Detail Decsription starts here </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*****************************************************************/</highlight></codeline>
-<codeline lineno="21"><highlight class="preprocessor">#ifndef<sp/>DMCAM_H</highlight></codeline>
-<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_H</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#ifndef<sp/>ITOF_H</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_H</highlight></codeline>
 <codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
 <codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
@@ -4922,24 +4922,24 @@
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
 <codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DM_NAME<sp/>&quot;DMCAM&quot;</highlight></codeline>
-<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_VERSION_MAJOR<sp/>1</highlight></codeline>
-<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_VERSION_MINOR<sp/>80</highlight></codeline>
-<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_VERSION_REV<sp/><sp/><sp/>5</highlight></codeline>
-<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_VERSION_STR<sp/>&quot;v1.80.5&quot;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT_NAME<sp/>&quot;DMCAM&quot;</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_VERSION_MAJOR<sp/>1</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_VERSION_MINOR<sp/>80</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_VERSION_REV<sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_VERSION_STR<sp/>&quot;v1.80.5&quot;</highlight></codeline>
 <codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_FRAME_DISCARD<sp/>(3)</highlight></codeline>
-<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_WRONG_STATE<sp/>(-2)</highlight></codeline>
-<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_CANCEL<sp/>(-3)</highlight></codeline>
-<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_TIMEOUT<sp/>(-5)</highlight></codeline>
-<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_STALL<sp/><sp/><sp/>(-7)</highlight></codeline>
-<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_ERROR<sp/><sp/><sp/>(-8)</highlight></codeline>
-<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_EOF<sp/><sp/><sp/>(-9)<sp/>//<sp/>cap<sp/>replay<sp/>related<sp/>error</highlight></codeline>
-<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DMCAM_ERR_CAP_UNKNOWN<sp/><sp/>(-10)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_FRAME_DISCARD<sp/>(3)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_WRONG_STATE<sp/>(-2)</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_CANCEL<sp/>(-3)</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_TIMEOUT<sp/>(-5)</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_STALL<sp/><sp/><sp/>(-7)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_ERROR<sp/><sp/><sp/>(-8)</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_EOF<sp/><sp/><sp/>(-9)<sp/>//<sp/>cap<sp/>replay<sp/>related<sp/>error</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ITOF_ERR_CAP_UNKNOWN<sp/><sp/>(-10)</highlight></codeline>
 <codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DM_SEEK_SET<sp/>0</highlight></codeline>
-<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_SEEK_CUR<sp/>1</highlight></codeline>
-<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DM_SEEK_END<sp/>2</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IT_SEEK_SET<sp/>0</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_SEEK_CUR<sp/>1</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IT_SEEK_END<sp/>2</highlight></codeline>
 <codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__GNUC__<sp/>&gt;<sp/>4<sp/>||<sp/>(__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>5)</highlight></codeline>
 <codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>API_DEPRECATED_FOR(f)<sp/>\</highlight></codeline>
@@ -5124,13 +5124,13 @@
 <codeline lineno="259"><highlight class="normal">}itof_bin_data_type_e;</highlight></codeline>
 <codeline lineno="260"><highlight class="normal"></highlight></codeline>
 <codeline lineno="262" refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_1X1,</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_2X2,</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_4X4,</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_8X8,</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_2X4,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_1X1,</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_2X2,</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_4X4,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_8X8,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_2X4,</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//---</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>DM_BINNING_CNT,</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>IT_BINNING_CNT,</highlight></codeline>
 <codeline lineno="270"><highlight class="normal">}<ref refid="dmcam_8h_1aa30b1b13d86ada87d60d90ea9c2bdf30" kindref="member">itof_binning_mode_e</ref>;</highlight></codeline>
 <codeline lineno="271"><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight></codeline>
@@ -5254,11 +5254,11 @@
 <codeline lineno="408"><highlight class="normal">}<sp/><ref refid="structdmcam__param__item__t" kindref="compound">itof_param_item_t</ref>;</highlight></codeline>
 <codeline lineno="409"><highlight class="normal"></highlight></codeline>
 <codeline lineno="411" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="412" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" kindref="member">DM_FRAME_FMT_RAW_DIST</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
-<codeline lineno="413" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" kindref="member">DM_FRAME_FMT_DISTANCE</ref>,<sp/></highlight></codeline>
-<codeline lineno="414" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" kindref="member">DM_FRAME_FMT_GRAY</ref>,</highlight></codeline>
-<codeline lineno="415" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" kindref="member">DM_FRAME_FMT_PCLOUD</ref>,</highlight></codeline>
-<codeline lineno="416" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" kindref="member">DM_FRAME_FMT_RGB</ref>,<sp/></highlight></codeline>
+<codeline lineno="412" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7ad67d3dda4e333f61875d8cefba4a4a" kindref="member">IT_FRAME_FMT_RAW_DIST</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="413" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aae4afa6254f90c44cbeed99a1668f75f4" kindref="member">IT_FRAME_FMT_DISTANCE</ref>,<sp/></highlight></codeline>
+<codeline lineno="414" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa7334fab02874d8f78f90aa49a723ac3e" kindref="member">IT_FRAME_FMT_GRAY</ref>,</highlight></codeline>
+<codeline lineno="415" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aa5b9e78b699891c38170dc4e54724d934" kindref="member">IT_FRAME_FMT_PCLOUD</ref>,</highlight></codeline>
+<codeline lineno="416" refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0aaa6983e77e40590683a2e395a135f1b0c" kindref="member">IT_FRAME_FMT_RGB</ref>,<sp/></highlight></codeline>
 <codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>---<sp/>TBD<sp/>----*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="418"><highlight class="normal">}<ref refid="dmcam_8h_1a4d0042f323361e9a187bb1ff827cdf0a" kindref="member">itof_frame_fmt_e</ref>;</highlight></codeline>
 <codeline lineno="419"><highlight class="normal"></highlight></codeline>
@@ -5418,23 +5418,23 @@
 <codeline lineno="1060"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1061"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1063" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fb" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1064" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" kindref="member">DMCAM_FILTER_ID_LEN_CALIB</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1065" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" kindref="member">DMCAM_FILTER_ID_PIXEL_CALIB</ref>,<sp/><sp/></highlight></codeline>
-<codeline lineno="1066" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" kindref="member">DMCAM_FILTER_ID_DEPTH_FILTER</ref>,<sp/><sp/></highlight></codeline>
-<codeline lineno="1067" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba88b63c99a08d9fff81fbde67d014ec99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba88b63c99a08d9fff81fbde67d014ec99" kindref="member">DMCAM_FILTER_ID_RESERVED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1068" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab10d5c87df0820cfdf3c92aae0da582f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab10d5c87df0820cfdf3c92aae0da582f" kindref="member">DMCAM_FILTER_ID_AMP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1069" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba54e9a9433ad6187c3e175bdb340d5832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba54e9a9433ad6187c3e175bdb340d5832" kindref="member">DMCAM_FILTER_ID_AUTO_INTG</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1070" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaf58599b5087bdd95b7135e6efceec1f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaf58599b5087bdd95b7135e6efceec1f8" kindref="member">DMCAM_FILTER_ID_SYNC_DELAY</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1071" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab06fa287b6cabf9e96e41fed3518e29d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab06fa287b6cabf9e96e41fed3518e29d" kindref="member">DMCAM_FILTER_ID_TEMP_MONITOR</ref>,<sp/></highlight></codeline>
-<codeline lineno="1072" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9619340bf83bcc5207a8d7ff63ab9f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9619340bf83bcc5207a8d7ff63ab9f9c" kindref="member">DMCAM_FILTER_ID_HDR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1073" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba225ba19c884c049f13574597289b613a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba225ba19c884c049f13574597289b613a" kindref="member">DMCAM_FILTER_ID_OFFSET</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1074" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba6f3845dee52dc985d3f45f71424a7932" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba6f3845dee52dc985d3f45f71424a7932" kindref="member">DMCAM_FILTER_ID_SPORT_MODE</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1075" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba70f44611100dcdf29ecb33c542f4e473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba70f44611100dcdf29ecb33c542f4e473" kindref="member">DMCAM_FILTER_ID_SYS_CALIB</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1076" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaeaa40879a14eec486e9c24f20c2f025c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaeaa40879a14eec486e9c24f20c2f025c" kindref="member">DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1077" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbabe322bbe4858095c020a3ae3921d25f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbabe322bbe4858095c020a3ae3921d25f1" kindref="member">DMCAM_FILTER_ID_FLYNOISE</ref>,<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FILTER_ID_TEMP_CALIB,</highlight><highlight class="comment">/*Temperature<sp/>calibration*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1080" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" kindref="member">DMCAM_FILTER_ID_MEDIAN</ref><sp/>=<sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" kindref="member">DMCAM_FILTER_ID_DEPTH_FILTER</ref>,<sp/><sp/></highlight></codeline>
-<codeline lineno="1081"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FILTER_CNT,</highlight></codeline>
+<codeline lineno="1064" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbad5374922c1c7929f504e16048bd54af6" kindref="member">ITOF_FILTER_ID_LEN_CALIB</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1065" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba82452a4cc25432fd8f87e8003e3b8c78" kindref="member">ITOF_FILTER_ID_PIXEL_CALIB</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="1066" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" kindref="member">ITOF_FILTER_ID_DEPTH_FILTER</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="1067" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba88b63c99a08d9fff81fbde67d014ec99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba88b63c99a08d9fff81fbde67d014ec99" kindref="member">ITOF_FILTER_ID_RESERVED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1068" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab10d5c87df0820cfdf3c92aae0da582f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab10d5c87df0820cfdf3c92aae0da582f" kindref="member">ITOF_FILTER_ID_AMP</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1069" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba54e9a9433ad6187c3e175bdb340d5832" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba54e9a9433ad6187c3e175bdb340d5832" kindref="member">ITOF_FILTER_ID_AUTO_INTG</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1070" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaf58599b5087bdd95b7135e6efceec1f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaf58599b5087bdd95b7135e6efceec1f8" kindref="member">ITOF_FILTER_ID_SYNC_DELAY</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1071" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab06fa287b6cabf9e96e41fed3518e29d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbab06fa287b6cabf9e96e41fed3518e29d" kindref="member">ITOF_FILTER_ID_TEMP_MONITOR</ref>,<sp/></highlight></codeline>
+<codeline lineno="1072" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9619340bf83bcc5207a8d7ff63ab9f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9619340bf83bcc5207a8d7ff63ab9f9c" kindref="member">ITOF_FILTER_ID_HDR</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1073" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba225ba19c884c049f13574597289b613a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba225ba19c884c049f13574597289b613a" kindref="member">ITOF_FILTER_ID_OFFSET</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1074" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba6f3845dee52dc985d3f45f71424a7932" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba6f3845dee52dc985d3f45f71424a7932" kindref="member">ITOF_FILTER_ID_SPORT_MODE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1075" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba70f44611100dcdf29ecb33c542f4e473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba70f44611100dcdf29ecb33c542f4e473" kindref="member">ITOF_FILTER_ID_SYS_CALIB</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1076" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaeaa40879a14eec486e9c24f20c2f025c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbaeaa40879a14eec486e9c24f20c2f025c" kindref="member">ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1077" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbabe322bbe4858095c020a3ae3921d25f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fbabe322bbe4858095c020a3ae3921d25f1" kindref="member">ITOF_FILTER_ID_FLYNOISE</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1079"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FILTER_ID_TEMP_CALIB,</highlight><highlight class="comment">/*Temperature<sp/>calibration*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1080" refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba9d8766d8b1c0898d67f2b463c1bce482" kindref="member">ITOF_FILTER_ID_MEDIAN</ref><sp/>=<sp/><ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fba130c93d0919d89b9b9977cfc31f760f7" kindref="member">ITOF_FILTER_ID_DEPTH_FILTER</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="1081"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FILTER_CNT,</highlight></codeline>
 <codeline lineno="1082"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------------------</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1083"><highlight class="normal">}<ref refid="dmcam_8h_1a28c18609c1e9edaaeca6bba2703561fb" kindref="member">itof_filter_id_e</ref>;</highlight></codeline>
 <codeline lineno="1084"><highlight class="normal"></highlight></codeline>
@@ -5479,80 +5479,80 @@
 <codeline lineno="1145"><highlight class="comment"><sp/>*---------------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1146"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1147"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1148"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_EPC<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">//<sp/>EPC<sp/>type<sp/>colormap</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_HSV,</highlight></codeline>
-<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BWR,</highlight></codeline>
-<codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_JET,</highlight></codeline>
-<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GIST_RAINBOW,</highlight></codeline>
-<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RAINBOW,</highlight></codeline>
-<codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_SPECTRAL,</highlight></codeline>
-<codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_VIRIDIS,</highlight></codeline>
-<codeline lineno="1156"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_INFERNO,</highlight></codeline>
-<codeline lineno="1157"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PLASMA,</highlight></codeline>
-<codeline lineno="1158"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_MAGMA,</highlight></codeline>
-<codeline lineno="1159"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BLUES,</highlight></codeline>
-<codeline lineno="1160"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BUGN,</highlight></codeline>
-<codeline lineno="1161"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BUPU,</highlight></codeline>
-<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GNBU,</highlight></codeline>
-<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GREENS,</highlight></codeline>
-<codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GREYS,</highlight></codeline>
-<codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_ORANGES,</highlight></codeline>
-<codeline lineno="1166"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_ORRD,</highlight></codeline>
-<codeline lineno="1167"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PUBU,</highlight></codeline>
-<codeline lineno="1168"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PUBUGN,</highlight></codeline>
-<codeline lineno="1169"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PURD,</highlight></codeline>
-<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PURPLES,</highlight></codeline>
-<codeline lineno="1171"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RDPU,</highlight></codeline>
-<codeline lineno="1172"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_REDS,</highlight></codeline>
-<codeline lineno="1173"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_YLGN,</highlight></codeline>
-<codeline lineno="1174"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_YLGNBU,</highlight></codeline>
-<codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_YLORBR,</highlight></codeline>
-<codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_YLORRD,</highlight></codeline>
-<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_AFMHOT,</highlight></codeline>
-<codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_AUTUMN,</highlight></codeline>
-<codeline lineno="1179"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BONE,</highlight></codeline>
-<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_COOL,</highlight></codeline>
-<codeline lineno="1181"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_COPPER,</highlight></codeline>
-<codeline lineno="1182"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GIST_HEAT,</highlight></codeline>
-<codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GRAY,</highlight></codeline>
-<codeline lineno="1184"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_HOT,</highlight></codeline>
-<codeline lineno="1185"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PINK,</highlight></codeline>
-<codeline lineno="1186"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_SPRING,</highlight></codeline>
-<codeline lineno="1187"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_SUMMER,</highlight></codeline>
-<codeline lineno="1188"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_WINTER,</highlight></codeline>
-<codeline lineno="1189"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BRBG,</highlight></codeline>
-<codeline lineno="1190"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_COOLWARM,</highlight></codeline>
-<codeline lineno="1191"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PIYG,</highlight></codeline>
-<codeline lineno="1192"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PRGN,</highlight></codeline>
-<codeline lineno="1193"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PUOR,</highlight></codeline>
-<codeline lineno="1194"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RDBU,</highlight></codeline>
-<codeline lineno="1195"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RDGY,</highlight></codeline>
-<codeline lineno="1196"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RDYLBU,</highlight></codeline>
-<codeline lineno="1197"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_RDYLGN,</highlight></codeline>
-<codeline lineno="1198"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_SEISMIC,</highlight></codeline>
-<codeline lineno="1199"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GIST_EARTH,</highlight></codeline>
-<codeline lineno="1200"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_TERRAIN,</highlight></codeline>
-<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_OCEAN,</highlight></codeline>
-<codeline lineno="1202"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GIST_STERN,</highlight></codeline>
-<codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_BRG,</highlight></codeline>
-<codeline lineno="1204"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_CMRMAP,</highlight></codeline>
-<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_CUBEHELIX,</highlight></codeline>
-<codeline lineno="1206"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GNUPLOT,</highlight></codeline>
-<codeline lineno="1207"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GNUPLOT2,</highlight></codeline>
-<codeline lineno="1208"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_GIST_NCAR,</highlight></codeline>
-<codeline lineno="1209"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_NIPY_SPECTRAL,</highlight></codeline>
-<codeline lineno="1210"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_FLAG,</highlight></codeline>
-<codeline lineno="1211"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_PRISM,</highlight></codeline>
+<codeline lineno="1148"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_EPC<sp/>=<sp/>0,<sp/></highlight><highlight class="comment">//<sp/>EPC<sp/>type<sp/>colormap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_HSV,</highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BWR,</highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_JET,</highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GIST_RAINBOW,</highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RAINBOW,</highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_SPECTRAL,</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_VIRIDIS,</highlight></codeline>
+<codeline lineno="1156"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_INFERNO,</highlight></codeline>
+<codeline lineno="1157"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PLASMA,</highlight></codeline>
+<codeline lineno="1158"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_MAGMA,</highlight></codeline>
+<codeline lineno="1159"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BLUES,</highlight></codeline>
+<codeline lineno="1160"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BUGN,</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BUPU,</highlight></codeline>
+<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GNBU,</highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GREENS,</highlight></codeline>
+<codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GREYS,</highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_ORANGES,</highlight></codeline>
+<codeline lineno="1166"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_ORRD,</highlight></codeline>
+<codeline lineno="1167"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PUBU,</highlight></codeline>
+<codeline lineno="1168"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PUBUGN,</highlight></codeline>
+<codeline lineno="1169"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PURD,</highlight></codeline>
+<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PURPLES,</highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RDPU,</highlight></codeline>
+<codeline lineno="1172"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_REDS,</highlight></codeline>
+<codeline lineno="1173"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_YLGN,</highlight></codeline>
+<codeline lineno="1174"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_YLGNBU,</highlight></codeline>
+<codeline lineno="1175"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_YLORBR,</highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_YLORRD,</highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_AFMHOT,</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_AUTUMN,</highlight></codeline>
+<codeline lineno="1179"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BONE,</highlight></codeline>
+<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_COOL,</highlight></codeline>
+<codeline lineno="1181"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_COPPER,</highlight></codeline>
+<codeline lineno="1182"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GIST_HEAT,</highlight></codeline>
+<codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GRAY,</highlight></codeline>
+<codeline lineno="1184"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_HOT,</highlight></codeline>
+<codeline lineno="1185"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PINK,</highlight></codeline>
+<codeline lineno="1186"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_SPRING,</highlight></codeline>
+<codeline lineno="1187"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_SUMMER,</highlight></codeline>
+<codeline lineno="1188"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_WINTER,</highlight></codeline>
+<codeline lineno="1189"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BRBG,</highlight></codeline>
+<codeline lineno="1190"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_COOLWARM,</highlight></codeline>
+<codeline lineno="1191"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PIYG,</highlight></codeline>
+<codeline lineno="1192"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PRGN,</highlight></codeline>
+<codeline lineno="1193"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PUOR,</highlight></codeline>
+<codeline lineno="1194"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RDBU,</highlight></codeline>
+<codeline lineno="1195"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RDGY,</highlight></codeline>
+<codeline lineno="1196"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RDYLBU,</highlight></codeline>
+<codeline lineno="1197"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_RDYLGN,</highlight></codeline>
+<codeline lineno="1198"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_SEISMIC,</highlight></codeline>
+<codeline lineno="1199"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GIST_EARTH,</highlight></codeline>
+<codeline lineno="1200"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_TERRAIN,</highlight></codeline>
+<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_OCEAN,</highlight></codeline>
+<codeline lineno="1202"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GIST_STERN,</highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_BRG,</highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_CMRMAP,</highlight></codeline>
+<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_CUBEHELIX,</highlight></codeline>
+<codeline lineno="1206"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GNUPLOT,</highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GNUPLOT2,</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_GIST_NCAR,</highlight></codeline>
+<codeline lineno="1209"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_NIPY_SPECTRAL,</highlight></codeline>
+<codeline lineno="1210"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_FLAG,</highlight></codeline>
+<codeline lineno="1211"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_PRISM,</highlight></codeline>
 <codeline lineno="1212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//---------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1213"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_COUNT,</highlight></codeline>
+<codeline lineno="1213"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_COUNT,</highlight></codeline>
 <codeline lineno="1214"><highlight class="normal">}itof_cmap_palette_e;</highlight></codeline>
 <codeline lineno="1215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1217" refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1218"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_OUTFMT_RGB,</highlight></codeline>
-<codeline lineno="1219"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_OUTFMT_RGBA,</highlight></codeline>
-<codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_OUTFMT_BGR,</highlight></codeline>
+<codeline lineno="1218"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_OUTFMT_RGB,</highlight></codeline>
+<codeline lineno="1219"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_OUTFMT_RGBA,</highlight></codeline>
+<codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_OUTFMT_BGR,</highlight></codeline>
 <codeline lineno="1221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//---------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_CMAP_OUTFMT_COUNT,<sp/></highlight></codeline>
+<codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_CMAP_OUTFMT_COUNT,<sp/></highlight></codeline>
 <codeline lineno="1223"><highlight class="normal">}<ref refid="dmcam_8h_1a7574db3b1665244ce8a46f8839ce49d2" kindref="member">itof_cmap_outfmt_e</ref>;</highlight></codeline>
 <codeline lineno="1224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1225" refid="structdmcam__cmap__cfg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdmcam__cmap__cfg" kindref="compound">itof_cmap_cfg</ref><sp/>{</highlight></codeline>
@@ -5584,10 +5584,10 @@
 <codeline lineno="1331"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dmcam_8h_1a561eb8b4e2257bd6ba378c0cbd0c74ca" kindref="member">itof_file_close</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd);</highlight></codeline>
 <codeline lineno="1332"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1333"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="1334"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FRAME_SAVE_FLOAT32<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="1335"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FRAME_SAVE_UINT32,</highlight></codeline>
-<codeline lineno="1336"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FRAME_SAVE_UINT16,</highlight></codeline>
-<codeline lineno="1337"><highlight class="normal"><sp/><sp/><sp/><sp/>DMCAM_FRAME_SAVE_UINT8,</highlight></codeline>
+<codeline lineno="1334"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FRAME_SAVE_FLOAT32<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="1335"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FRAME_SAVE_UINT32,</highlight></codeline>
+<codeline lineno="1336"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FRAME_SAVE_UINT16,</highlight></codeline>
+<codeline lineno="1337"><highlight class="normal"><sp/><sp/><sp/><sp/>ITOF_FRAME_SAVE_UINT8,</highlight></codeline>
 <codeline lineno="1338"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1339"><highlight class="normal">}itof_frame_save_fmt_t;</highlight></codeline>
 <codeline lineno="1340"><highlight class="normal"></highlight></codeline>
@@ -5612,7 +5612,7 @@
 <codeline lineno="1476"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
 <codeline lineno="1477"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
 <codeline lineno="1478"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
-<codeline lineno="1479"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//DMCAM_H</highlight></codeline>
+<codeline lineno="1479"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/>//ITOF_H</highlight></codeline>
     </programlisting>
     <location file="/mnt/hgfs/sdk/doc/doc-en/source/Reference/C_C++/dmcam.h"/>
   </compounddef>

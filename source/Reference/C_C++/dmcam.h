@@ -18,8 +18,8 @@
  *
  * *******************************************************************/
 
-#ifndef DMCAM_H
-#define DMCAM_H
+#ifndef ITOF_H
+#define ITOF_H
 #ifdef __cplusplus
 extern "C"
 {
@@ -42,24 +42,24 @@ extern "C"
 #endif
 #include <stdint.h>
 
-#define DM_NAME "DMCAM"
-#define DM_VERSION_MAJOR 1
-#define DM_VERSION_MINOR 81
-#define DM_VERSION_REV 4
-#define DM_VERSION_STR "v1.81.4"
+#define IT_NAME "DMCAM"
+#define IT_VERSION_MAJOR 1
+#define IT_VERSION_MINOR 81
+#define IT_VERSION_REV 4
+#define IT_VERSION_STR "v1.81.4"
 
-#define DMCAM_ERR_CAP_FRAME_DISCARD (3)
-#define DMCAM_ERR_CAP_WRONG_STATE (-2)
-#define DMCAM_ERR_CAP_CANCEL (-3)
-#define DMCAM_ERR_CAP_TIMEOUT (-5)
-#define DMCAM_ERR_CAP_STALL (-7)
-#define DMCAM_ERR_CAP_ERROR (-8)
-#define DMCAM_ERR_CAP_EOF (-9)  // cap replay related error
-#define DMCAM_ERR_CAP_UNKNOWN (-10)
+#define ITOF_ERR_CAP_FRAME_DISCARD (3)
+#define ITOF_ERR_CAP_WRONG_STATE (-2)
+#define ITOF_ERR_CAP_CANCEL (-3)
+#define ITOF_ERR_CAP_TIMEOUT (-5)
+#define ITOF_ERR_CAP_STALL (-7)
+#define ITOF_ERR_CAP_ERROR (-8)
+#define ITOF_ERR_CAP_EOF (-9)  // cap replay related error
+#define ITOF_ERR_CAP_UNKNOWN (-10)
 
-#define DM_SEEK_SET 0
-#define DM_SEEK_CUR 1
-#define DM_SEEK_END 2
+#define IT_SEEK_SET 0
+#define IT_SEEK_CUR 1
+#define IT_SEEK_END 2
 
 #if __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 5)
 #define API_DEPRECATED_FOR(f) __attribute__((deprecated("Use " #f " instead")))
@@ -266,13 +266,13 @@ typedef enum {
 
 /** binning mode */
 typedef enum {
-    DM_BINNING_1X1,
-    DM_BINNING_2X2,
-    DM_BINNING_4X4,
-    DM_BINNING_8X8,
-    DM_BINNING_2X4,
+    IT_BINNING_1X1,
+    IT_BINNING_2X2,
+    IT_BINNING_4X4,
+    IT_BINNING_8X8,
+    IT_BINNING_2X4,
     //---
-    DM_BINNING_CNT,
+    IT_BINNING_CNT,
 } itof_binning_mode_e;
 
 /**
@@ -426,11 +426,11 @@ typedef struct {
 
 /** Framae data format */
 typedef enum {
-    DM_FRAME_FMT_RAW_DIST = 0, /** distance data without calibration*/
-    DM_FRAME_FMT_DISTANCE,     /** distance with calibration*/
-    DM_FRAME_FMT_GRAY,         /** Confidence data*/
-    DM_FRAME_FMT_PCLOUD,       /** pointcloud data*/
-    DM_FRAME_FMT_RGB,          /** reserved*/
+    IT_FRAME_FMT_RAW_DIST = 0, /** distance data without calibration*/
+    IT_FRAME_FMT_DISTANCE,     /** distance with calibration*/
+    IT_FRAME_FMT_GRAY,         /** Confidence data*/
+    IT_FRAME_FMT_PCLOUD,       /** pointcloud data*/
+    IT_FRAME_FMT_RGB,          /** reserved*/
     /* --- TBD ----*/
 } itof_frame_fmt_e;
 
@@ -1219,24 +1219,24 @@ __API int itof_frame_get_pcl_xyzi(itof_dev_t *dev,
 
 /** filter ID  */
 typedef enum {
-    DMCAM_FILTER_ID_LEN_CALIB,           /** lens calibration */
-    DMCAM_FILTER_ID_PIXEL_CALIB,         /** pixel calibration*/
-    DMCAM_FILTER_ID_DEPTH_FILTER,        /** Depth filter */
-    DMCAM_FILTER_ID_RESERVED,            /** RESERVED */
-    DMCAM_FILTER_ID_AMP,                 /** Amplitude filter control*/
-    DMCAM_FILTER_ID_AUTO_INTG,           /** auto integration filter enable : use sat_ratio to adjust */
-    DMCAM_FILTER_ID_SYNC_DELAY,          /**  sync delay */
-    DMCAM_FILTER_ID_TEMP_MONITOR,        /** temperature monitor */
-    DMCAM_FILTER_ID_HDR,                 /** HDR mode */
-    DMCAM_FILTER_ID_OFFSET,              /**  set offset for calc distance */
-    DMCAM_FILTER_ID_SPORT_MODE,          /**  set sport mode */
-    DMCAM_FILTER_ID_SYS_CALIB,           /** using system calibration param */
-    DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB, /** using ambient light calib calibration param */
-    DMCAM_FILTER_ID_FLYNOISE,            /** fly noise filter */
+    ITOF_FILTER_ID_LEN_CALIB,           /** lens calibration */
+    ITOF_FILTER_ID_PIXEL_CALIB,         /** pixel calibration*/
+    ITOF_FILTER_ID_DEPTH_FILTER,        /** Depth filter */
+    ITOF_FILTER_ID_RESERVED,            /** RESERVED */
+    ITOF_FILTER_ID_AMP,                 /** Amplitude filter control*/
+    ITOF_FILTER_ID_AUTO_INTG,           /** auto integration filter enable : use sat_ratio to adjust */
+    ITOF_FILTER_ID_SYNC_DELAY,          /**  sync delay */
+    ITOF_FILTER_ID_TEMP_MONITOR,        /** temperature monitor */
+    ITOF_FILTER_ID_HDR,                 /** HDR mode */
+    ITOF_FILTER_ID_OFFSET,              /**  set offset for calc distance */
+    ITOF_FILTER_ID_SPORT_MODE,          /**  set sport mode */
+    ITOF_FILTER_ID_SYS_CALIB,           /** using system calibration param */
+    ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB, /** using ambient light calib calibration param */
+    ITOF_FILTER_ID_FLYNOISE,            /** fly noise filter */
 
-    DMCAM_FILTER_ID_TEMP_CALIB,          /** Temperature calibration*/
-    DMCAM_FILTER_ID_MEDIAN = DMCAM_FILTER_ID_DEPTH_FILTER, /**  MEDIAN is replaced with depth filter */
-    DMCAM_FILTER_CNT,
+    ITOF_FILTER_ID_TEMP_CALIB,          /** Temperature calibration*/
+    ITOF_FILTER_ID_MEDIAN = ITOF_FILTER_ID_DEPTH_FILTER, /**  MEDIAN is replaced with depth filter */
+    ITOF_FILTER_CNT,
     //-------------------
 } itof_filter_id_e;
 
@@ -1246,23 +1246,23 @@ typedef union
     uint32_t raw;
 
     uint8_t case_idx;       /**  User Scenario index */
-    uint32_t lens_id;       /**  DMCAM_FILTER_ID_LEN_CALIB parameter: length index*/
-    uint16_t min_amp;       /**  DMCAM_FILTER_ID_AMP parameter: Min amplitude threshold*/
-    uint16_t sat_ratio;     /**  DMCAM_FILTER_ID_AUTO_INTG parameter: saturation ratio threshold*/
-    uint16_t sync_delay;    /**  DMCAM_FILTER_ID_SYNC_DELAY parameter: sync delay: 0 = random delay, 1 = specified delay
+    uint32_t lens_id;       /**  ITOF_FILTER_ID_LEN_CALIB parameter: length index*/
+    uint16_t min_amp;       /**  ITOF_FILTER_ID_AMP parameter: Min amplitude threshold*/
+    uint16_t sat_ratio;     /**  ITOF_FILTER_ID_AUTO_INTG parameter: saturation ratio threshold*/
+    uint16_t sync_delay;    /**  ITOF_FILTER_ID_SYNC_DELAY parameter: sync delay: 0 = random delay, 1 = specified delay
                                in ms */
-    int16_t temp_threshold; /**  DMCAM_FILTER_ID_TEMP_MONITOR paramter: Temperature threshold for temperature monitor*/
+    int16_t temp_threshold; /**  ITOF_FILTER_ID_TEMP_MONITOR paramter: Temperature threshold for temperature monitor*/
     struct {
         uint16_t intg_3d;    /**  intg_3d: exposure time 0 */
         uint16_t intg_3dhdr; /**  intg_3dhdr: exposure time 1 */
-    } intg;                  /**  DMCAM_FILTER_ID_HDR paramter */
-    uint8_t median_ksize; /**  DMCAM_FILTER_ID_MEDIAN paramter:  DEPRECATED, please use  DMCAM_FILTER_ID_DEPTH_FILTER*/
+    } intg;                  /**  ITOF_FILTER_ID_HDR paramter */
+    uint8_t median_ksize; /**  ITOF_FILTER_ID_MEDIAN paramter:  DEPRECATED, please use  ITOF_FILTER_ID_DEPTH_FILTER*/
     struct {
-        int16_t offset_mm;    /**  DMCAM_FILTER_ID_OFFSET paramter : offset in mm*/
-        int16_t scale_x1000;      /**  DMCAM_FILTER_ID_OFFSET paramter : scale x 1000 */
+        int16_t offset_mm;    /**  ITOF_FILTER_ID_OFFSET paramter : offset in mm*/
+        int16_t scale_x1000;      /**  ITOF_FILTER_ID_OFFSET paramter : scale x 1000 */
     };
-    uint8_t sport_mode; /**  DMCAM_FILTER_ID_SPORT_MODE parameter: 0 = high motion mode, 1 = extrem high motion mode */
-    uint16_t k_ambient_light; /**  DMCAM_FILTER_ID_AMBIENT_LIGHT_CALIB kcoeff of ambient light calibration */
+    uint8_t sport_mode; /**  ITOF_FILTER_ID_SPORT_MODE parameter: 0 = high motion mode, 1 = extrem high motion mode */
+    uint16_t k_ambient_light; /**  ITOF_FILTER_ID_AMBIENT_LIGHT_CALIB kcoeff of ambient light calibration */
     struct {
         uint8_t col_reduction; /** column binning:0 no binning, 1 by half  */
         uint8_t row_reduction; /** row binning: 0 no binning, 1 by half, 2 a quarter*/
@@ -1271,7 +1271,7 @@ typedef union
     struct {
         uint8_t depth_filter_mode;     /** 0xF0 = filter strength controlled by depth_filter_strength
                                             Other values = filter controlled automatically */
-        uint8_t depth_filter_strength; /** DMCAM_FILTER_ID_DEPTH_FILTER strength: [0, 31]*/
+        uint8_t depth_filter_strength; /** ITOF_FILTER_ID_DEPTH_FILTER strength: [0, 31]*/
     };
 
     struct {
@@ -1308,88 +1308,88 @@ __API int itof_filter_disable(itof_dev_t *dev, itof_filter_id_e filter_id);
  *  CMAP utils section     
  *****************************************************/
 typedef enum {
-    DMCAM_CMAP_EPC = 0,  // EPC type colormap
-    DMCAM_CMAP_HSV,
-    DMCAM_CMAP_BWR,
-    DMCAM_CMAP_JET,
-    DMCAM_CMAP_GIST_RAINBOW,
-    DMCAM_CMAP_RAINBOW,
-    DMCAM_CMAP_SPECTRAL,
-    DMCAM_CMAP_VIRIDIS,
-    DMCAM_CMAP_INFERNO,
-    DMCAM_CMAP_PLASMA,
-    DMCAM_CMAP_MAGMA,
-    DMCAM_CMAP_BLUES,
-    DMCAM_CMAP_BUGN,
-    DMCAM_CMAP_BUPU,
-    DMCAM_CMAP_GNBU,
-    DMCAM_CMAP_GREENS,
-    DMCAM_CMAP_GREYS,
-    DMCAM_CMAP_ORANGES,
-    DMCAM_CMAP_ORRD,
-    DMCAM_CMAP_PUBU,
-    DMCAM_CMAP_PUBUGN,
-    DMCAM_CMAP_PURD,
-    DMCAM_CMAP_PURPLES,
-    DMCAM_CMAP_RDPU,
-    DMCAM_CMAP_REDS,
-    DMCAM_CMAP_YLGN,
-    DMCAM_CMAP_YLGNBU,
-    DMCAM_CMAP_YLORBR,
-    DMCAM_CMAP_YLORRD,
-    DMCAM_CMAP_AFMHOT,
-    DMCAM_CMAP_AUTUMN,
-    DMCAM_CMAP_BONE,
-    DMCAM_CMAP_COOL,
-    DMCAM_CMAP_COPPER,
-    DMCAM_CMAP_GIST_HEAT,
-    DMCAM_CMAP_GRAY,
-    DMCAM_CMAP_HOT,
-    DMCAM_CMAP_PINK,
-    DMCAM_CMAP_SPRING,
-    DMCAM_CMAP_SUMMER,
-    DMCAM_CMAP_WINTER,
-    DMCAM_CMAP_BRBG,
-    DMCAM_CMAP_COOLWARM,
-    DMCAM_CMAP_PIYG,
-    DMCAM_CMAP_PRGN,
-    DMCAM_CMAP_PUOR,
-    DMCAM_CMAP_RDBU,
-    DMCAM_CMAP_RDGY,
-    DMCAM_CMAP_RDYLBU,
-    DMCAM_CMAP_RDYLGN,
-    DMCAM_CMAP_SEISMIC,
-    DMCAM_CMAP_GIST_EARTH,
-    DMCAM_CMAP_TERRAIN,
-    DMCAM_CMAP_OCEAN,
-    DMCAM_CMAP_GIST_STERN,
-    DMCAM_CMAP_BRG,
-    DMCAM_CMAP_CMRMAP,
-    DMCAM_CMAP_CUBEHELIX,
-    DMCAM_CMAP_GNUPLOT,
-    DMCAM_CMAP_GNUPLOT2,
-    DMCAM_CMAP_GIST_NCAR,
-    DMCAM_CMAP_NIPY_SPECTRAL,
-    DMCAM_CMAP_FLAG,
-    DMCAM_CMAP_PRISM,
+    ITOF_CMAP_EPC = 0,  // EPC type colormap
+    ITOF_CMAP_HSV,
+    ITOF_CMAP_BWR,
+    ITOF_CMAP_JET,
+    ITOF_CMAP_GIST_RAINBOW,
+    ITOF_CMAP_RAINBOW,
+    ITOF_CMAP_SPECTRAL,
+    ITOF_CMAP_VIRIDIS,
+    ITOF_CMAP_INFERNO,
+    ITOF_CMAP_PLASMA,
+    ITOF_CMAP_MAGMA,
+    ITOF_CMAP_BLUES,
+    ITOF_CMAP_BUGN,
+    ITOF_CMAP_BUPU,
+    ITOF_CMAP_GNBU,
+    ITOF_CMAP_GREENS,
+    ITOF_CMAP_GREYS,
+    ITOF_CMAP_ORANGES,
+    ITOF_CMAP_ORRD,
+    ITOF_CMAP_PUBU,
+    ITOF_CMAP_PUBUGN,
+    ITOF_CMAP_PURD,
+    ITOF_CMAP_PURPLES,
+    ITOF_CMAP_RDPU,
+    ITOF_CMAP_REDS,
+    ITOF_CMAP_YLGN,
+    ITOF_CMAP_YLGNBU,
+    ITOF_CMAP_YLORBR,
+    ITOF_CMAP_YLORRD,
+    ITOF_CMAP_AFMHOT,
+    ITOF_CMAP_AUTUMN,
+    ITOF_CMAP_BONE,
+    ITOF_CMAP_COOL,
+    ITOF_CMAP_COPPER,
+    ITOF_CMAP_GIST_HEAT,
+    ITOF_CMAP_GRAY,
+    ITOF_CMAP_HOT,
+    ITOF_CMAP_PINK,
+    ITOF_CMAP_SPRING,
+    ITOF_CMAP_SUMMER,
+    ITOF_CMAP_WINTER,
+    ITOF_CMAP_BRBG,
+    ITOF_CMAP_COOLWARM,
+    ITOF_CMAP_PIYG,
+    ITOF_CMAP_PRGN,
+    ITOF_CMAP_PUOR,
+    ITOF_CMAP_RDBU,
+    ITOF_CMAP_RDGY,
+    ITOF_CMAP_RDYLBU,
+    ITOF_CMAP_RDYLGN,
+    ITOF_CMAP_SEISMIC,
+    ITOF_CMAP_GIST_EARTH,
+    ITOF_CMAP_TERRAIN,
+    ITOF_CMAP_OCEAN,
+    ITOF_CMAP_GIST_STERN,
+    ITOF_CMAP_BRG,
+    ITOF_CMAP_CMRMAP,
+    ITOF_CMAP_CUBEHELIX,
+    ITOF_CMAP_GNUPLOT,
+    ITOF_CMAP_GNUPLOT2,
+    ITOF_CMAP_GIST_NCAR,
+    ITOF_CMAP_NIPY_SPECTRAL,
+    ITOF_CMAP_FLAG,
+    ITOF_CMAP_PRISM,
     //---------------------
-    DMCAM_CMAP_COUNT,
+    ITOF_CMAP_COUNT,
 } itof_cmap_palette_e;
 
 /** DMCAM color map output format definition   */
 typedef enum {
-    DMCAM_CMAP_OUTFMT_RGB,
-    DMCAM_CMAP_OUTFMT_RGBA,
-    DMCAM_CMAP_OUTFMT_BGR,
-    DMCAM_CMAP_OUTFMT_BGRA,
+    ITOF_CMAP_OUTFMT_RGB,
+    ITOF_CMAP_OUTFMT_RGBA,
+    ITOF_CMAP_OUTFMT_BGR,
+    ITOF_CMAP_OUTFMT_BGRA,
 
-    DMCAM_CMAP_OUTFMT_RGB32,
-    DMCAM_CMAP_OUTFMT_BGR32,
+    ITOF_CMAP_OUTFMT_RGB32,
+    ITOF_CMAP_OUTFMT_BGR32,
 
-    DMCAM_CMAP_OUTFMT_ARGB,
-    DMCAM_CMAP_OUTFMT_ABGR,
+    ITOF_CMAP_OUTFMT_ARGB,
+    ITOF_CMAP_OUTFMT_ABGR,
     //---------------------
-    DMCAM_CMAP_OUTFMT_COUNT,
+    ITOF_CMAP_OUTFMT_COUNT,
 } itof_cmap_outfmt_e;
 
 typedef struct itof_cmap_cfg {
@@ -1511,10 +1511,10 @@ __API int itof_file_open(const char *fname, const char *mode);
 __API void itof_file_close(int fd);
 
 typedef enum {
-    DMCAM_FRAME_SAVE_FLOAT32 = 0,
-    DMCAM_FRAME_SAVE_UINT32,
-    DMCAM_FRAME_SAVE_UINT16,
-    DMCAM_FRAME_SAVE_UINT8,
+    ITOF_FRAME_SAVE_FLOAT32 = 0,
+    ITOF_FRAME_SAVE_UINT32,
+    ITOF_FRAME_SAVE_UINT16,
+    ITOF_FRAME_SAVE_UINT8,
 
 } itof_frame_save_fmt_t;
 
@@ -1526,8 +1526,8 @@ typedef enum {
  * @param save_fmt [in] file saving format defined in
  *                 itof_frame_save_fmt_t. only followin format
  *                 is supported:
- *              DMCAM_FRAME_SAVE_UINT32
- *              DMCAM_FRAME_SAVE_UINT16
+ *              ITOF_FRAME_SAVE_UINT32
+ *              ITOF_FRAME_SAVE_UINT16
  * @param raw [in] raw data
  * @param raw_len [in] number of raw data (in count of
  *                 uint16_t)
@@ -1557,9 +1557,9 @@ __API bool itof_frame_save_raw(int fd,
  * @param save_fmt [in] file saving format defined in @
  *                 @ref itof_frame_save_fmt_t. only followin
  *                 format is supported:
- *              DMCAM_FRAME_SAVE_FLOAT32
- *              DMCAM_FRAME_SAVE_UINT32
- *              DMCAM_FRAME_SAVE_UINT16
+ *              ITOF_FRAME_SAVE_FLOAT32
+ *              ITOF_FRAME_SAVE_UINT32
+ *              ITOF_FRAME_SAVE_UINT16
  * @param dist [in] distance data (in float32, unit: meter)
  * @param dist_len [in] number of distance data (in count of
  *                 float)
@@ -1584,8 +1584,8 @@ __API bool itof_frame_save_distance(int fd,
  * @param save_fmt [in] file saving format defined in
  *                 @ref itof_frame_save_fmt_t. only followin
  *                 format is supported:
- *              DMCAM_FRAME_SAVE_UINT16
- *              DMCAM_FRAME_SAVE_UINT8
+ *              ITOF_FRAME_SAVE_UINT16
+ *              ITOF_FRAME_SAVE_UINT8
  * @param src [in] gray data (in float32)
  * @param src_len [in] number of distance data (in count of
  *                 float)
@@ -1828,4 +1828,4 @@ bool itof_lens_calib_apply_gray_u16(itof_dev_t *dev, uint16_t *dst, int dst_len,
 #ifdef __cplusplus
 }
 #endif
-#endif  // DMCAM_H
+#endif  // ITOF_H

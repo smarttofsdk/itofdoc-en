@@ -46,32 +46,32 @@ Filter enable and disable
 * Pixel calibration, used for correction of depth data after turning on::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_PIXEL_CALIB; //pixel calibration
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_PIXEL_CALIB; //pixel calibration
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable pixel calibration
-	itof_filter_disable(dev,DMCAM_FILTER_ID_PIXEL_CALIB); //disable pixel calibration
+	itof_filter_disable(dev,ITOF_FILTER_ID_PIXEL_CALIB); //disable pixel calibration
 	
 * Depth filtering, used to filter depth data when turned on::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_MEDIAN;	//depth filter item
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_MEDIAN;	//depth filter item
 	//witem.median_ksize = 3;	     //default value
 	witem.depth_filter_mode = 0xf0;  //default value
 	witem.depth_filter_strength = 1; //ranges 0~100
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable filter
-	itof_filter_disable(dev,DMCAM_FILTER_ID_MEDIAN);//disable filter
+	itof_filter_disable(dev,ITOF_FILTER_ID_MEDIAN);//disable filter
 	
 * Amplitude filtering, filtering points with poor quality after turning on::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_AMP;	//amplitude filter item
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_AMP;	//amplitude filter item
 	witem.min_amp = 30;	//Set the minimum amplitude filtering threshold
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable filter
-	itof_filter_disable(dev,DMCAM_FILTER_ID_AMP);	//disable filter
+	itof_filter_disable(dev,ITOF_FILTER_ID_AMP);	//disable filter
 	
 * HDR mode，set two integration times to ensure that the same module will not overexpose when measuring different objects near and far::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_HDR;	//HDR mode
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_HDR;	//HDR mode
 	witem.intg.intg_3d = 100;	         //HDR small exposure time in HDR mode
 	witem.intg.intg_3dhdr = 700;         //HDR large exposure time in mode
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u)); //enable HDR
@@ -85,23 +85,23 @@ Filter enable and disable
 * Automatic integration time, automatically adjust the exposure time according to the distance of the measured object after turning on::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_AUTO_INTG;	//Automatic exposure item
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_AUTO_INTG;	//Automatic exposure item
 	witem.sat_ratio = 5;//Automatic exposure threshold value
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable
-	itof_filter_disable(dev,DMCAM_FILTER_ID_AUTO_INTG);	//disable
+	itof_filter_disable(dev,ITOF_FILTER_ID_AUTO_INTG);	//disable
 	
 * Multi-module interference cancellation, turn on to eliminate or reduce interference when multiple modules are turned on at the same time::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_SYNC_DELAY;	 //interference delay item
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_SYNC_DELAY;	 //interference delay item
 	witem.sync_delay = 0;	//0 means a random delay
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable
-	itof_filter_disable(dev,DMCAM_FILTER_ID_SYNC_DELAY);	//enable
+	itof_filter_disable(dev,ITOF_FILTER_ID_SYNC_DELAY);	//enable
 
 * Sports mode 0, frame format should be set to 2::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_SPORT_MODE;
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_SPORT_MODE;
 	itof_param_item_t wparam;	
 	uint32_t set_format = 2;	//set frame format to 2		
 	memset(&wparam,0,sizeof(wparam));
@@ -111,12 +111,12 @@ Filter enable and disable
 	assert(itof_param_batch_set(dev,&wparam,1));
 	witem.sport_mode = 0;	//set sport mode to 0
 	itof_filter_enable(dev,filter_id,&witem,sizeof(itof_filter_args_u));//enable sport mode 0
-	itof_filter_disable(dev,DMCAM_FILTER_ID_SPORT_MODE);//disable sport mode 0
+	itof_filter_disable(dev,ITOF_FILTER_ID_SPORT_MODE);//disable sport mode 0
 	
 * Sport mode 1, frame format should be set to 4::
 
 	itof_filter_args_u witem;
-	itof_filter_id_e filter_id = DMCAM_FILTER_ID_SPORT_MODE;
+	itof_filter_id_e filter_id = ITOF_FILTER_ID_SPORT_MODE;
 	itof_param_item_t wparam;	
 	uint32_t set_format = 4;
 	memset(&wparam,0,sizeof(wparam));
@@ -132,4 +132,4 @@ Filter enable and disable
 	wparam.param_id = PARAM_FRAME_FORMAT;	
 	wparam.param_val_len = sizeof(set_format);
 	assert(itof_param_batch_set(dev,&wparam,1));
-	itof_filter_disable(dev,DMCAM_FILTER_ID_SPORT_MODE);
+	itof_filter_disable(dev,ITOF_FILTER_ID_SPORT_MODE);
